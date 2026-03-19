@@ -6,7 +6,7 @@ const approach = [
 
 export default function Approach() {
   return (
-    <section className="section-padding bg-accent-soft">
+    <section id="approach" className="section-padding bg-accent-soft">
       <div className="container">
         <h2 className="section-title">Approach</h2>
         <div className="grid">

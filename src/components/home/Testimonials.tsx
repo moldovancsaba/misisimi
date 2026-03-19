@@ -15,13 +15,13 @@ const outcomes = [
 
 export default function Testimonials() {
   return (
-    <section className="section-padding">
+    <section id="testimonials" className="section-padding">
       <div className="container">
         <h2 className="section-title">Client Outcomes</h2>
         <div className="grid">
           {outcomes.map((item, i) => (
             <div key={i} className="testimonial-card">
-              <p className="quote">"{item.quote}"</p>
+              <p className="quote">&quot;{item.quote}&quot;</p>
               <div className="client-info">
                 <strong>{item.client}</strong>
               </div>

@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 export default function Hero() {
   return (
     <section className="hero section-padding">
@@ -11,7 +13,7 @@ export default function Hero() {
               without reducing human capital.
             </p>
             <div className="cta-group">
-              <button className="btn btn-primary">Start a Conversation</button>
+              <Link href="#contact" className="btn btn-primary">Start a Conversation</Link>
             </div>
           </div>
           <div className="hero-visual">

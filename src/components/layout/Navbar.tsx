@@ -8,6 +8,12 @@ export default function Navbar() {
         <Link href="/" className="logo-group">
           <Image src="/misisimi_title.png" alt="misisimi title" width={309} height={40} className="logo-title" priority />
         </Link>
+        <div className="nav-links">
+          <Link href="#capabilities" className="nav-link">Capabilities</Link>
+          <Link href="#approach" className="nav-link">Approach</Link>
+          <Link href="#testimonials" className="nav-link">Outcomes</Link>
+          <Link href="#contact" className="nav-link btn-nav">Contact</Link>
+        </div>
       </div>
       <style jsx>{`
         .navbar {
@@ -20,13 +26,38 @@ export default function Navbar() {
         }
         .nav-content {
           display: flex;
-          justify-content: flex-start;
+          justify-content: space-between;
           align-items: center;
           height: 80px; /* Standard height for 40px branding */
           max-width: 1000px;
           margin: 0 auto;
           width: 100%;
           padding: 0 1.5rem; /* Exactly matches hero section padding */
+        }
+        .nav-links {
+          display: flex;
+          align-items: center;
+          gap: 2rem;
+        }
+        .nav-link {
+          font-size: 0.875rem;
+          font-weight: 500;
+          color: var(--muted);
+          transition: color 0.2s;
+        }
+        .nav-link:hover {
+          color: var(--text);
+        }
+        .btn-nav {
+          background: var(--surface);
+          border: 1px solid var(--border);
+          padding: 0.5rem 1.25rem;
+          border-radius: 6px;
+          color: var(--text);
+          font-weight: 600;
+        }
+        .btn-nav:hover {
+          border-color: var(--primary);
         }
         .logo-group {
           display: flex;

@@ -1,21 +1,53 @@
+'use client';
+
+import { useState } from 'react';
+
 export default function ContactForm() {
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    // Simulate form submission
+    setSubmitted(true);
+  };
+
+  if (submitted) {
+    return (
+      <section id="contact" className="section-padding">
+        <div className="container">
+          <div className="contact-grid" style={{ textAlign: 'center', display: 'block' }}>
+            <h2 className="section-title">Thank You!</h2>
+            <p style={{ fontSize: '1.25rem' }}>Your message has been sent. We&apos;ll be in touch soon.</p>
+            <button 
+              onClick={() => setSubmitted(false)} 
+              className="btn btn-primary" 
+              style={{ marginTop: '2rem' }}
+            >
+              Send Another Message
+            </button>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
   return (
-    <section className="section-padding">
+    <section id="contact" className="section-padding">
       <div className="container">
         <div className="contact-grid">
           <div className="contact-info">
             <h2 className="section-title">Contact</h2>
-            <p>Ready to solve your business complexity? Let's talk.</p>
+            <p>Ready to solve your business complexity? Let&apos;s talk.</p>
           </div>
-          <form className="form">
+          <form className="form" onSubmit={handleSubmit}>
             <div className="form-group">
-              <input type="text" placeholder="Name" />
+              <input type="text" placeholder="Name" required />
             </div>
             <div className="form-group">
-              <input type="email" placeholder="Email" />
+              <input type="email" placeholder="Email" required />
             </div>
             <div className="form-group">
-              <input type="text" placeholder="Company" />
+              <input type="text" placeholder="Company" required />
             </div>
             <button type="submit" className="btn btn-primary">Send Message</button>
           </form>

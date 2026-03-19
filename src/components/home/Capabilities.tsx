@@ -23,7 +23,7 @@ const capabilities = [
 
 export default function Capabilities() {
   return (
-    <section className="section-padding">
+    <section id="capabilities" className="section-padding">
       <div className="container">
         <h2 className="section-title">Capabilities</h2>
         <div className="grid">
