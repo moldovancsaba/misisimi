@@ -107,18 +107,25 @@ p {
   color: var(--muted);
 }
 
-.grid-3, .grid-4, .problem-grid, .steps-grid, .pricing-grid, .use-case-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, min(25vw, 1fr)));
+.grid-3,
+.problem-grid,
+.steps-grid,
+.pricing-grid,
+.use-case-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 2rem;
   align-items: stretch;
-  grid-auto-rows: minmax(340px, 1fr);
-  justify-items: center;
 }
 
-.pricing-grid {
-  grid-template-columns: repeat(auto-fit, minmax(260px, min(25vw, 1fr)));
-  grid-auto-rows: minmax(340px, 1fr);
+.grid-3 > .card,
+.problem-grid > .card,
+.steps-grid > .card,
+.pricing-grid > .card,
+.use-case-grid > .card {
+  flex: 0 0 min(clamp(240px, 25vw, 360px), 100%);
+  max-width: min(clamp(240px, 25vw, 360px), 100%);
 }
 
 .card {
