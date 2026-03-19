@@ -6,8 +6,8 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="container nav-content">
         <Link href="/" className="logo-group">
-          <Image src="/logo.png" alt="misisimi logo" width={40} height={40} className="logo-img" priority />
-          <Image src="/misisimi_title.png" alt="misisimi title" width={180} height={40} className="logo-title" priority />
+          <Image src="/logo.png" alt="misisimi logo" width={37} height={40} className="logo-img" priority />
+          <Image src="/misisimi_title.png" alt="misisimi title" width={309} height={40} className="logo-title" priority />
         </Link>
       </div>
       <style jsx>{`
