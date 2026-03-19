@@ -1,3 +1,4 @@
+'use client';
 const deliverables = [
   {
     title: "Custom AI models",

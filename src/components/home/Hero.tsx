@@ -1,3 +1,4 @@
+'use client';
 import Link from 'next/link'
 
 export default function Hero() {
@@ -40,6 +41,8 @@ export default function Hero() {
         .hero {
           position: relative;
           overflow: hidden;
+          background: white;
+          padding: 80px 0;
         }
         .hero-grid {
           display: grid;
@@ -47,10 +50,61 @@ export default function Hero() {
           gap: 4rem;
           align-items: center;
         }
+        .hero-visual {
+          position: relative;
+          height: 400px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .workflow-diagram {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 3rem;
+        }
+        .node {
+          width: 140px;
+          height: 140px;
+          border-radius: 50%;
+          background: white;
+          border: 4px solid var(--primary);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-family: 'Sora', sans-serif;
+          font-weight: 800;
+          font-size: 0.875rem;
+          color: var(--primary);
+          z-index: 2;
+          box-shadow: 0 8px 30px rgba(11, 31, 58, 0.1);
+        }
+        .line {
+          position: absolute;
+          width: 4px;
+          height: 60px;
+          background: var(--accent);
+          z-index: 1;
+        }
+        .line-1 { top: 125px; }
+        .line-2 { bottom: 125px; }
+        .accent-circle {
+          position: absolute;
+          width: 300px;
+          height: 300px;
+          border-radius: 50%;
+          background: radial-gradient(circle, rgba(59, 130, 246, 0.1) 0%, transparent 70%);
+          z-index: 0;
+        }
         h1 {
           font-size: clamp(2.5rem, 5vw, 4rem);
           margin-bottom: 1.5rem;
           max-width: 900px;
+          color: var(--primary);
         }
         .hero-subtitle {
           font-size: 1.25rem;
@@ -60,24 +114,6 @@ export default function Hero() {
           color: var(--muted);
         }
         /* Global button styles are now managed in globals.css */
-        .hero-visual {
-          position: relative;
-        }
-        .cube-wrapper {
-          position: relative;
-          width: 100%;
-          aspect-ratio: 1;
-        }
-        .hero-image {
-          width: 100%;
-          height: auto;
-          filter: drop-shadow(0 0 50px rgba(168, 85, 247, 0.2));
-          animation: float 6s ease-in-out infinite;
-        }
-        @keyframes float {
-          0%, 100% { transform: translateY(0); }
-          50% { transform: translateY(-20px); }
-        }
         @media (max-width: 968px) {
           .hero-grid {
             grid-template-columns: 1fr;

@@ -1,3 +1,4 @@
+'use client';
 export default function Problem() {
   const problems = [
     "Manual processes slow down operations and increase costs",
@@ -7,7 +8,7 @@ export default function Problem() {
   ];
 
   return (
-    <section id="problem" className="section-padding" style={{ background: 'rgba(255, 255, 255, 0.02)' }}>
+    <section id="problem" className="section-padding" style={{ background: 'var(--background)' }}>
       <div className="container">
         <div className="problem-content">
           <h2 className="section-title">Most businesses know AI matters — but don’t know where to start</h2>
@@ -23,14 +24,14 @@ export default function Problem() {
       </div>
       <style jsx>{`
         .problem-content {
-          max-width: 800px;
+          max-width: 900px;
           margin: 0 auto;
           text-align: center;
         }
         .section-title {
           font-size: 2.5rem;
           margin-bottom: 4rem;
-          color: var(--text);
+          color: var(--primary);
         }
         .problem-grid {
           display: grid;
@@ -41,24 +42,25 @@ export default function Problem() {
         .problem-item {
           display: flex;
           align-items: flex-start;
-          gap: 1rem;
-          padding: 1.5rem;
+          gap: 1.25rem;
+          padding: 2rem;
           background: var(--surface);
           border: 1px solid var(--border);
-          border-radius: 12px;
+          border-radius: var(--radius-card);
         }
         .problem-dot {
-          width: 8px;
-          height: 8px;
+          width: 10px;
+          height: 10px;
           border-radius: 50%;
-          background: var(--secondary);
-          margin-top: 0.6rem;
+          background: var(--accent);
+          margin-top: 0.5rem;
           flex-shrink: 0;
         }
         p {
           color: var(--text);
           font-size: 1.125rem;
-          line-height: 1.4;
+          line-height: 1.5;
+          font-weight: 500;
         }
         @media (max-width: 768px) {
           .problem-grid {
