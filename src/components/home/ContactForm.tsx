@@ -54,15 +54,7 @@ export default function ContactForm() {
           outline: none;
           border-color: var(--primary);
         }
-        .btn {
-          padding: 1rem;
-          border-radius:12px;
-          background: var(--gradient);
-          color: white;
-          font-weight: 600;
-          border: none;
-          cursor: pointer;
-        }
+        /* Global button styles are now managed in globals.css */
         @media (max-width: 768px) {
           .contact-grid {
             grid-template-columns: 1fr;
