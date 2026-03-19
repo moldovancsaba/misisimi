@@ -30,7 +30,7 @@ export default function Pricing() {
           </div>
 
           {/* Card 2: AI Diagnostic */}
-          <div className="card pricing-card promo-card card-landscape">
+          <div className="card pricing-card promo-card card-portrait">
             <span className="badge">Entry Offer</span>
             <h4>AI Diagnostic</h4>
             <div className="promo-content">

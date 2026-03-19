@@ -106,11 +106,23 @@ p {
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 2rem;
   align-items: stretch;
+  grid-auto-rows: minmax(320px, 1fr);
 }
 
 .pricing-grid {
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 2.5rem;
+}
+
+.grid-4 .card,
+.problem-grid .card,
+.steps-grid .card,
+.use-case-grid .card {
+  aspect-ratio: 2 / 3;
+}
+
+.grid-3 .card-landscape {
+  aspect-ratio: 4 / 3;
 }
 
 .card {
