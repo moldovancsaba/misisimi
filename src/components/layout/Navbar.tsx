@@ -6,7 +6,7 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="container nav-content">
         <Link href="/" className="logo-group">
-          <Image src="/logo.svg" alt="misisimi logo" width={32} height={32} />
+          <Image src="/logo.png" alt="misisimi logo" width={48} height={48} className="logo-img" />
           <span className="logo-text">misisimi</span>
         </Link>
         <div className="nav-tagline">Zero2Done Execution</div>
@@ -34,6 +34,9 @@ export default function Navbar() {
           font-size: 1.5rem;
           letter-spacing: -0.05em; /* Tight logo tracking */
           line-height: 1;
+        }
+        .logo-img {
+          filter: drop-shadow(0 0 10px rgba(168, 85, 247, 0.2));
         }
         .logo-text {
           color: var(--text);
