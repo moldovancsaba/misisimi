@@ -269,7 +269,7 @@ p {
   background: rgba(13, 13, 20, 0.4);
   backdrop-filter: blur(25px);
   -webkit-backdrop-filter: blur(25px);
-  border: 5px solid rgba(255, 255, 255, 0.2);
+  border: 5px solid #ffffff;
   border-radius: var(--radius-card);
   padding: 3.5rem;
   display: flex;
@@ -305,7 +305,7 @@ p {
 
 .card:hover {
   transform: translateY(-8px) scale(1.01);
-  border-color: rgba(168, 85, 247, 0.4);
+  border-color: #ffffff;
   background: rgba(13, 13, 20, 0.6);
   box-shadow: 
     0 30px 60px rgba(0, 0, 0, 0.6),
