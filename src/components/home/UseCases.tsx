@@ -24,7 +24,9 @@ export default function UseCases() {
   return (
     <section id="use-cases" className="section-padding">
       <div className="container">
-        <h2 className="section-title" style={{ textAlign: 'center', marginBottom: '4rem', fontSize: '2.5rem' }}>Where AI creates immediate value</h2>
+        <div className="section-header">
+          <h2 className="section-title">Where AI creates immediate value</h2>
+        </div>
         <div className="use-case-grid">
           {cases.map((item, i) => (
             <div key={i} className="card use-case-card">
@@ -51,65 +53,6 @@ export default function UseCases() {
           ))}
         </div>
       </div>
-      <style jsx>{`
-        .use-case-grid {
-          display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-          gap: 2rem;
-        }
-        .use-case-card {
-          display: flex;
-          flex-direction: column;
-          gap: 1.5rem;
-        }
-        h3 {
-          font-size: 1.5rem;
-          color: white;
-          background: var(--gradient);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          margin-bottom: 1rem;
-        }
-        .case-content {
-          display: flex;
-          flex-direction: column;
-          gap: 1.25rem;
-        }
-        .case-part {
-          display: flex;
-          flex-direction: column;
-          gap: 0.25rem;
-        }
-        .part-label {
-          font-size: 0.75rem;
-          text-transform: uppercase;
-          font-weight: 800;
-          color: var(--secondary);
-          letter-spacing: 0.05em;
-        }
-        p {
-          font-size: 1.125rem;
-          color: white !important;
-          line-height: 1.5;
-        }
-        .outcome-list {
-          list-style: none;
-          display: flex;
-          flex-direction: column;
-          gap: 0.5rem;
-        }
-        .outcome-list li {
-          color: #F9FAFB;
-          font-weight: 600;
-          display: flex;
-          align-items: center;
-          gap: 0.75rem;
-        }
-        .outcome-list li::before {
-          content: '→';
-          color: var(--primary);
-        }
-      `}</style>
     </section>
   );
 }

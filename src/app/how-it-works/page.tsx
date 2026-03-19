@@ -33,10 +33,10 @@ export default function HowItWorksPage() {
   return (
     <main>
       <Navbar />
-      <header className="section-padding bg-accent-soft">
-        <div className="container" style={{ textAlign: 'center' }}>
-          <h1 style={{ fontSize: '3.5rem', marginBottom: '1rem' }}>How It Works</h1>
-          <p style={{ fontSize: '1.25rem', color: 'var(--muted)', maxWidth: '700px', margin: '0 auto' }}>
+      <header className="service-header">
+        <div className="container">
+          <h1 className="text-gradient">How It Works</h1>
+          <p className="section-subtitle">
             A structured, 4-step process to bring AI into your business operations.
           </p>
         </div>
@@ -50,8 +50,8 @@ export default function HowItWorksPage() {
                 <div className="timeline-dot"></div>
                 <div className="timeline-content card">
                   <span className="step-label">{item.step}</span>
-                  <h2>{item.title}</h2>
-                  <ul>
+                  <h2 className="text-gradient" style={{ marginBottom: '1.5rem' }}>{item.title}</h2>
+                  <ul className="outcome-list">
                     {item.items.map((li, j) => (
                       <li key={j}>{li}</li>
                     ))}
@@ -67,67 +67,6 @@ export default function HowItWorksPage() {
       </section>
 
       <Footer />
-
-      <style jsx>{`
-        .timeline {
-          max-width: 800px;
-          margin: 0 auto;
-          position: relative;
-          padding-left: 2rem;
-          border-left: 2px solid var(--border);
-        }
-        .timeline-item {
-          position: relative;
-          margin-bottom: 4rem;
-        }
-        .timeline-dot {
-          position: absolute;
-          left: -2.75rem;
-          top: 1.5rem;
-          width: 24px;
-          height: 24px;
-          background: var(--accent);
-          border: 4px solid var(--background);
-          border-radius: 50%;
-        }
-        .step-label {
-          font-size: 0.75rem;
-          text-transform: uppercase;
-          font-weight: 800;
-          color: var(--accent);
-          letter-spacing: 0.1em;
-          margin-bottom: 0.5rem;
-          display: block;
-        }
-        h2 {
-          font-size: 2rem;
-          margin-bottom: 1.5rem;
-        }
-        ul {
-          list-style: none;
-          margin-bottom: 2rem;
-          display: flex;
-          flex-direction: column;
-          gap: 0.5rem;
-        }
-        li {
-          color: var(--text);
-          font-size: 1.125rem;
-        }
-        li::before {
-          content: '—';
-          margin-right: 0.75rem;
-          color: var(--accent);
-        }
-        .deliverable {
-          padding: 1rem;
-          background: var(--surface);
-          border-radius: 8px;
-          border-left: 4px solid var(--accent);
-          font-size: 0.9375rem;
-        }
-        strong { color: white; }
-      `}</style>
     </main>
   );
 }

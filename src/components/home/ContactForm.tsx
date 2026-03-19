@@ -60,52 +60,6 @@ export default function ContactForm() {
           </form>
         </div>
       </div>
-      <style jsx>{`
-        .contact-grid {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          gap: 4rem;
-          background: var(--surface);
-          padding: 4rem;
-          border-radius: 24px;
-          border: 1px solid var(--border);
-        }
-        .section-title {
-          font-size: 2.5rem;
-          margin-bottom: 1.5rem;
-        }
-        .form {
-          display: flex;
-          flex-direction: column;
-          gap: 1rem;
-        }
-        input, textarea {
-          width: 100%;
-          padding: 1rem 1.25rem;
-          background: #0F0F18;
-          border: 1px solid var(--border);
-          color: white;
-          border-radius: 12px;
-          font-size: 1rem;
-          transition: border-color 0.2s;
-          font-family: inherit;
-        }
-        textarea {
-          min-height: 120px;
-          resize: vertical;
-        }
-        input:focus, textarea:focus {
-          outline: none;
-          border-color: var(--primary);
-        }
-        /* Global button styles are now managed in globals.css */
-        @media (max-width: 768px) {
-          .contact-grid {
-            grid-template-columns: 1fr;
-            padding: 2.5rem 1.5rem;
-          }
-        }
-      `}</style>
     </section>
   )
 }

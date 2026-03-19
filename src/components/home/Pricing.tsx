@@ -11,8 +11,10 @@ export default function Pricing() {
   return (
     <section id="pricing" className="section-padding">
       <div className="container">
-        <h2 className="section-title" style={{ textAlign: 'center', marginBottom: '1rem', fontSize: '2.5rem' }}>Pricing aligned with delivered capabilities — not hours</h2>
-        <p style={{ textAlign: 'center', marginBottom: '4rem', color: 'var(--muted)', fontSize: '1.25rem' }}>Transparent, modular, and outcome-based pricing using Value Credits.</p>
+        <div className="section-header">
+          <h2 className="section-title">Pricing aligned with delivered capabilities — not hours</h2>
+          <p className="section-subtitle">Transparent, modular, and outcome-based pricing using Value Credits.</p>
+        </div>
         
         <div className="pricing-grid">
           <div className="pricing-info">
@@ -45,85 +47,6 @@ export default function Pricing() {
           </div>
         </div>
       </div>
-      <style jsx>{`
-        .pricing-grid {
-          display: grid;
-          grid-template-columns: 1fr 1.2fr;
-          gap: 4rem;
-          align-items: start;
-        }
-        h3 { 
-          font-size: 2.25rem; 
-          margin-bottom: 1.5rem; 
-          background: var(--gradient);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-        }
-        h4 { font-size: 1.5rem; margin-bottom: 1.5rem; color: white !important; }
-        .benefits-list {
-          list-style: none;
-          margin-bottom: 3rem;
-        }
-        .benefits-list li {
-          padding: 0.75rem 0;
-          color: #F9FAFB;
-          display: flex;
-          align-items: center;
-          gap: 1rem;
-          font-weight: 500;
-        }
-        .benefits-list li::before {
-          content: '✓';
-          color: var(--secondary);
-          font-weight: 900;
-        }
-        .entry-offer {
-          border-left: 4px solid var(--secondary);
-          background: rgba(236, 72, 153, 0.05);
-        }
-        .badge {
-          display: inline-block;
-          background: var(--gradient);
-          color: white;
-          padding: 4px 12px;
-          border-radius: var(--radius-btn);
-          font-size: 0.75rem;
-          font-weight: 800;
-          margin-bottom: 1rem;
-          text-transform: uppercase;
-        }
-        .price { 
-          font-size: 1.5rem; 
-          font-weight: 800; 
-          color: var(--secondary) !important; 
-          margin-bottom: 0.5rem; 
-        }
-        .delivery { font-size: 0.875rem; color: #94A3B8; font-weight: 500; }
-        
-        .table {
-          display: flex;
-          flex-direction: column;
-          gap: 1rem;
-          margin-bottom: 2rem;
-        }
-        .table-row {
-          display: flex;
-          justify-content: space-between;
-          padding-bottom: 1rem;
-          border-bottom: 1px solid var(--border);
-          color: #F9FAFB;
-          font-weight: 500;
-        }
-        .credit-val { font-weight: 800; color: var(--primary); }
-        .note { font-size: 0.875rem; color: #94A3B8; text-align: center; font-style: italic; }
-
-        @media (max-width: 968px) {
-          .pricing-grid {
-            grid-template-columns: 1fr;
-            gap: 2rem;
-          }
-        }
-      `}</style>
     </section>
   );
 }

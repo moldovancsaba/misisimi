@@ -31,10 +31,12 @@ export default function WhatWeBuild() {
   return (
     <section id="services" className="section-padding">
       <div className="container">
-        <h2 className="section-title">What we actually deliver</h2>
-        <div className="grid">
+        <div className="section-header">
+          <h2 className="section-title">What we actually deliver</h2>
+        </div>
+        <div className="grid-3">
           {deliverables.map((item, i) => (
-            <div key={i} className="card transition-all">
+            <div key={i} className="card">
               <div className="card-icon">{item.icon}</div>
               <h3>{item.title}</h3>
               <p>{item.description}</p>
@@ -42,38 +44,6 @@ export default function WhatWeBuild() {
           ))}
         </div>
       </div>
-      <style jsx>{`
-        .section-title {
-          font-size: 2.5rem;
-          margin-bottom: 3.5rem;
-          text-align: center;
-        }
-        .grid {
-          display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-          gap: 1.5rem;
-        }
-        .card {
-          background: var(--surface);
-          border: 1px solid var(--border);
-          padding: 2rem;
-          border-radius: 12px;
-          height: 100%;
-        }
-        .card:hover {
-          border-color: var(--accent);
-          background: rgba(59, 130, 246, 0.05);
-        }
-        .card-icon {
-          font-size: 1.5rem;
-          margin-bottom: 1rem;
-        }
-        h3 {
-          margin-bottom: 0.5rem;
-          font-size: 1.125rem;
-          font-weight: 700;
-        }
-      `}</style>
     </section>
   )
 }

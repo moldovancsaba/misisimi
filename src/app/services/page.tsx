@@ -27,22 +27,22 @@ export default function ServicesPage() {
   return (
     <main>
       <Navbar />
-      <header className="section-padding bg-accent-soft">
-        <div className="container" style={{ textAlign: 'center' }}>
-          <h1 style={{ fontSize: '3.5rem', marginBottom: '1rem' }}>Services</h1>
-          <p style={{ fontSize: '1.25rem', color: 'var(--muted)', maxWidth: '700px', margin: '0 auto' }}>
+      <header className="service-header">
+        <div className="container">
+          <h1 className="text-gradient">Services</h1>
+          <p className="section-subtitle">
             Practical AI implementation for small and mid-sized businesses.
           </p>
         </div>
       </header>
 
       {services.map((service, i) => (
-        <section key={i} className="section-padding" style={{ background: i % 2 === 0 ? 'white' : 'var(--background)' }}>
+        <section key={i} className="section-padding">
           <div className="container">
             <div className="service-grid">
               <div className="service-content">
-                <h2 style={{ fontSize: '2.5rem', marginBottom: '1.5rem', color: 'white' }}>{service.title}</h2>
-                <p style={{ fontSize: '1.25rem', marginBottom: '2.5rem', color: 'var(--text)' }}>{service.desc}</p>
+                <h2 className="text-gradient" style={{ marginBottom: '2rem' }}>{service.title}</h2>
+                <p className="section-subtitle" style={{ textAlign: 'left', margin: '0 0 4rem', fontSize: '1.5rem', color: '#FFFFFF' }}>{service.desc}</p>
                 <div className="spec-grid">
                   <div className="spec-card">
                     <h4>Includes</h4>
@@ -68,52 +68,6 @@ export default function ServicesPage() {
       ))}
 
       <Footer />
-
-      <style jsx>{`
-        section {
-          background: transparent !important;
-        }
-        .service-grid {
-          max-width: 900px;
-          margin: 0 auto;
-        }
-        .spec-grid {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          gap: 2.5rem;
-        }
-        .spec-card h4 {
-          font-size: 0.875rem;
-          text-transform: uppercase;
-          letter-spacing: 0.1em;
-          color: var(--accent);
-          margin-bottom: 1.25rem;
-          border-bottom: 1px solid var(--border);
-          padding-bottom: 0.5rem;
-        }
-        ul {
-          list-style: none;
-          display: flex;
-          flex-direction: column;
-          gap: 0.75rem;
-        }
-        li {
-          color: var(--muted);
-          display: flex;
-          align-items: center;
-          gap: 0.75rem;
-        }
-        li::before {
-          content: '•';
-          color: var(--accent);
-          font-weight: 900;
-        }
-        @media (max-width: 768px) {
-          .spec-grid {
-            grid-template-columns: 1fr;
-          }
-        }
-      `}</style>
     </main>
   );
 }

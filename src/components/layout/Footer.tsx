@@ -8,23 +8,13 @@ export default function Footer() {
             © {new Date().getFullYear()} misisimi — Zero2Done Execution
           </div>
           <div className="footer-links">
-            {/* Add links if needed */}
+            <a href="/services">Services</a>
+            <a href="/how-it-works">How It Works</a>
+            <a href="/#faq">FAQ</a>
+            <a href="/#contact">Contact</a>
           </div>
         </div>
       </div>
-      <style jsx>{`
-        .footer {
-          padding: 4rem 0;
-          border-top: 1px solid var(--border);
-          color: var(--muted);
-          font-size: 0.875rem;
-        }
-        .footer-content {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-      `}</style>
     </footer>
   )
 }
