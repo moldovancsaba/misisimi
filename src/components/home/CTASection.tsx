@@ -6,7 +6,8 @@ export default function CTASection() {
     <section className="section-padding">
       <div className="container">
         <div className="cta-banner">
-          <h2>Start with a clear understanding of where AI fits your business</h2>
+          <h2 className="text-gradient">Ready to automate your operations?</h2>
+          <p className="section-subtitle" style={{marginBottom: '3rem'}}>Take the first step with our AI Diagnostic.</p>
           <Link href="#contact" className="btn btn-primary">
             Get Your AI Diagnostic
           </Link>
