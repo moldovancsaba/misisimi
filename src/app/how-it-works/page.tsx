@@ -1,6 +1,8 @@
-'use client';
+ 'use client';
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import FAQ from "@/components/home/FAQ";
+import ContactForm from "@/components/home/ContactForm";
 
 export default function HowItWorksPage() {
   const steps = [
@@ -66,6 +68,8 @@ export default function HowItWorksPage() {
         </div>
       </section>
 
+      <FAQ />
+      <ContactForm />
       <Footer />
     </main>
   );

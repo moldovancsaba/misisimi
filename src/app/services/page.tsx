@@ -1,6 +1,8 @@
 'use client';
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import ContactForm from "@/components/home/ContactForm";
+import FAQ from "@/components/home/FAQ";
 
 export default function ServicesPage() {
   const services = [
@@ -36,13 +38,16 @@ export default function ServicesPage() {
         </div>
       </header>
 
-      {services.map((service, i) => (
-        <section key={i} className="section-padding">
-          <div className="container">
-            <div className="service-grid">
-              <div className="service-content">
-                <h2 className="text-gradient" style={{ marginBottom: '2rem' }}>{service.title}</h2>
-                <p className="section-subtitle" style={{ textAlign: 'left', margin: '0 0 4rem', fontSize: '1.5rem', color: '#FFFFFF' }}>{service.desc}</p>
+      <section className="section-padding">
+        <div className="container">
+          <div className="section-header">
+            <h2 className="section-title">What we actually deliver</h2>
+          </div>
+          <div className="grid-3 service-grid">
+            {services.map((service, i) => (
+              <article key={i} className="card service-card card-portrait">
+                <h3 className="text-gradient">{service.title}</h3>
+                <p>{service.desc}</p>
                 <div className="spec-grid">
                   <div className="spec-card">
                     <h4>Includes</h4>
@@ -61,11 +66,14 @@ export default function ServicesPage() {
                     </ul>
                   </div>
                 </div>
-              </div>
-            </div>
+              </article>
+            ))}
           </div>
-        </section>
-      ))}
+        </div>
+      </section>
+
+      <FAQ />
+      <ContactForm />
 
       <Footer />
     </main>
