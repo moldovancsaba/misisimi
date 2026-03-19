@@ -29,7 +29,7 @@ export default function UseCases() {
         </div>
         <div className="use-case-grid">
           {cases.map((item, i) => (
-            <div key={i} className="card use-case-card">
+            <div key={i} className="card use-case-card card-portrait">
               <h3>{item.title}</h3>
               <div className="case-content">
                 <div className="case-part">

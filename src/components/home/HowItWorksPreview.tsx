@@ -15,7 +15,7 @@ export default function HowItWorksPreview() {
         </div>
         <div className="steps-grid">
           {steps.map((step, i) => (
-            <div key={i} className="card step-card">
+            <div key={i} className="card step-card card-landscape">
               <div className="step-num">{i + 1}</div>
               <h3>{step.title}</h3>
               {step.time && <span className="step-badge">{step.time}</span>}

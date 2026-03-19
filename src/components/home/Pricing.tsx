@@ -18,7 +18,7 @@ export default function Pricing() {
         
         <div className="pricing-grid">
           {/* Card 1: Value System */}
-          <div className="card pricing-card">
+          <div className="card pricing-card card-portrait">
             <h3>Value Credit System</h3>
             <p className="credit-rate">1 Value Credit = €200</p>
             <ul className="benefits-list">
@@ -30,7 +30,7 @@ export default function Pricing() {
           </div>
 
           {/* Card 2: AI Diagnostic */}
-          <div className="card pricing-card promo-card">
+          <div className="card pricing-card promo-card card-landscape">
             <span className="badge">Entry Offer</span>
             <h4>AI Diagnostic</h4>
             <div className="promo-content">
@@ -42,7 +42,7 @@ export default function Pricing() {
           </div>
 
           {/* Card 3: Credit Scale */}
-          <div className="card pricing-card table-card">
+          <div className="card pricing-card table-card card-portrait">
             <h4 className="table-title">Credit Scale</h4>
             <div className="table">
               {credits.map((item, i) => (

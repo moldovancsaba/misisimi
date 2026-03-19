@@ -308,12 +308,18 @@ p {
   border: 5px solid rgba(255, 255, 255, 0.2);
   border-radius: var(--radius-card);
   padding: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1.5rem;
   transition: all 0.5s cubic-bezier(0.2, 1, 0.3, 1);
   position: relative;
   overflow: hidden;
   box-shadow: 
     0 10px 40px rgba(0, 0, 0, 0.4),
     inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+  aspect-ratio: 2 / 3;
+  min-height: 320px;
 }
 
 .card::before {
@@ -341,6 +347,18 @@ p {
     0 30px 60px rgba(0, 0, 0, 0.6),
     0 0 20px rgba(168, 85, 247, 0.15),
     inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+
+.card > * {
+  width: 100%;
+}
+
+.card-portrait {
+  aspect-ratio: 2 / 3;
+}
+
+.card-landscape {
+  aspect-ratio: 4 / 3;
 }
 
 

@@ -36,7 +36,7 @@ export default function WhatWeBuild() {
         </div>
         <div className="grid-3">
           {deliverables.map((item, i) => (
-            <div key={i} className="card">
+            <div key={i} className="card card-portrait">
               <div className="card-icon">{item.icon}</div>
               <h3>{item.title}</h3>
               <p>{item.description}</p>
