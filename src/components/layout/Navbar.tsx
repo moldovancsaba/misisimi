@@ -6,8 +6,8 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="container nav-content">
         <Link href="/" className="logo-group">
-          <Image src="/logo.png" alt="misisimi logo" width={160} height={160} className="logo-img" priority />
-          <span className="logo-text text-gradient">misisimi</span>
+          <Image src="/logo.png" alt="misisimi logo" width={240} height={240} className="logo-img" priority />
+          <span className="logo-text">MISISIMI</span>
         </Link>
       </div>
       <style jsx>{`
@@ -23,20 +23,23 @@ export default function Navbar() {
           display: flex;
           justify-content: flex-start;
           align-items: center;
-          height: 300px; /* Massive height for the final brand statement */
+          height: 400px; /* Massive headroom for 200px branding */
         }
         .logo-group {
           display: flex;
           align-items: center;
-          gap: 2.5rem;
-          font-weight: 950; /* Absolute maximum weight */
-          font-size: 10rem; /* Matches the 160px logo visual presence */
-          letter-spacing: -0.1em; 
-          line-height: 1; /* Standard line-height to avoid squashing */
+          gap: 3rem;
+          font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+          font-weight: 700;
+          font-size: 200px; /* Explicit size as DRAWN */
+          color: white; /* SOLID WHITE as requested */
+          letter-spacing: -0.05em; 
+          line-height: 1;
           text-decoration: none !important;
+          text-transform: uppercase;
         }
         .logo-img {
-          filter: drop-shadow(0 0 30px rgba(168, 85, 247, 0.4));
+          filter: drop-shadow(0 0 40px rgba(168, 85, 247, 0.4));
         }
         .logo-text {
           display: inline-block;
