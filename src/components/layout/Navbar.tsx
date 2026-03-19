@@ -44,6 +44,7 @@ export default function Navbar() {
           margin-left: -1.5rem; /* Offsets the image whitespace to align cube with content edge */
         }
         .logo-text {
+          position: relative;
           font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
           font-weight: 950;
           font-size: clamp(2.5rem, 5vw, 4rem);
@@ -51,13 +52,19 @@ export default function Navbar() {
           line-height: 1;
           text-transform: uppercase;
           flex-shrink: 0;
-          
-          /* 100% Transparency for the font itself */
-          color: transparent !important;
-          -webkit-text-fill-color: transparent !important;
-          
-          /* Solid Drop Shadow: 15px distance, 0 blur */
-          text-shadow: 0 15px 0 #ffffff;
+          z-index: 1;
+        }
+        .logo-text::after {
+          content: "MISISIMI";
+          position: absolute;
+          left: 0;
+          top: 15px; /* Distance 15px */
+          width: 100%;
+          height: 100%;
+          color: white; /* 100% White Shadow */
+          z-index: -1; /* Confirmed BACKGROUND placement */
+          filter: none; /* No blur as requested */
+          pointer-events: none;
         }
         .nav-tagline {
           font-weight: 600;
