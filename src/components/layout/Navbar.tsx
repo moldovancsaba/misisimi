@@ -6,7 +6,6 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="container nav-content">
         <Link href="/" className="logo-group">
-          <Image src="/logo.png" alt="misisimi logo" width={37} height={40} className="logo-img" priority />
           <Image src="/misisimi_title.png" alt="misisimi title" width={309} height={40} className="logo-title" priority />
         </Link>
       </div>
@@ -35,13 +34,10 @@ export default function Navbar() {
           gap: 1.5rem;
           text-decoration: none !important;
         }
-        .logo-img, .logo-title {
+        .logo-title {
           height: 40px;
           width: auto;
           filter: drop-shadow(0 0 10px rgba(168, 85, 247, 0.2));
-        }
-        .logo-img {
-          /* No more negative margin needed with asset-based alignment */
         }
         .nav-tagline {
           font-weight: 600;
