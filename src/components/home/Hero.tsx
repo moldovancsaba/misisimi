@@ -44,24 +44,7 @@ export default function Hero() {
           margin-bottom: 2rem;
           color: var(--muted);
         }
-        .btn {
-          padding: 0.875rem 1.75rem;
-          border-radius: 6px;
-          font-weight: 700;
-          font-size: 0.9375rem;
-          cursor: pointer;
-          transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-          border: none;
-        }
-        .btn:hover {
-          transform: translateY(-2px);
-        }
-        .btn-primary {
-          background: var(--gradient);
-          color: white;
-          border: 2px solid white; /* High-contrast outline stroke */
-          box-shadow: 0 4px 20px rgba(168, 85, 247, 0.3);
-        }
+        /* Global button styles are now managed in globals.css */
         .hero-visual {
           position: relative;
         }
