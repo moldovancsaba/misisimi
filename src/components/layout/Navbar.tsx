@@ -52,8 +52,22 @@ export default function Navbar() {
           line-height: 1;
           text-transform: uppercase;
           flex-shrink: 0;
-          z-index: 1;
+          z-index: 1; /* TOP LAYER: Gradient Fill */
         }
+        /* MIDDLE LAYER: 3px Outer Stroke */
+        .logo-text::before {
+          content: "MISISIMI";
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          color: white;
+          -webkit-text-stroke: 3px white;
+          z-index: -1;
+          pointer-events: none;
+        }
+        /* BOTTOM LAYER: 15px Background Shadow */
         .logo-text::after {
           content: "MISISIMI";
           position: absolute;
@@ -62,9 +76,9 @@ export default function Navbar() {
           width: 100%;
           height: 100%;
           color: white !important;
-          -webkit-text-fill-color: white !important; /* Overrides the gradient inheritance */
+          -webkit-text-fill-color: white !important;
           background: none !important;
-          z-index: -1;
+          z-index: -2;
           pointer-events: none;
         }
         .nav-tagline {
