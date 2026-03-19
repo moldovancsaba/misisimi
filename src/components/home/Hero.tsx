@@ -59,6 +59,7 @@ export default function Hero() {
         .btn-primary {
           background: var(--gradient);
           color: white;
+          border: 2px solid white; /* High-contrast outline stroke */
           box-shadow: 0 4px 20px rgba(168, 85, 247, 0.3);
         }
         .hero-visual {
