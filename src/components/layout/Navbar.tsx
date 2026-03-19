@@ -58,12 +58,13 @@ export default function Navbar() {
           content: "MISISIMI";
           position: absolute;
           left: 0;
-          top: 15px; /* Distance 15px */
+          top: 15px;
           width: 100%;
           height: 100%;
-          color: white; /* 100% White Shadow */
-          z-index: -1; /* Confirmed BACKGROUND placement */
-          filter: none; /* No blur as requested */
+          color: white !important;
+          -webkit-text-fill-color: white !important; /* Overrides the gradient inheritance */
+          background: none !important;
+          z-index: -1;
           pointer-events: none;
         }
         .nav-tagline {
