@@ -65,9 +65,9 @@ export default function UseCases() {
         h3 {
           font-size: 1.5rem;
           color: white;
-          border-bottom: 2px solid var(--accent);
-          padding-bottom: 0.5rem;
-          display: inline-block;
+          background: var(--gradient);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
           margin-bottom: 1rem;
         }
         .case-content {
@@ -84,30 +84,30 @@ export default function UseCases() {
           font-size: 0.75rem;
           text-transform: uppercase;
           font-weight: 800;
-          color: var(--accent);
+          color: var(--secondary);
           letter-spacing: 0.05em;
         }
         p {
-          font-size: 1rem;
-          color: var(--text);
-          line-height: 1.4;
+          font-size: 1.125rem;
+          color: white !important;
+          line-height: 1.5;
         }
         .outcome-list {
           list-style: none;
           display: flex;
           flex-direction: column;
-          gap: 0.25rem;
+          gap: 0.5rem;
         }
         .outcome-list li {
-          color: var(--primary);
+          color: #F9FAFB;
           font-weight: 600;
           display: flex;
           align-items: center;
-          gap: 0.5rem;
+          gap: 0.75rem;
         }
         .outcome-list li::before {
           content: '→';
-          color: var(--accent);
+          color: var(--primary);
         }
       `}</style>
     </section>

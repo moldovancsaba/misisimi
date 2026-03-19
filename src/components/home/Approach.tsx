@@ -58,31 +58,37 @@ export default function Solution() {
           grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
           gap: 2rem;
         }
-        .solution-card {
+        .step-card {
           position: relative;
-          padding: 3rem 2rem;
+          padding: 3rem;
           background: var(--surface);
+          backdrop-filter: blur(10px);
+          border-radius: var(--radius-card);
           border: 1px solid var(--border);
-          border-radius: 16px;
-          transition: border-color 0.2s;
+          transition: transform 0.3s ease;
         }
-        .solution-card:hover {
-          border-color: var(--primary);
+        .step-card:hover {
+          transform: translateY(-5px);
+          border-color: var(--secondary);
         }
         .step-number {
-          font-size: 4rem;
-          font-weight: 900;
-          color: rgba(168, 85, 247, 0.05);
           position: absolute;
           top: 1rem;
-          right: 1.5rem;
+          right: 2rem;
+          font-size: 8rem;
+          font-weight: 900;
+          color: rgba(255, 255, 255, 0.05);
           line-height: 1;
+          pointer-events: none;
         }
         h3 {
-          font-size: 1.5rem;
-          font-weight: 700;
+          font-size: 1.75rem;
           margin-bottom: 1rem;
-          color: var(--primary);
+          color: white;
+        }
+        p {
+          color: #E2E8F0;
+          line-height: 1.7;
         }
         .solution-title {
           font-weight: 600;

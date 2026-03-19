@@ -65,9 +65,9 @@ export default function Hero() {
         .node {
           width: 140px;
           height: 140px;
-          border-radius: 50%;
+          border-radius: 40px; /* Squircle for modern feel */
           background: var(--surface);
-          border: 4px solid var(--accent);
+          border: 1px solid var(--border);
           display: flex;
           align-items: center;
           justify-content: center;
@@ -76,7 +76,20 @@ export default function Hero() {
           font-size: 0.875rem;
           color: white;
           z-index: 2;
-          box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+          backdrop-filter: blur(10px);
+        }
+        .node::after {
+          content: "";
+          position: absolute;
+          inset: 0;
+          border-radius: 40px;
+          padding: 2px;
+          background: var(--gradient);
+          -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+          mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+          -webkit-mask-composite: xor;
+          mask-composite: exclude;
         }
         .line {
           position: absolute;
@@ -103,10 +116,10 @@ export default function Hero() {
         }
         .hero-subtitle {
           font-size: 1.25rem;
-          line-height: 1.6;
+          line-height: 1.8;
           max-width: 640px;
-          margin-bottom: 2.5rem;
-          color: var(--muted);
+          margin-bottom: 3rem;
+          color: #E2E8F0;
         }
         /* Global button styles are now managed in globals.css */
         @media (max-width: 968px) {

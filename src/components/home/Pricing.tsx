@@ -52,39 +52,53 @@ export default function Pricing() {
           gap: 4rem;
           align-items: start;
         }
-        h3 { font-size: 2rem; margin-bottom: 1.5rem; color: var(--primary); }
-        h4 { font-size: 1.25rem; margin-bottom: 1.5rem; }
+        h3 { 
+          font-size: 2.25rem; 
+          margin-bottom: 1.5rem; 
+          background: var(--gradient);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+        h4 { font-size: 1.5rem; margin-bottom: 1.5rem; color: white !important; }
         .benefits-list {
           list-style: none;
           margin-bottom: 3rem;
         }
         .benefits-list li {
-          padding: 0.5rem 0;
-          color: var(--muted);
+          padding: 0.75rem 0;
+          color: #F9FAFB;
           display: flex;
           align-items: center;
-          gap: 0.75rem;
+          gap: 1rem;
+          font-weight: 500;
         }
         .benefits-list li::before {
           content: '✓';
-          color: var(--accent);
+          color: var(--secondary);
           font-weight: 900;
         }
         .entry-offer {
-          border-left: 4px solid var(--accent);
+          border-left: 4px solid var(--secondary);
+          background: rgba(236, 72, 153, 0.05);
         }
         .badge {
           display: inline-block;
-          background: var(--accent);
+          background: var(--gradient);
           color: white;
-          padding: 2px 10px;
-          border-radius: 4px;
+          padding: 4px 12px;
+          border-radius: var(--radius-btn);
           font-size: 0.75rem;
-          font-weight: 700;
+          font-weight: 800;
           margin-bottom: 1rem;
+          text-transform: uppercase;
         }
-        .price { font-size: 1.5rem; font-weight: 700; color: var(--primary); margin-bottom: 0.25rem; }
-        .delivery { font-size: 0.875rem; color: var(--muted); }
+        .price { 
+          font-size: 1.5rem; 
+          font-weight: 800; 
+          color: var(--secondary) !important; 
+          margin-bottom: 0.5rem; 
+        }
+        .delivery { font-size: 0.875rem; color: #94A3B8; font-weight: 500; }
         
         .table {
           display: flex;
@@ -95,11 +109,13 @@ export default function Pricing() {
         .table-row {
           display: flex;
           justify-content: space-between;
-          padding-bottom: 0.75rem;
+          padding-bottom: 1rem;
           border-bottom: 1px solid var(--border);
+          color: #F9FAFB;
+          font-weight: 500;
         }
-        .credit-val { font-weight: 700; color: var(--accent); }
-        .note { font-size: 0.875rem; color: var(--muted); text-align: center; font-style: italic; }
+        .credit-val { font-weight: 800; color: var(--primary); }
+        .note { font-size: 0.875rem; color: #94A3B8; text-align: center; font-style: italic; }
 
         @media (max-width: 968px) {
           .pricing-grid {

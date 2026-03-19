@@ -7,7 +7,10 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="container nav-content">
         <div className="logo-group">
-          <Link href="/" className="logo">MISISIMI</Link>
+          <Link href="/" className="logo-link">
+            <img src="/logo.svg" alt="MISISIMI Logo" className="logo-img" />
+            <span className="logo-text text-gradient">MISISIMI</span>
+          </Link>
         </div>
         <div className="nav-links">
           <Link href="/" className="nav-item">Home</Link>
@@ -19,8 +22,9 @@ export default function Navbar() {
       </div>
       <style jsx>{`
         .navbar {
-          background: rgba(11, 31, 58, 0.8);
-          backdrop-filter: blur(10px);
+          background: rgba(3, 3, 3, 0.7);
+          backdrop-filter: blur(20px);
+          -webkit-backdrop-filter: blur(20px);
           border-bottom: 1px solid var(--border);
           position: sticky;
           top: 0;
@@ -30,11 +34,11 @@ export default function Navbar() {
           display: flex;
           justify-content: space-between;
           align-items: center;
-          height: 80px;
-          max-width: 1000px;
+          height: 90px;
+          max-width: var(--container-max);
           margin: 0 auto;
           width: 100%;
-          padding: 0 1.5rem;
+          padding: 0 2rem;
         }
         .logo-group {
           display: flex;
@@ -42,13 +46,21 @@ export default function Navbar() {
           gap: 1.5rem;
           text-decoration: none !important;
         }
-        .logo {
-          font-family: 'Sora', sans-serif;
-          font-size: 1.5rem;
-          font-weight: 800;
-          color: var(--primary);
+        .logo-link {
+          display: flex;
+          align-items: center;
+          gap: 0.75rem;
           text-decoration: none;
-          letter-spacing: -0.02em;
+        }
+        .logo-img {
+          height: 32px;
+          width: 32px;
+        }
+        .logo-text {
+          font-family: 'Sora', sans-serif;
+          font-size: 1.75rem;
+          font-weight: 900;
+          letter-spacing: -0.04em;
         }
         .nav-links {
           display: flex;
