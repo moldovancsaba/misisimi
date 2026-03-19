@@ -38,19 +38,19 @@ export default function Capabilities() {
       </div>
       <style jsx>{`
         .section-title {
-          font-size: 2.5rem;
-          margin-bottom: 3rem;
+          font-size: 2rem;
+          margin-bottom: 2.5rem;
         }
         .grid {
           display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-          gap: 1.5rem;
+          grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+          gap: 1.25rem;
         }
         .card {
           background: var(--surface);
           border: 1px solid var(--border);
-          padding: 2.5rem;
-          border-radius: 16px;
+          padding: 2rem;
+          border-radius: 12px;
           height: 100%;
         }
         .card:hover {
@@ -58,12 +58,13 @@ export default function Capabilities() {
           background: #181825;
         }
         .card-icon {
-          font-size: 2rem;
-          margin-bottom: 1.5rem;
+          font-size: 1.5rem;
+          margin-bottom: 1rem;
         }
         h3 {
-          margin-bottom: 0.75rem;
-          font-size: 1.25rem;
+          margin-bottom: 0.5rem;
+          font-size: 1.125rem;
+          font-weight: 700;
         }
       `}</style>
     </section>

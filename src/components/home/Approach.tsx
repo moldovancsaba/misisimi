@@ -26,30 +26,31 @@ export default function Approach() {
           border-bottom: 1px solid var(--border);
         }
         .section-title {
-          font-size: 2.5rem;
-          margin-bottom: 3rem;
+          font-size: 2rem;
+          margin-bottom: 2.5rem;
         }
         .grid {
           display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-          gap: 2rem;
+          grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+          gap: 1.5rem;
         }
         .approach-card {
           position: relative;
-          padding: 3rem 2rem;
+          padding: 2.5rem 2rem;
         }
         .step-number {
-          font-size: 4rem;
+          font-size: 3rem;
           font-weight: 900;
           color: rgba(168, 85, 247, 0.1);
           position: absolute;
-          top: 1rem;
+          top: 0.75rem;
           left: 1rem;
           line-height: 1;
         }
         h3 {
-          font-size: 1.5rem;
-          margin-bottom: 1rem;
+          font-size: 1.25rem;
+          font-weight: 700;
+          margin-bottom: 0.75rem;
           position: relative;
           z-index: 1;
         }

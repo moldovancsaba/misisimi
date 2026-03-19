@@ -29,22 +29,25 @@ export default function Navbar() {
         .logo-group {
           display: flex;
           align-items: center;
-          gap: 0.75rem;
-          font-weight: 700;
-          font-size: 1.25rem;
-          letter-spacing: -0.01em;
+          gap: 0.625rem;
+          font-weight: 800; /* Heavier for brand impact */
+          font-size: 1.5rem;
+          letter-spacing: -0.05em; /* Tight logo tracking */
+          line-height: 1;
         }
         .logo-text {
-          background: var(--gradient);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
+          color: var(--text);
+          /* Removed gradient from logo text for cleaner "executive" look, 
+             or keep it subtle if desired. I'll use text-color for now. */
         }
         .nav-tagline {
-          font-weight: 500;
-          font-size: 0.875rem;
+          font-weight: 600;
+          font-size: 0.75rem;
           color: var(--muted);
           text-transform: uppercase;
-          letter-spacing: 0.05em;
+          letter-spacing: 0.1em;
+          border-left: 1px solid var(--border);
+          padding-left: 1rem;
         }
       `}</style>
     </nav>

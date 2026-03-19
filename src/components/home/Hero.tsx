@@ -33,20 +33,24 @@ export default function Hero() {
           align-items: center;
         }
         h1 {
-          font-size: clamp(3rem, 6vw, 4.5rem);
-          margin-bottom: 1.5rem;
+          font-size: clamp(2.5rem, 5vw, 4rem);
+          margin-bottom: 1rem;
+          max-width: 800px;
         }
         .hero-subtitle {
-          font-size: 1.25rem;
-          max-width: 600px;
-          margin-bottom: 2.5rem;
+          font-size: 1.125rem;
+          line-height: 1.6;
+          max-width: 540px;
+          margin-bottom: 2rem;
+          color: var(--muted);
         }
         .btn {
-          padding: 1rem 2rem;
-          border-radius: 8px;
-          font-weight: 600;
+          padding: 0.875rem 1.75rem;
+          border-radius: 6px;
+          font-weight: 700;
+          font-size: 0.9375rem;
           cursor: pointer;
-          transition: transform 0.2s;
+          transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
           border: none;
         }
         .btn:hover {
