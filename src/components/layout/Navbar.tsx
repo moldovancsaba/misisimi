@@ -45,6 +45,8 @@ export default function Navbar() {
         }
         .logo-text {
           position: relative;
+          display: inline-grid; /* Stacks all layers in the same grid cell */
+          place-items: start;
           font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
           font-weight: 950;
           font-size: clamp(2.5rem, 5vw, 4rem);
@@ -52,34 +54,30 @@ export default function Navbar() {
           line-height: 1;
           text-transform: uppercase;
           flex-shrink: 0;
-          z-index: 1; /* TOP LAYER: Gradient Fill */
+          z-index: 1;
+        }
+        /* All layers mapped to the same grid cell for perfect alignment */
+        .logo-text::before,
+        .logo-text::after {
+          grid-area: 1 / 1;
+          content: "MISISIMI";
+          width: 100%;
+          height: 100%;
+          pointer-events: none;
         }
         /* MIDDLE LAYER: 3px Outer Stroke */
         .logo-text::before {
-          content: "MISISIMI";
-          position: absolute;
-          left: 0;
-          top: 0;
-          width: 100%;
-          height: 100%;
           color: white;
           -webkit-text-stroke: 3px white;
           z-index: -1;
-          pointer-events: none;
         }
         /* BOTTOM LAYER: 15px Background Shadow */
         .logo-text::after {
-          content: "MISISIMI";
-          position: absolute;
-          left: 0;
-          top: 15px;
-          width: 100%;
-          height: 100%;
           color: white !important;
           -webkit-text-fill-color: white !important;
           background: none !important;
+          transform: translateY(15px); /* Clean vertical offset */
           z-index: -2;
-          pointer-events: none;
         }
         .nav-tagline {
           font-weight: 600;
