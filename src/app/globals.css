@@ -35,6 +35,15 @@ body {
   letter-spacing: -0.01em; /* Subtle tightening for clean look */
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button, input, textarea {
+  font-family: inherit;
+}
+
 /* Typography Refinement */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
