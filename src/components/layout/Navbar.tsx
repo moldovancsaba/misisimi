@@ -19,7 +19,7 @@ export default function Navbar() {
       </div>
       <style jsx>{`
         .navbar {
-          background: rgba(245, 247, 250, 0.8); /* Corrected FA to 250 */
+          background: rgba(11, 31, 58, 0.8);
           backdrop-filter: blur(10px);
           border-bottom: 1px solid var(--border);
           position: sticky;

@@ -29,19 +29,14 @@ export default function Hero() {
           gap: 1.25rem;
           margin-top: 1rem;
         }
-        .btn-secondary {
-          background: transparent;
-          color: white;
-          border: 4px solid var(--border);
-        }
         .btn-secondary:hover {
-          border-color: var(--primary);
-          background: var(--surface);
+          border-color: white;
+          background: rgba(255, 255, 255, 0.1);
         }
         .hero {
           position: relative;
           overflow: hidden;
-          background: white;
+          background: transparent;
           padding: 80px 0;
         }
         .hero-grid {
@@ -71,17 +66,17 @@ export default function Hero() {
           width: 140px;
           height: 140px;
           border-radius: 50%;
-          background: white;
-          border: 4px solid var(--primary);
+          background: var(--surface);
+          border: 4px solid var(--accent);
           display: flex;
           align-items: center;
           justify-content: center;
           font-family: 'Sora', sans-serif;
           font-weight: 800;
           font-size: 0.875rem;
-          color: var(--primary);
+          color: white;
           z-index: 2;
-          box-shadow: 0 8px 30px rgba(11, 31, 58, 0.1);
+          box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
         }
         .line {
           position: absolute;
@@ -104,7 +99,7 @@ export default function Hero() {
           font-size: clamp(2.5rem, 5vw, 4rem);
           margin-bottom: 1.5rem;
           max-width: 900px;
-          color: var(--primary);
+          color: white;
         }
         .hero-subtitle {
           font-size: 1.25rem;

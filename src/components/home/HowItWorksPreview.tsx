@@ -8,7 +8,7 @@ export default function HowItWorksPreview() {
   ];
 
   return (
-    <section className="section-padding" style={{ background: 'white' }}>
+    <section className="section-padding">
       <div className="container">
         <h2 className="section-title" style={{ textAlign: 'center', marginBottom: '4rem', fontSize: '2.5rem' }}>How It Works</h2>
         <div className="steps-grid">

@@ -1,17 +1,20 @@
 :root {
-  --bg: #0B0B12;
-  --surface: #12121C;
-
-  --primary: #A855F7;
-  --secondary: #EC4899;
-  --accent: #6366F1;
-
-  --text: #F9FAFB;
-  --muted: #9CA3AF;
-  --border: #1F1F2E;
-
-  --gradient: linear-gradient(135deg, #EC4899, #A855F7, #6366F1);
-  --gradient-soft: linear-gradient(135deg, rgba(236, 72, 153, 0.1), rgba(168, 85, 247, 0.1), rgba(99, 102, 241, 0.1));
+  --primary: #0B1F3A; /* Brand color */
+  --accent: #3B82F6;  /* Electric Blue */
+  --background: #0B1F3A; /* Dark Blue */
+  --surface: #162C4E;    /* Navy Blue Cards */
+  --text: #F5F7FA;       /* Neutral Grey/White */
+  --muted: #94A3B8;
+  --border: #1E3A8A;
+  
+  --gradient: linear-gradient(135deg, #3B82F6 0%, #60A5FA 100%);
+  
+  --container-max: 1200px;
+  --section-padding-desktop: 80px;
+  --section-padding-mobile: 40px;
+  
+  --radius-btn: 8px;
+  --radius-card: 12px;
 }
 
 * {
@@ -28,6 +31,12 @@ html, body {
   scroll-behavior: smooth;
 }
 
+h1, h2, h3, h4 {
+  font-family: 'Sora', sans-serif;
+  color: #FFFFFF !important;
+  font-weight: 700;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -41,7 +50,7 @@ button, input, textarea {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   line-height: 1.1;
-  letter-spacing: -0.04em; /* Aggressive tightening for executive headers */
+  letter-spacing: -0.04em;
 }
 
 h1 { font-size: 3.5rem; }
@@ -49,10 +58,9 @@ h2 { font-size: 2.25rem; }
 h3 { font-size: 1.5rem; }
 
 p {
-  color: var(--muted);
-  font-size: 0.9375rem; /* Smaller for product-like density */
-  line-height: 1.5;
-  font-weight: 400;
+  color: #CBD5E1; /* Lighter than muted for better reading */
+  font-size: 0.9375rem;
+  line-height: 1.6;
 }
 
 .text-gradient {
@@ -60,12 +68,12 @@ p {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  color: transparent;
+  color: #FFFFFF; /* Fallback */
 }
 
 /* Density Utilities */
 .container {
-  max-width: 1200px; /* Updated from 1000px as per spec */
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 1.5rem;
 }
@@ -80,17 +88,12 @@ p {
   }
 }
 
-/* Transitions */
-.transition-all {
-  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 /* Global Button System */
 .btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 12px 20px;
+  padding: 12px 28px;
   border-radius: var(--radius-btn);
   font-weight: 600;
   font-size: 1rem;
@@ -100,29 +103,26 @@ p {
   text-decoration: none;
 }
 
-.btn:hover {
-  transform: translateY(-2px);
-}
-
 .btn-primary {
-  background: var(--primary);
+  background: var(--accent);
   color: white;
 }
 
 .btn-primary:hover {
-  background: var(--accent);
+  filter: brightness(1.1);
   transform: translateY(-2px);
 }
 
 .btn-secondary {
   background: transparent;
-  color: var(--primary);
-  border-color: var(--primary);
+  color: white;
+  border-color: rgba(255, 255, 255, 0.2);
 }
 
 .btn-secondary:hover {
-  background: var(--primary);
-  color: white;
+  background: rgba(255, 255, 255, 0.05);
+  border-color: white;
+  transform: translateY(-2px);
 }
 
 /* Base Card Style */

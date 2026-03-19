@@ -64,7 +64,7 @@ export default function UseCases() {
         }
         h3 {
           font-size: 1.5rem;
-          color: var(--primary);
+          color: white;
           border-bottom: 2px solid var(--accent);
           padding-bottom: 0.5rem;
           display: inline-block;

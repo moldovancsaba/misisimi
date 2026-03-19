@@ -19,7 +19,7 @@ const solutions = [
 
 export default function Solution() {
   return (
-    <section id="how-it-works" className="section-padding bg-accent-soft">
+    <section id="how-it-works" className="section-padding">
       <div className="container">
         <h2 className="section-title">We turn AI from concept into working systems</h2>
         <p className="section-subtitle">MISISIMI combines strategy, engineering, and automation to deliver AI solutions that integrate directly into your business operations.</p>
@@ -44,12 +44,14 @@ export default function Solution() {
           font-size: 2.5rem;
           margin-bottom: 1rem;
           text-align: center;
+          color: white;
         }
         .section-subtitle {
           text-align: center;
           max-width: 700px;
           margin: 0 auto 4rem;
           font-size: 1.125rem;
+          color: var(--text);
         }
         .grid {
           display: grid;

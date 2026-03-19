@@ -61,8 +61,8 @@ export default function WhatWeBuild() {
           height: 100%;
         }
         .card:hover {
-          border-color: var(--primary);
-          background: #181825;
+          border-color: var(--accent);
+          background: rgba(59, 130, 246, 0.05);
         }
         .card-icon {
           font-size: 1.5rem;

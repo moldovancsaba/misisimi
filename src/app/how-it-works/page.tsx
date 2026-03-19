@@ -121,12 +121,12 @@ export default function HowItWorksPage() {
         }
         .deliverable {
           padding: 1rem;
-          background: var(--background);
+          background: var(--surface);
           border-radius: 8px;
           border-left: 4px solid var(--accent);
           font-size: 0.9375rem;
         }
-        strong { color: var(--primary); }
+        strong { color: white; }
       `}</style>
     </main>
   );

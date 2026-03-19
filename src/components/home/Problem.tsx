@@ -31,7 +31,7 @@ export default function Problem() {
         .section-title {
           font-size: 2.5rem;
           margin-bottom: 4rem;
-          color: var(--primary);
+          color: white;
         }
         .problem-grid {
           display: grid;

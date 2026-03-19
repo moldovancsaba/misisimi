@@ -9,7 +9,7 @@ export default function Pricing() {
   ];
 
   return (
-    <section id="pricing" className="section-padding bg-accent-soft">
+    <section id="pricing" className="section-padding">
       <div className="container">
         <h2 className="section-title" style={{ textAlign: 'center', marginBottom: '1rem', fontSize: '2.5rem' }}>Pricing aligned with delivered capabilities — not hours</h2>
         <p style={{ textAlign: 'center', marginBottom: '4rem', color: 'var(--muted)', fontSize: '1.25rem' }}>Transparent, modular, and outcome-based pricing using Value Credits.</p>

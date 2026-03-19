@@ -41,7 +41,7 @@ export default function ServicesPage() {
           <div className="container">
             <div className="service-grid">
               <div className="service-content">
-                <h2 style={{ fontSize: '2.5rem', marginBottom: '1.5rem', color: 'var(--primary)' }}>{service.title}</h2>
+                <h2 style={{ fontSize: '2.5rem', marginBottom: '1.5rem', color: 'white' }}>{service.title}</h2>
                 <p style={{ fontSize: '1.25rem', marginBottom: '2.5rem', color: 'var(--text)' }}>{service.desc}</p>
                 <div className="spec-grid">
                   <div className="spec-card">
@@ -70,6 +70,9 @@ export default function ServicesPage() {
       <Footer />
 
       <style jsx>{`
+        section {
+          background: transparent !important;
+        }
         .service-grid {
           max-width: 900px;
           margin: 0 auto;
