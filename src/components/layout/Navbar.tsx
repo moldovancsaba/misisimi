@@ -41,22 +41,27 @@ export default function Navbar() {
           height: auto;
           filter: drop-shadow(0 0 20px rgba(168, 85, 247, 0.3));
           flex-shrink: 0;
+          margin-left: -1.2rem; /* Pulls the cube artwork to align with hero text edge */
         }
         .logo-text {
           font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-          font-weight: 800;
-          font-size: clamp(2.5rem, 5vw, 4rem); /* Identical scaling to hero heading */
+          font-weight: 900; /* Extra bold as requested */
+          font-size: clamp(2.5rem, 5vw, 4rem);
           letter-spacing: -0.05em; 
           line-height: 1;
           text-transform: uppercase;
           flex-shrink: 0;
-          /* Heavy white border using text-shadow to preserve the internal gradient */
+          /* Dense 8-direction shadow stack for a clean OUTER stroke */
           text-shadow: 
-            -2px -2px 0 #fff,  
-             2px -2px 0 #fff,
-            -2px  2px 0 #fff,
-             2px  2px 0 #fff,
-             0px  3px 10px rgba(255, 255, 255, 0.5);
+             2px  0px 0 #fff,
+            -2px  0px 0 #fff,
+             0px  2px 0 #fff,
+             0px -2px 0 #fff,
+             1.5px  1.5px 0 #fff,
+            -1.5px  1.5px 0 #fff,
+             1.5px -1.5px 0 #fff,
+            -1.5px -1.5px 0 #fff,
+             0px 4px 15px rgba(255, 255, 255, 0.4);
         }
         .nav-tagline {
           font-weight: 600;
