@@ -51,16 +51,8 @@ export default function Navbar() {
           line-height: 1;
           text-transform: uppercase;
           flex-shrink: 0;
-          /* Sharp, solid 2px white border using exhaustive shadow directions */
-          text-shadow: 
-             2px  2px 0 #fff,
-            -2px  2px 0 #fff,
-             2px -2px 0 #fff,
-            -2px -2px 0 #fff,
-             2px  0px 0 #fff,
-            -2px  0px 0 #fff,
-             0px  2px 0 #fff,
-             0px -2px 0 #fff;
+          /* 90-degree Drop Shadow: 10px distance (y), 10px blur (size) */
+          text-shadow: 0 10px 10px #ffffff;
         }
         .nav-tagline {
           font-weight: 600;
