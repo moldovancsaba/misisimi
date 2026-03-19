@@ -45,14 +45,19 @@ export default function Navbar() {
         }
         .logo-text {
           font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-          font-weight: 950; /* Maximum bold */
+          font-weight: 950;
           font-size: clamp(2.5rem, 5vw, 4rem);
           letter-spacing: -0.05em; 
           line-height: 1;
           text-transform: uppercase;
           flex-shrink: 0;
-          /* 90-degree Drop Shadow: 10px distance (y), 10px blur (size) */
-          text-shadow: 0 10px 10px #ffffff;
+          
+          /* 100% Transparency for the font itself */
+          color: transparent !important;
+          -webkit-text-fill-color: transparent !important;
+          
+          /* Solid Drop Shadow: 15px distance, 0 blur */
+          text-shadow: 0 15px 0 #ffffff;
         }
         .nav-tagline {
           font-weight: 600;
