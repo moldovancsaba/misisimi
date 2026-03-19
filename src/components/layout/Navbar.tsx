@@ -21,25 +21,26 @@ export default function Navbar() {
         }
         .nav-content {
           display: flex;
-          justify-content: space-between;
+          justify-content: flex-start;
           align-items: center;
-          height: 220px; /* Extreme height for massive branding */
+          height: 300px; /* Massive height for the final brand statement */
         }
         .logo-group {
           display: flex;
           align-items: center;
-          gap: 2rem;
-          font-weight: 900;
-          font-size: 7rem; /* Extreme scale to match 160px visual unit */
-          letter-spacing: -0.09em; 
-          line-height: 0.7;
-          text-decoration: none;
+          gap: 2.5rem;
+          font-weight: 950; /* Absolute maximum weight */
+          font-size: 10rem; /* Matches the 160px logo visual presence */
+          letter-spacing: -0.1em; 
+          line-height: 1; /* Standard line-height to avoid squashing */
+          text-decoration: none !important;
         }
         .logo-img {
-          filter: drop-shadow(0 0 20px rgba(168, 85, 247, 0.3));
+          filter: drop-shadow(0 0 30px rgba(168, 85, 247, 0.4));
         }
         .logo-text {
-          /* Gradient is handled by the text-gradient utility class */
+          display: inline-block;
+          vertical-align: middle;
         }
         .nav-tagline {
           font-weight: 600;
