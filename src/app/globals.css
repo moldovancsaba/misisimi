@@ -73,7 +73,7 @@ p {
 
 /* Density Utilities */
 .container {
-  max-width: 1000px; /* Narrower for better scanability */
+  max-width: 1200px; /* Updated from 1000px as per spec */
   margin: 0 auto;
   padding: 0 1.5rem;
 }

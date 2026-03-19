@@ -16,14 +16,14 @@ export default function ContactForm() {
       <section id="contact" className="section-padding">
         <div className="container">
           <div className="contact-grid" style={{ textAlign: 'center', display: 'block' }}>
-            <h2 className="section-title">Thank You!</h2>
-            <p style={{ fontSize: '1.25rem' }}>Your message has been sent. We&apos;ll be in touch soon.</p>
+            <h2 className="section-title">Diagnostic Requested</h2>
+            <p style={{ fontSize: '1.25rem' }}>Thank you. We&apos;ll review your business profile and contact you within 24–72 hours.</p>
             <button 
               onClick={() => setSubmitted(false)} 
               className="btn btn-primary" 
               style={{ marginTop: '2rem' }}
             >
-              Send Another Message
+              Back to Form
             </button>
           </div>
         </div>
@@ -36,8 +36,8 @@ export default function ContactForm() {
       <div className="container">
         <div className="contact-grid">
           <div className="contact-info">
-            <h2 className="section-title">Contact</h2>
-            <p>Ready to solve your business complexity? Let&apos;s talk.</p>
+            <h2 className="section-title">Get Your AI Diagnostic</h2>
+            <p>Start with a clear understanding of where AI fits your business. We&apos;ll review your operations and identify high-ROI automation opportunities.</p>
           </div>
           <form className="form" onSubmit={handleSubmit}>
             <div className="form-group">
@@ -49,7 +49,13 @@ export default function ContactForm() {
             <div className="form-group">
               <input type="text" placeholder="Company" required />
             </div>
-            <button type="submit" className="btn btn-primary">Send Message</button>
+            <div className="form-group">
+              <input type="text" placeholder="Industry" required />
+            </div>
+            <div className="form-group">
+              <textarea placeholder="Tell us about the core complexity or bottleneck you want to solve" required />
+            </div>
+            <button type="submit" className="btn btn-primary">Request Free Diagnostic</button>
           </form>
         </div>
       </div>
@@ -72,7 +78,7 @@ export default function ContactForm() {
           flex-direction: column;
           gap: 1rem;
         }
-        input {
+        input, textarea {
           width: 100%;
           padding: 1rem 1.25rem;
           background: #0F0F18;
@@ -81,8 +87,13 @@ export default function ContactForm() {
           border-radius: 12px;
           font-size: 1rem;
           transition: border-color 0.2s;
+          font-family: inherit;
         }
-        input:focus {
+        textarea {
+          min-height: 120px;
+          resize: vertical;
+        }
+        input:focus, textarea:focus {
           outline: none;
           border-color: var(--primary);
         }

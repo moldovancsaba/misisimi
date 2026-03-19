@@ -9,9 +9,10 @@ export default function Navbar() {
           <Image src="/misisimi_title.png" alt="misisimi title" width={309} height={40} className="logo-title" priority />
         </Link>
         <div className="nav-links">
-          <Link href="#capabilities" className="nav-link">Capabilities</Link>
-          <Link href="#approach" className="nav-link">Approach</Link>
-          <Link href="#testimonials" className="nav-link">Outcomes</Link>
+          <Link href="/" className="nav-link">Home</Link>
+          <Link href="#services" className="nav-link">Services</Link>
+          <Link href="#how-it-works" className="nav-link">How It Works</Link>
+          <Link href="#faq" className="nav-link">FAQ</Link>
           <Link href="#contact" className="nav-link btn-nav">Contact</Link>
         </div>
       </div>

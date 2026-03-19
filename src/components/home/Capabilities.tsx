@@ -1,50 +1,56 @@
-const capabilities = [
+const deliverables = [
   {
-    title: "AI Integration",
-    description: "Embed AI into workflows that teams actually use.",
-    icon: "🤖"
+    title: "Custom AI models",
+    description: "ML / NLP models tailored to your business data and use cases.",
+    icon: "🧬"
   },
   {
-    title: "Execution Support",
-    description: "Operate at leadership level to drive delivery.",
+    title: "AI automation workflows",
+    description: "Connect your existing tools into automated, AI-driven processes.",
     icon: "⚡"
   },
   {
-    title: "Process Redesign",
-    description: "Remove bottlenecks and inefficiencies.",
-    icon: "⚙️"
+    title: "Data pipelines",
+    description: "Modern data infrastructure to feed your AI systems consistently.",
+    icon: "📉"
   },
   {
-    title: "Zero2Done",
-    description: "From problem to working system — fully implemented.",
-    icon: "🎯"
+    title: "Predictive analytics",
+    description: "Forecast demand, identify churn, and unlock actionable insights.",
+    icon: "🔮"
+  },
+  {
+    title: "Internal AI tools",
+    description: "Custom dashboards and assistants for your internal teams.",
+    icon: "🛠️"
   }
 ];
 
-export default function Capabilities() {
+export default function WhatWeBuild() {
   return (
-    <section id="capabilities" className="section-padding">
+    <section id="services" className="section-padding">
       <div className="container">
-        <h2 className="section-title">Capabilities</h2>
+        <h2 className="section-title">What we actually deliver</h2>
         <div className="grid">
-          {capabilities.map((cap, i) => (
+          {deliverables.map((item, i) => (
             <div key={i} className="card transition-all">
-              <div className="card-icon">{cap.icon}</div>
-              <h3>{cap.title}</h3>
-              <p>{cap.description}</p>
+              <div className="card-icon">{item.icon}</div>
+              <h3>{item.title}</h3>
+              <p>{item.description}</p>
             </div>
           ))}
         </div>
       </div>
       <style jsx>{`
         .section-title {
-          font-size: 2rem;
-          margin-bottom: 2.5rem;
+          font-size: 2.5rem;
+          margin-bottom: 3.5rem;
+          text-align: center;
         }
         .grid {
           display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-          gap: 1.25rem;
+          grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+          gap: 1.5rem;
         }
         .card {
           background: var(--surface);

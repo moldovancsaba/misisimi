@@ -6,14 +6,13 @@ export default function Hero() {
       <div className="container">
         <div className="hero-grid">
           <div className="hero-content">
-            <h1 className="text-gradient">Solve Business Complexity. Execute Fast.</h1>
+            <h1 className="text-gradient">Build and deploy practical AI systems for your business — without complexity</h1>
             <p className="hero-subtitle">
-              misisimi is a client-first execution partner for SMEs.
-              We embed AI into daily operations to increase efficiency and profitability —
-              without reducing human capital.
+              We diagnose, design, and implement custom AI solutions that automate workflows, reduce costs, and unlock actionable insights.
             </p>
             <div className="cta-group">
-              <Link href="#contact" className="btn btn-primary">Start a Conversation</Link>
+              <Link href="#contact" className="btn btn-primary">Get Your AI Diagnostic</Link>
+              <Link href="#how-it-works" className="btn btn-secondary">See How It Works</Link>
             </div>
           </div>
           <div className="hero-visual">
@@ -24,6 +23,20 @@ export default function Hero() {
         </div>
       </div>
       <style jsx>{`
+        .cta-group {
+          display: flex;
+          gap: 1.25rem;
+          margin-top: 1rem;
+        }
+        .btn-secondary {
+          background: transparent;
+          color: white;
+          border: 4px solid var(--border);
+        }
+        .btn-secondary:hover {
+          border-color: var(--primary);
+          background: var(--surface);
+        }
         .hero {
           position: relative;
           overflow: hidden;
@@ -36,14 +49,14 @@ export default function Hero() {
         }
         h1 {
           font-size: clamp(2.5rem, 5vw, 4rem);
-          margin-bottom: 1rem;
-          max-width: 800px;
+          margin-bottom: 1.5rem;
+          max-width: 900px;
         }
         .hero-subtitle {
-          font-size: 1.125rem;
+          font-size: 1.25rem;
           line-height: 1.6;
-          max-width: 540px;
-          margin-bottom: 2rem;
+          max-width: 640px;
+          margin-bottom: 2.5rem;
           color: var(--muted);
         }
         /* Global button styles are now managed in globals.css */
