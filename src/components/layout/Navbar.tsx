@@ -7,7 +7,7 @@ export default function Navbar() {
       <div className="container nav-content">
         <Link href="/" className="logo-group">
           <Image src="/logo.png" alt="misisimi logo" width={48} height={48} className="logo-img" />
-          <span className="logo-text">misisimi</span>
+          <span className="logo-text text-gradient">misisimi</span>
         </Link>
         <div className="nav-tagline">Zero2Done Execution</div>
       </div>
@@ -39,9 +39,7 @@ export default function Navbar() {
           filter: drop-shadow(0 0 10px rgba(168, 85, 247, 0.2));
         }
         .logo-text {
-          color: var(--text);
-          /* Removed gradient from logo text for cleaner "executive" look, 
-             or keep it subtle if desired. I'll use text-color for now. */
+          /* Gradient is handled by the text-gradient utility class */
         }
         .nav-tagline {
           font-weight: 600;
