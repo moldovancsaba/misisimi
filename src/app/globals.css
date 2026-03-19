@@ -271,6 +271,8 @@ p {
   text-decoration: none;
   font-family: 'Sora', sans-serif;
   letter-spacing: -0.02em;
+  border: 5px solid transparent;
+  box-sizing: border-box;
 }
 
 .btn-primary {
@@ -289,7 +291,7 @@ p {
 .btn-secondary {
   background: rgba(255, 255, 255, 0.05);
   color: white;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 5px solid rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
 }
 
