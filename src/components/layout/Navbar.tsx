@@ -6,10 +6,9 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="container nav-content">
         <Link href="/" className="logo-group">
-          <Image src="/logo.png" alt="misisimi logo" width={80} height={80} className="logo-img" />
+          <Image src="/logo.png" alt="misisimi logo" width={160} height={160} className="logo-img" priority />
           <span className="logo-text text-gradient">misisimi</span>
         </Link>
-        <div className="nav-tagline">Zero2Done Execution</div>
       </div>
       <style jsx>{`
         .navbar {
@@ -24,20 +23,20 @@ export default function Navbar() {
           display: flex;
           justify-content: space-between;
           align-items: center;
-          height: 140px; /* Increased height for the huge logo */
+          height: 220px; /* Extreme height for massive branding */
         }
         .logo-group {
           display: flex;
           align-items: center;
-          gap: 1.25rem;
-          font-weight: 900; /* Maximum brand impact */
-          font-size: 4.5rem; /* Massive size to match 80px logo */
-          letter-spacing: -0.08em; /* Extremely tight for the massive scale */
-          line-height: 0.8;
-          text-decoration: none; /* Explicit removal of underline */
+          gap: 2rem;
+          font-weight: 900;
+          font-size: 7rem; /* Extreme scale to match 160px visual unit */
+          letter-spacing: -0.09em; 
+          line-height: 0.7;
+          text-decoration: none;
         }
         .logo-img {
-          filter: drop-shadow(0 0 10px rgba(168, 85, 247, 0.2));
+          filter: drop-shadow(0 0 20px rgba(168, 85, 247, 0.3));
         }
         .logo-text {
           /* Gradient is handled by the text-gradient utility class */
