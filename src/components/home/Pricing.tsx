@@ -15,7 +15,7 @@ export default function Pricing() {
           <h2 className="section-title">Pricing aligned with delivered capabilities — not hours</h2>
           <p className="section-subtitle">Transparent, modular, and outcome-based pricing using Value Credits.</p>
         </div>
-        <div className="pricing-grid grid-3">
+        <div className="grid-3">
           <div className="card pricing-card card-portrait">
             <h3>Value Credit System</h3>
             <p className="credit-rate">1 Value Credit = €200</p>

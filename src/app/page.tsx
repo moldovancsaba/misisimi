@@ -29,5 +29,5 @@ export default function Home() {
     <Footer key="footer" />
   ];
 
-  return <main>{sections}</main>;
+  return <main id="top">{sections}</main>;
 }

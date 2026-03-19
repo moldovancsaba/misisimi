@@ -13,9 +13,9 @@ export default function HowItWorksPreview() {
         <div className="section-header">
           <h2 className="section-title">How It Works</h2>
         </div>
-        <div className="grid-3 steps-grid">
+        <div className="grid-3">
           {steps.map((step, i) => (
-            <div key={i} className="card step-card card-landscape">
+            <div key={i} className="card step-card card-portrait">
               <div className="step-num">{i + 1}</div>
               <h3>{step.title}</h3>
               {step.time && <span className="step-badge">{step.time}</span>}

@@ -27,7 +27,7 @@ export default function UseCases() {
         <div className="section-header">
           <h2 className="section-title">Where AI creates immediate value</h2>
         </div>
-        <div className="grid-3 use-case-grid">
+        <div className="grid-3">
           {cases.map((item, i) => (
             <div key={i} className="card use-case-card card-portrait">
               <h3>{item.title}</h3>

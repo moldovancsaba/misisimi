@@ -15,7 +15,7 @@ export default function Solution() {
         </div>
         <div className="grid-3">
           {solutions.map((item, i) => (
-            <div key={i} className="card step-card card-landscape">
+            <div key={i} className="card step-card card-portrait">
               <div className="step-number">{i + 1}</div>
               <h3>{item.step}</h3>
               <p className="solution-title">{item.title}</p>
