@@ -23,27 +23,31 @@ export default function Navbar() {
           display: flex;
           justify-content: flex-start;
           align-items: center;
-          height: 400px; /* Massive headroom for 200px branding */
+          height: 400px;
+          padding: 0 4rem;
+          max-width: none; /* Crucial: Prevent squashing at 200px scale */
+          width: 100%;
         }
         .logo-group {
           display: flex;
           align-items: center;
           gap: 3rem;
-          font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-          font-weight: 700;
-          font-size: 200px; /* Explicit size as DRAWN */
-          color: white; /* SOLID WHITE as requested */
-          letter-spacing: -0.05em; 
-          line-height: 1;
           text-decoration: none !important;
-          text-transform: uppercase;
+          white-space: nowrap; /* Prevent wrapping at huge scale */
         }
         .logo-img {
           filter: drop-shadow(0 0 40px rgba(168, 85, 247, 0.4));
+          flex-shrink: 0;
         }
         .logo-text {
-          display: inline-block;
-          vertical-align: middle;
+          font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+          font-weight: 700;
+          font-size: 200px; /* Applied DIRECTLY to the span */
+          color: white; /* SOLID WHITE */
+          letter-spacing: -0.05em; 
+          line-height: 1;
+          text-transform: uppercase;
+          flex-shrink: 0;
         }
         .nav-tagline {
           font-weight: 600;
