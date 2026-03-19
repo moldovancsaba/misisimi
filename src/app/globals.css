@@ -101,52 +101,16 @@ p {
   color: var(--muted);
 }
 
-.grid-4 {
+.grid-4, .problem-grid, .steps-grid, .grid-3, .use-case-grid, .pricing-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 2rem;
-}
-
-/* SECTION GRIDS */
-.grid-4 {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2rem;
-}
-
-/* SECTION GRIDS */
-.problem-grid, .steps-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr) !important;
-  gap: 2rem;
-}
-
-.pricing-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  align-items: stretch;
-}
-
-.grid-3, .use-case-grid {
-  display: grid !important;
-  grid-template-columns: repeat(3, 1fr) !important;
-  gap: 2rem;
-  align-items: stretch;
-}
-
-.grid-4, .problem-grid, .steps-grid {
-  display: grid !important;
-  grid-template-columns: repeat(4, 1fr) !important;
-  gap: 1.5rem;
   align-items: stretch;
 }
 
 .pricing-grid {
-  display: grid !important;
-  grid-template-columns: repeat(3, 1fr) !important;
-  gap: 2rem;
-  align-items: stretch;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2.5rem;
 }
 
 .card {
