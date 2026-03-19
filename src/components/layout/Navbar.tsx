@@ -6,8 +6,8 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="container nav-content">
         <Link href="/" className="logo-group">
-          <Image src="/logo.png" alt="misisimi logo" width={240} height={240} className="logo-img" priority />
-          <span className="logo-text">MISISIMI</span>
+          <Image src="/logo.png" alt="misisimi logo" width={80} height={80} className="logo-img" priority />
+          <span className="logo-text text-gradient">MISISIMI</span>
         </Link>
       </div>
       <style jsx>{`
@@ -23,31 +23,32 @@ export default function Navbar() {
           display: flex;
           justify-content: flex-start;
           align-items: center;
-          height: 400px;
-          padding: 0 4rem;
-          max-width: none; /* Crucial: Prevent squashing at 200px scale */
+          height: 120px; /* Balanced height for 3.5rem branding */
+          max-width: 1200px;
+          margin: 0 auto;
           width: 100%;
         }
         .logo-group {
           display: flex;
           align-items: center;
-          gap: 3rem;
+          gap: 1.5rem;
           text-decoration: none !important;
-          white-space: nowrap; /* Prevent wrapping at huge scale */
+          white-space: nowrap;
         }
         .logo-img {
-          filter: drop-shadow(0 0 40px rgba(168, 85, 247, 0.4));
+          filter: drop-shadow(0 0 20px rgba(168, 85, 247, 0.3));
           flex-shrink: 0;
         }
         .logo-text {
           font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-          font-weight: 700;
-          font-size: 200px; /* Applied DIRECTLY to the span */
-          color: white; /* SOLID WHITE */
+          font-weight: 800;
+          font-size: 3.5rem; /* Matches "Solve Business" size */
           letter-spacing: -0.05em; 
           line-height: 1;
           text-transform: uppercase;
           flex-shrink: 0;
+          -webkit-text-stroke: 1px rgba(255, 255, 255, 0.4); /* Subtler white border for gradient text */
+          paint-order: stroke fill;
         }
         .nav-tagline {
           font-weight: 600;
