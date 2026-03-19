@@ -14,20 +14,20 @@ import CTASection from "@/components/home/CTASection";
 import ContactForm from "@/components/home/ContactForm";
 
 export default function Home() {
-  return (
-    <main>
-      <Navbar />
-      <Hero />
-      <Problem />
-      <Solution />
-      <WhatWeBuild />
-      <HowItWorksPreview />
-      <Pricing />
-      <UseCases />
-      <FAQ />
-      <CTASection />
-      <ContactForm />
-      <Footer />
-    </main>
-  );
+  const sections = [
+    <Navbar key="navbar" />,
+    <Hero key="hero" />,
+    <Problem key="problem" />,
+    <Solution key="solution" />,
+    <WhatWeBuild key="capabilities" />,
+    <HowItWorksPreview key="how-it-works" />,
+    <Pricing key="pricing" />,
+    <UseCases key="use-cases" />,
+    <FAQ key="faq" />,
+    <CTASection key="cta" />,
+    <ContactForm key="contact" />,
+    <Footer key="footer" />
+  ];
+
+  return <main>{sections}</main>;
 }
