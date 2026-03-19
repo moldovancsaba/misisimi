@@ -1,14 +1,13 @@
 'use client';
-import CardGrid from "@/components/layout/CardGrid";
-export default function Pricing() {
-  const credits = [
-    { type: "Small improvement", value: 1 },
-    { type: "Minor feature", value: 2 },
-    { type: "Standard feature", value: 3 },
-    { type: "Large module", value: 5 },
-    { type: "Strategic component", value: 8 },
-  ];
+const credits = [
+  { type: "Small improvement", value: 1 },
+  { type: "Minor feature", value: 2 },
+  { type: "Standard feature", value: 3 },
+  { type: "Large module", value: 5 },
+  { type: "Strategic component", value: 8 },
+];
 
+export default function Pricing() {
   return (
     <section id="pricing" className="section-padding">
       <div className="container">
@@ -16,8 +15,7 @@ export default function Pricing() {
           <h2 className="section-title">Pricing aligned with delivered capabilities — not hours</h2>
           <p className="section-subtitle">Transparent, modular, and outcome-based pricing using Value Credits.</p>
         </div>
-
-        <CardGrid className="pricing-grid">
+        <div className="pricing-grid grid-3">
           <div className="card pricing-card card-portrait">
             <h3>Value Credit System</h3>
             <p className="credit-rate">1 Value Credit = €200</p>
@@ -28,7 +26,6 @@ export default function Pricing() {
               <li>Full transparency upfront</li>
             </ul>
           </div>
-
           <div className="card pricing-card promo-card card-portrait">
             <span className="badge">Entry Offer</span>
             <h4>AI Diagnostic</h4>
@@ -39,7 +36,6 @@ export default function Pricing() {
             </div>
             <a href="#contact" className="btn btn-secondary btn-sm">Get Diagnostic</a>
           </div>
-
           <div className="card pricing-card table-card card-portrait">
             <h4 className="table-title">Credit Scale</h4>
             <div className="table">
@@ -52,7 +48,7 @@ export default function Pricing() {
             </div>
             <p className="note">Typical projects: 25–60 credits</p>
           </div>
-        </CardGrid>
+        </div>
       </div>
       <style jsx>{`
         .pricing-grid {

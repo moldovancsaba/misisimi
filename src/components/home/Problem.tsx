@@ -1,5 +1,4 @@
 'use client';
-import CardGrid from "@/components/layout/CardGrid";
 export default function Problem() {
   const problems = [
     "Manual processes slow down operations and increase costs",
@@ -14,14 +13,14 @@ export default function Problem() {
         <div className="section-header">
           <h2 className="section-title">Most businesses know AI matters — but don’t know where to start</h2>
         </div>
-        <CardGrid className="problem-grid">
+        <div className="grid-4 problem-grid">
           {problems.map((problem, i) => (
             <div key={i} className="card problem-item card-portrait">
               <div className="problem-dot"></div>
               <p>{problem}</p>
             </div>
           ))}
-        </CardGrid>
+        </div>
       </div>
     </section>
   );

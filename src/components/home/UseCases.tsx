@@ -1,34 +1,33 @@
 'use client';
-import CardGrid from "@/components/layout/CardGrid";
-export default function UseCases() {
-  const cases = [
-    {
-      title: "Operations Automation",
-      problem: "Manual workflows consume time and create bottlenecks.",
-      solution: "Automated workflows using AI + integrations.",
-      outcome: ["30–60% time reduction", "Fewer manual errors"]
-    },
-    {
-      title: "Customer Support AI",
-      problem: "High volume of repetitive customer queries.",
-      solution: "AI assistant trained on company data.",
-      outcome: ["Faster response times", "Reduced support workload"]
-    },
-    {
-      title: "Data Insights & Forecasting",
-      problem: "Decisions made without structured data insights.",
-      solution: "Predictive models and dashboards.",
-      outcome: ["Better forecasting", "Improved decision quality"]
-    }
-  ];
+const cases = [
+  {
+    title: "Operations Automation",
+    problem: "Manual workflows consume time and create bottlenecks.",
+    solution: "Automated workflows using AI + integrations.",
+    outcome: ["30–60% time reduction", "Fewer manual errors"]
+  },
+  {
+    title: "Customer Support AI",
+    problem: "High volume of repetitive customer queries.",
+    solution: "AI assistant trained on company data.",
+    outcome: ["Faster response times", "Reduced support workload"]
+  },
+  {
+    title: "Data Insights & Forecasting",
+    problem: "Decisions made without structured data insights.",
+    solution: "Predictive models and dashboards.",
+    outcome: ["Better forecasting", "Improved decision quality"]
+  }
+];
 
+export default function UseCases() {
   return (
     <section id="use-cases" className="section-padding">
       <div className="container">
         <div className="section-header">
           <h2 className="section-title">Where AI creates immediate value</h2>
         </div>
-        <CardGrid className="use-case-grid">
+        <div className="grid-3 use-case-grid">
           {cases.map((item, i) => (
             <div key={i} className="card use-case-card card-portrait">
               <h3>{item.title}</h3>
@@ -52,7 +51,7 @@ export default function UseCases() {
               </div>
             </div>
           ))}
-        </CardGrid>
+        </div>
       </div>
     </section>
   );
