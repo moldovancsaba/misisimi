@@ -7,7 +7,7 @@ export default function Navbar() {
       <div className="container nav-content">
         <Link href="/" className="logo-group">
           <Image src="/logo.png" alt="misisimi logo" width={80} height={80} className="logo-img" priority />
-          <span className="logo-text text-gradient">MISISIMI</span>
+          <span className="logo-text text-gradient"><span className="logo-fill">MISISIMI</span></span>
         </Link>
       </div>
       <style jsx>{`
@@ -56,7 +56,8 @@ export default function Navbar() {
           flex-shrink: 0;
           z-index: 1;
         }
-        /* All layers mapped to the same grid cell for perfect alignment */
+        /* All layers pinned to the same grid cell for absolute alignment */
+        .logo-fill,
         .logo-text::before,
         .logo-text::after {
           grid-area: 1 / 1;
@@ -64,6 +65,10 @@ export default function Navbar() {
           width: 100%;
           height: 100%;
           pointer-events: none;
+        }
+        .logo-fill {
+          z-index: 1; /* TOP LAYER: Gradient Fill */
+          pointer-events: auto;
         }
         /* MIDDLE LAYER: 3px Outer Stroke */
         .logo-text::before {
