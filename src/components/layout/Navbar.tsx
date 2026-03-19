@@ -24,15 +24,15 @@ export default function Navbar() {
           display: flex;
           justify-content: space-between;
           align-items: center;
-          height: 72px;
+          height: 100px; /* Increased height to accommodate larger logo */
         }
         .logo-group {
           display: flex;
           align-items: center;
-          gap: 0.625rem;
+          gap: 0.75rem;
           font-weight: 800; /* Heavier for brand impact */
-          font-size: 1.5rem;
-          letter-spacing: -0.05em; /* Tight logo tracking */
+          font-size: 2.75rem; /* Matches the 48px logo icon height */
+          letter-spacing: -0.06em; /* Even tighter tracking for the large size */
           line-height: 1;
         }
         .logo-img {
