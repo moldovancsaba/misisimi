@@ -291,7 +291,7 @@ p {
 .btn-secondary {
   background: rgba(255, 255, 255, 0.05);
   color: white;
-  border: 5px solid rgba(255, 255, 255, 0.2);
+  border: 5px solid #FFFFFF;
   backdrop-filter: blur(10px);
 }
 
@@ -305,7 +305,7 @@ p {
   background: rgba(13, 13, 20, 0.4);
   backdrop-filter: blur(25px);
   -webkit-backdrop-filter: blur(25px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 5px solid rgba(255, 255, 255, 0.2);
   border-radius: var(--radius-card);
   padding: 3.5rem;
   transition: all 0.5s cubic-bezier(0.2, 1, 0.3, 1);
