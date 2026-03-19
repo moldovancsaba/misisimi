@@ -23,10 +23,11 @@ export default function Navbar() {
           display: flex;
           justify-content: flex-start;
           align-items: center;
-          height: 120px; /* Balanced height for 3.5rem branding */
-          max-width: 1200px;
+          height: 120px;
+          max-width: 1000px; /* Perfectly aligned with hero container */
           margin: 0 auto;
           width: 100%;
+          padding: 0; /* Remove padding to match hero alignment */
         }
         .logo-group {
           display: flex;
@@ -42,12 +43,12 @@ export default function Navbar() {
         .logo-text {
           font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
           font-weight: 800;
-          font-size: 3.5rem; /* Matches "Solve Business" size */
+          font-size: 3.5rem;
           letter-spacing: -0.05em; 
           line-height: 1;
           text-transform: uppercase;
           flex-shrink: 0;
-          -webkit-text-stroke: 1px rgba(255, 255, 255, 0.4); /* Subtler white border for gradient text */
+          -webkit-text-stroke: 3px white; /* Massive high-contrast border */
           paint-order: stroke fill;
         }
         .nav-tagline {
