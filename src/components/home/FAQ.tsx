@@ -76,7 +76,9 @@ export default function FAQ() {
   return (
     <section id="faq" className="section-padding bg-accent-soft">
       <div className="container">
-        <h2 className="section-title">FAQ</h2>
+        <div className="section-header">
+          <h2 className="section-title">FAQ</h2>
+        </div>
         <div className="faq-container">
           {faqs.map((cat, catIdx) => (
             <div key={catIdx} className="faq-category">

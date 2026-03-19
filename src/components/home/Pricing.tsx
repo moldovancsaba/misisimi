@@ -1,4 +1,5 @@
 'use client';
+import CardGrid from "@/components/layout/CardGrid";
 export default function Pricing() {
   const credits = [
     { type: "Small improvement", value: 1 },
@@ -15,9 +16,8 @@ export default function Pricing() {
           <h2 className="section-title">Pricing aligned with delivered capabilities — not hours</h2>
           <p className="section-subtitle">Transparent, modular, and outcome-based pricing using Value Credits.</p>
         </div>
-        
-        <div className="pricing-grid">
-          {/* Card 1: Value System */}
+
+        <CardGrid className="pricing-grid">
           <div className="card pricing-card card-portrait">
             <h3>Value Credit System</h3>
             <p className="credit-rate">1 Value Credit = €200</p>
@@ -29,7 +29,6 @@ export default function Pricing() {
             </ul>
           </div>
 
-          {/* Card 2: AI Diagnostic */}
           <div className="card pricing-card promo-card card-portrait">
             <span className="badge">Entry Offer</span>
             <h4>AI Diagnostic</h4>
@@ -41,7 +40,6 @@ export default function Pricing() {
             <a href="#contact" className="btn btn-secondary btn-sm">Get Diagnostic</a>
           </div>
 
-          {/* Card 3: Credit Scale */}
           <div className="card pricing-card table-card card-portrait">
             <h4 className="table-title">Credit Scale</h4>
             <div className="table">
@@ -54,7 +52,7 @@ export default function Pricing() {
             </div>
             <p className="note">Typical projects: 25–60 credits</p>
           </div>
-        </div>
+        </CardGrid>
       </div>
       <style jsx>{`
         .pricing-grid {

@@ -1,4 +1,5 @@
 'use client';
+import CardGrid from "@/components/layout/CardGrid";
 const solutions = [
   { 
     step: "Diagnose", 
@@ -25,7 +26,7 @@ export default function Solution() {
           <h2 className="section-title">We turn AI from concept into working systems</h2>
           <p className="section-subtitle">MISISIMI combines strategy, engineering, and automation to deliver AI solutions that integrate directly into your business operations.</p>
         </div>
-        <div className="grid-3">
+        <CardGrid className="grid-3 steps-grid">
           {solutions.map((item, i) => (
             <div key={i} className="card step-card card-landscape">
               <div className="step-number">{i + 1}</div>
@@ -34,7 +35,7 @@ export default function Solution() {
               <p className="solution-desc">{item.description}</p>
             </div>
           ))}
-        </div>
+        </CardGrid>
       </div>
     </section>
   )

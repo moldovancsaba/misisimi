@@ -1,4 +1,5 @@
 'use client';
+import CardGrid from "@/components/layout/CardGrid";
 export default function UseCases() {
   const cases = [
     {
@@ -27,7 +28,7 @@ export default function UseCases() {
         <div className="section-header">
           <h2 className="section-title">Where AI creates immediate value</h2>
         </div>
-        <div className="use-case-grid">
+        <CardGrid className="use-case-grid">
           {cases.map((item, i) => (
             <div key={i} className="card use-case-card card-portrait">
               <h3>{item.title}</h3>
@@ -51,7 +52,7 @@ export default function UseCases() {
               </div>
             </div>
           ))}
-        </div>
+        </CardGrid>
       </div>
     </section>
   );

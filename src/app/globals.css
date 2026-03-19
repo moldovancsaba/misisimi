@@ -86,6 +86,12 @@ p {
 .section-title {
   font-size: clamp(2rem, 4vw, 3rem);
   margin-bottom: 1.5rem;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  text-align: center;
 }
 
 .bg-accent-soft {
@@ -101,17 +107,32 @@ p {
   color: var(--muted);
 }
 
-.grid-4, .problem-grid, .steps-grid, .grid-3, .use-case-grid, .pricing-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 2rem;
-  align-items: stretch;
-  grid-auto-rows: minmax(320px, 1fr);
+.card {
+  height: 100%;
+  display: flex !important;
+  flex-direction: column;
 }
 
-.pricing-grid {
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 2.5rem;
+.card-grid {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--card-gap, 2rem);
+}
+
+.card-row-grid {
+  display: grid;
+  grid-template-columns: repeat(var(--columns, 3), minmax(240px, 1fr));
+  gap: var(--card-gap, 2rem);
+  align-items: stretch;
+}
+
+.card-row-center {
+  display: flex;
+  justify-content: center;
+  gap: var(--card-gap, 2rem);
+  flex-wrap: wrap;
+  align-items: stretch;
 }
 
 .grid-4 .card,
@@ -123,24 +144,6 @@ p {
 
 .grid-3 .card-landscape {
   aspect-ratio: 4 / 3;
-}
-
-.card {
-  height: 100%;
-  display: flex !important;
-  flex-direction: column;
-}
-
-@media (max-width: 1100px) {
-  .grid-3, .grid-4, .problem-grid, .steps-grid, .pricing-grid, .use-case-grid {
-    grid-template-columns: repeat(2, 1fr) !important;
-  }
-}
-
-@media (max-width: 768px) {
-  .grid-2, .grid-3, .grid-4, .problem-grid, .steps-grid, .pricing-grid, .use-case-grid {
-    grid-template-columns: 1fr !important;
-  }
 }
 
 /* FAQ ACCORDION */
@@ -219,18 +222,6 @@ p {
   color: #CBD5E0;
   line-height: 1.7;
   font-size: 1.05rem;
-}
-
-@media (max-width: 1100px) {
-  .steps-grid, .problem-grid, .pricing-grid {
-    grid-template-columns: repeat(2, 1fr) !important;
-  }
-}
-
-@media (max-width: 768px) {
-  .grid-2, .grid-3, .grid-4, .problem-grid, .steps-grid, .pricing-grid {
-    grid-template-columns: 1fr !important;
-  }
 }
 
 /* COMPONENTS */

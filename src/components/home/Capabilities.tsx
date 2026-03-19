@@ -1,4 +1,5 @@
 'use client';
+import CardGrid from "@/components/layout/CardGrid";
 const deliverables = [
   {
     title: "Custom AI models",
@@ -34,7 +35,7 @@ export default function WhatWeBuild() {
         <div className="section-header">
           <h2 className="section-title">What we actually deliver</h2>
         </div>
-        <div className="grid-3">
+        <CardGrid className="grid-3">
           {deliverables.map((item, i) => (
             <div key={i} className="card card-portrait">
               <div className="card-icon">{item.icon}</div>
@@ -42,7 +43,7 @@ export default function WhatWeBuild() {
               <p>{item.description}</p>
             </div>
           ))}
-        </div>
+        </CardGrid>
       </div>
     </section>
   )

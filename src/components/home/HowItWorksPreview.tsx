@@ -1,4 +1,5 @@
 'use client';
+import CardGrid from "@/components/layout/CardGrid";
 export default function HowItWorksPreview() {
   const steps = [
     { title: "AI Diagnostic", time: "24–72h", desc: "Identify high-ROI automation opportunities." },
@@ -13,7 +14,7 @@ export default function HowItWorksPreview() {
         <div className="section-header">
           <h2 className="section-title">How It Works</h2>
         </div>
-        <div className="steps-grid">
+        <CardGrid className="steps-grid">
           {steps.map((step, i) => (
             <div key={i} className="card step-card card-landscape">
               <div className="step-num">{i + 1}</div>
@@ -22,7 +23,7 @@ export default function HowItWorksPreview() {
               <p>{step.desc}</p>
             </div>
           ))}
-        </div>
+        </CardGrid>
       </div>
     </section>
   );
