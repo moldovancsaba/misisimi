@@ -461,7 +461,7 @@ p {
 }
 
 .brand-logo {
-  height: 25px; /* Scaled down to 70% of 36px */
+  height: clamp(16px, 2vw, 22px);
   width: auto;
   display: block;
 }
@@ -589,6 +589,9 @@ p {
     justify-content: center;
     flex-wrap: wrap;
     gap: 0.85rem 1.25rem;
+  }
+  .brand-logo {
+    height: 18px;
   }
   .nav-item {
     font-size: 0.95rem;
@@ -731,6 +734,9 @@ p {
   }
   .container {
     padding: 0 1.25rem;
+  }
+  .brand-logo {
+    height: 16px;
   }
   .card {
     padding: 2rem;
