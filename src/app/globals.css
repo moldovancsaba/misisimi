@@ -615,25 +615,24 @@ p {
   max-width: 520px;
 }
 
-.contact-trust {
+.contact-trust-list {
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
+  gap: 1rem;
   margin-top: 2rem;
 }
 
-.contact-trust-item {
+.contact-trust-row {
   display: flex;
   flex-direction: column;
-  gap: 0.55rem;
-  padding: 1.25rem 1.5rem;
-  border: 2px solid rgba(255, 255, 255, 0.12);
-  border-radius: 20px;
-  background: rgba(255, 255, 255, 0.03);
+  gap: 0.35rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-.contact-trust-item p {
-  font-size: 1rem;
+.contact-trust-row p {
+  font-size: 0.96rem;
+  line-height: 1.5;
 }
 
 .contact-success {

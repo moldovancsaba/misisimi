@@ -33,25 +33,27 @@ export default function UseCases() {
         </div>
         <div className="grid-3">
           {cases.map((item, i) => (
-            <div key={i} className="card use-case-card card-portrait">
-              <span className="capability-eyebrow">{item.eyebrow}</span>
-              <h3>{item.title}</h3>
-              <div className="case-content">
-                <div className="case-part">
-                  <span className="part-label">Problem</span>
-                  <p className="case-text">{item.problem}</p>
-                </div>
-                <div className="case-part">
-                  <span className="part-label part-label-primary">Solution</span>
-                  <p className="case-text">{item.solution}</p>
-                </div>
-                <div className="case-part outcome">
-                  <span className="part-label part-label-secondary">Outcome</span>
-                  <ul className="outcome-list">
-                    {item.outcome.map((text, j) => (
-                      <li key={j}>{text}</li>
-                    ))}
-                  </ul>
+            <div key={i} className="card-group">
+              <span className="capability-eyebrow card-group-eyebrow">{item.eyebrow}</span>
+              <div className="card use-case-card card-portrait">
+                <h3>{item.title}</h3>
+                <div className="case-content">
+                  <div className="case-part">
+                    <span className="part-label">Problem</span>
+                    <p className="case-text">{item.problem}</p>
+                  </div>
+                  <div className="case-part">
+                    <span className="part-label part-label-primary">Solution</span>
+                    <p className="case-text">{item.solution}</p>
+                  </div>
+                  <div className="case-part outcome">
+                    <span className="part-label part-label-secondary">Outcome</span>
+                    <ul className="outcome-list">
+                      {item.outcome.map((text, j) => (
+                        <li key={j}>{text}</li>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>

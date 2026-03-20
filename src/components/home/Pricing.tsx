@@ -34,6 +34,10 @@ export default function Pricing() {
                     <li>Full transparency upfront</li>
                   </ul>
                 </div>
+                <div className="case-part">
+                  <span className="part-label part-label-secondary">Benefit</span>
+                  <p className="pricing-detail">Commercial scope stays tied to outputs, which makes planning, approval, and expectation-setting much clearer.</p>
+                </div>
               </div>
             </div>
           </div>
@@ -53,6 +57,10 @@ export default function Pricing() {
                 <div className="case-part">
                   <span className="part-label part-label-secondary">Output</span>
                   <p className="pricing-detail">You get a clear problem framing, opportunity map, and recommendation for what to build next.</p>
+                </div>
+                <div className="case-part">
+                  <span className="part-label">Action</span>
+                  <p className="pricing-detail">Use the diagnostic to decide whether the next step should be automation, a custom system, or a phased delivery roadmap.</p>
                 </div>
               </div>
               <a href="#contact" className="btn btn-secondary btn-sm">Get Diagnostic</a>
@@ -77,6 +85,10 @@ export default function Pricing() {
                 <div className="case-part">
                   <span className="part-label part-label-secondary">Typical Engagement</span>
                   <p className="note">Typical projects: 25–60 credits (€5,000 – €12,000+)</p>
+                </div>
+                <div className="case-part">
+                  <span className="part-label part-label-primary">Use</span>
+                  <p className="pricing-detail">This gives a realistic range for phased delivery instead of an abstract estimate disconnected from deliverables.</p>
                 </div>
               </div>
             </div>
