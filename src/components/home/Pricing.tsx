@@ -15,7 +15,7 @@ export default function Pricing() {
           <h2 className="section-title">Pricing aligned with delivered capabilities — not hours</h2>
           <p className="section-subtitle">Pricing is structured around deliverables and business scope, not time spent. The diagnostic is the entry point, then project scope expands through value credits.</p>
         </div>
-        <div className="grid-3">
+        <div className="grid-3 pricing-grid">
           <div className="card pricing-card card-portrait">
             <span className="capability-eyebrow">Pricing Principle</span>
             <h3>Value Credit System</h3>
@@ -53,21 +53,6 @@ export default function Pricing() {
           </div>
         </div>
       </div>
-      <style jsx>{`
-        .pricing-grid {
-          gap: 2.5rem;
-        }
-        .promo-card {
-          display: flex;
-          flex-direction: column;
-          gap: 1.5rem;
-          align-items: flex-start;
-        }
-        .promo-card .btn {
-          width: min(220px, 100%);
-          justify-content: center;
-        }
-      `}</style>
     </section>
   );
 }

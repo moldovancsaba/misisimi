@@ -15,13 +15,12 @@ export default function ContactForm() {
     return (
       <section id="contact" className="section-padding">
         <div className="container">
-          <div className="contact-grid" style={{ textAlign: 'center', display: 'block' }}>
+          <div className="contact-success">
             <h2 className="section-title">Diagnostic Requested</h2>
-            <p style={{ fontSize: '1.25rem' }}>Thank you. We&apos;ll review your business profile and contact you within 24–72 hours.</p>
-            <button 
-              onClick={() => setSubmitted(false)} 
-              className="btn btn-primary" 
-              style={{ marginTop: '2rem' }}
+            <p className="contact-success-text">Thank you. We&apos;ll review your business profile and contact you within 24–72 hours.</p>
+            <button
+              onClick={() => setSubmitted(false)}
+              className="btn btn-primary contact-success-btn"
             >
               Back to Form
             </button>
