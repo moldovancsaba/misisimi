@@ -30,12 +30,25 @@ export default function Solution() {
         </div>
         <div className="grid-3">
           {solutions.map((item, i) => (
-            <div key={i} className="card step-card card-portrait">
-              <div className="step-number">{i + 1}</div>
-              <h3>{item.step}</h3>
-              <p className="solution-title">{item.title}</p>
-              <p className="solution-desc">{item.description}</p>
-              <p className="solution-output">{item.output}</p>
+            <div key={i} className="card-group">
+              <span className="capability-eyebrow card-group-eyebrow">Step {i + 1}</span>
+              <div className="card step-card card-portrait">
+                <h3>{item.step}</h3>
+                <div className="case-content">
+                  <div className="case-part">
+                    <span className="part-label">Focus</span>
+                    <p className="case-text">{item.title}</p>
+                  </div>
+                  <div className="case-part">
+                    <span className="part-label part-label-primary">Execution</span>
+                    <p className="case-text">{item.description}</p>
+                  </div>
+                  <div className="case-part">
+                    <span className="part-label part-label-secondary">Output</span>
+                    <p className="solution-output">{item.output}</p>
+                  </div>
+                </div>
+              </div>
             </div>
           ))}
         </div>

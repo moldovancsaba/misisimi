@@ -67,29 +67,34 @@ export default function WhatWeBuild() {
         </div>
         <div className="grid-3">
           {deliverables.map((item, i) => (
-            <article key={i} className="card card-portrait capability-card">
-              <span className="capability-eyebrow">{item.eyebrow}</span>
-              <h3>{item.title}</h3>
-              <p className="capability-body">{item.body}</p>
-              <div className="case-content">
-                <div className="case-part">
-                  <span className="part-label">Includes</span>
-                  <ul className="capability-list">
-                    {item.includes.map((entry) => (
-                      <li key={entry}>{entry}</li>
-                    ))}
-                  </ul>
+            <div key={i} className="card-group">
+              <span className="capability-eyebrow card-group-eyebrow">{item.eyebrow}</span>
+              <article className="card card-portrait capability-card">
+                <h3>{item.title}</h3>
+                <div className="case-content">
+                  <div className="case-part">
+                    <span className="part-label">Overview</span>
+                    <p className="capability-body">{item.body}</p>
+                  </div>
+                  <div className="case-part">
+                    <span className="part-label part-label-primary">Includes</span>
+                    <ul className="capability-list">
+                      {item.includes.map((entry) => (
+                        <li key={entry}>{entry}</li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div className="case-part">
+                    <span className="part-label part-label-secondary">Output</span>
+                    <ul className="capability-list">
+                      {item.output.map((entry) => (
+                        <li key={entry}>{entry}</li>
+                      ))}
+                    </ul>
+                  </div>
                 </div>
-                <div className="case-part">
-                  <span className="part-label part-label-secondary">Output</span>
-                  <ul className="capability-list">
-                    {item.output.map((entry) => (
-                      <li key={entry}>{entry}</li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
-            </article>
+              </article>
+            </div>
           ))}
         </div>
       </div>
