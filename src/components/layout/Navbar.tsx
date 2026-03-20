@@ -12,7 +12,8 @@ export default function Navbar() {
       <div className="container nav-content">
         <div className="logo-group">
           <Link href="#top" className="logo-link" onClick={closeMenu}>
-            <img src="/misisimi_title.png" alt="MISISIMI" className="brand-logo" />
+            <img src="/logo-misisimi-line.png" alt="MISISIMI" className="brand-logo brand-logo-desktop" />
+            <img src="/logo-misisimi-rectangle.png" alt="MISISIMI" className="brand-logo brand-logo-mobile" />
           </Link>
         </div>
         <button

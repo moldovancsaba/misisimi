@@ -543,6 +543,10 @@ p {
   display: block;
 }
 
+.brand-logo-mobile {
+  display: none;
+}
+
 .nav-toggle {
   display: none;
   width: 48px;
@@ -905,6 +909,13 @@ p {
   }
   .brand-logo {
     height: 16px;
+  }
+  .brand-logo-desktop {
+    display: none;
+  }
+  .brand-logo-mobile {
+    display: block;
+    height: 22px;
   }
   .nav-content {
     padding-top: 0.65rem;
