@@ -303,7 +303,7 @@ p {
 .problem-card-group {
   display: flex;
   flex-direction: column;
-  gap: clamp(0.2rem, 0.8cqi, 0.35rem);
+  gap: clamp(0.45rem, 1.6cqi, 0.75rem);
 }
 
 .card-group-eyebrow,
