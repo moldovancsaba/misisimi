@@ -52,10 +52,6 @@ p {
 }
 
 .text-gradient {
-  background: var(--gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
   color: #FFFFFF;
 }
 
@@ -88,11 +84,7 @@ p {
 .section-title {
   font-size: clamp(2rem, 3.6vw, 2.8rem);
   margin-bottom: 1rem;
-  background: var(--gradient);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
+  color: #FFFFFF;
   text-align: center;
 }
 
@@ -391,11 +383,19 @@ p {
 }
 
 .eyebrow-text {
-  background: var(--gradient);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
+  color: #FFFFFF;
+}
+
+@supports ((-webkit-background-clip: text) and (-webkit-text-fill-color: transparent)) or (background-clip: text) {
+  .text-gradient,
+  .section-title,
+  .eyebrow-text {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
 }
 
 .outcome-list {
