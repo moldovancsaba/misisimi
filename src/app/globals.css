@@ -315,7 +315,11 @@ p {
   background: none;
   font-size: clamp(0.88rem, 2.2cqi, 1rem);
   letter-spacing: 0.1em;
-  color: var(--text);
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 
 .outcome-list {
