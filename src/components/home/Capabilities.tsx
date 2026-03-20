@@ -1,6 +1,7 @@
 'use client';
 
 type DeliverableCard = {
+  emoji: string;
   title: string;
   eyebrow: string;
   body: string;
@@ -10,6 +11,7 @@ type DeliverableCard = {
 
 const deliverables: DeliverableCard[] = [
   {
+    emoji: '🧬',
     eyebrow: 'AI Development',
     title: 'AI Development',
     body: 'We design and build custom AI systems tailored to your operations and data model.',
@@ -26,6 +28,7 @@ const deliverables: DeliverableCard[] = [
     ]
   },
   {
+    emoji: '🧠',
     eyebrow: 'AI Consulting',
     title: 'AI Consulting',
     body: 'We help you identify where AI creates ROI, what to prioritize, and how to implement it.',
@@ -40,6 +43,7 @@ const deliverables: DeliverableCard[] = [
     ]
   },
   {
+    emoji: '⚡',
     eyebrow: 'AI Automation Tools',
     title: 'AI Automation Tools',
     body: 'We ship lightweight tools that automate repetitive work quickly and integrate with your existing stack.',
@@ -68,7 +72,7 @@ export default function WhatWeBuild() {
         <div className="grid-3">
           {deliverables.map((item, i) => (
             <div key={i} className="card-group">
-              <span className="capability-eyebrow card-group-eyebrow">{item.eyebrow}</span>
+              <span className="capability-eyebrow card-group-eyebrow">{item.emoji} {item.eyebrow}</span>
               <article className="card card-portrait capability-card">
                 <h3>{item.title}</h3>
                 <div className="case-content">

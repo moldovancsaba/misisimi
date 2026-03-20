@@ -4,6 +4,7 @@ import { useState } from 'react';
 
 const faqs = [
   {
+    emoji: "🎯",
     category: "Engagement",
     questions: [
       {
@@ -17,6 +18,7 @@ const faqs = [
     ]
   },
   {
+    emoji: "⚙️",
     category: "Process",
     questions: [
       {
@@ -30,6 +32,7 @@ const faqs = [
     ]
   },
   {
+    emoji: "🚀",
     category: "Delivery",
     questions: [
       {
@@ -43,6 +46,7 @@ const faqs = [
     ]
   },
   {
+    emoji: "💎",
     category: "Commercial",
     questions: [
       {
@@ -56,6 +60,7 @@ const faqs = [
     ]
   },
   {
+    emoji: "🔐",
     category: "Trust",
     questions: [
       {
@@ -87,7 +92,7 @@ export default function FAQ() {
         <div className="faq-container">
           {faqs.map((cat, catIdx) => (
             <div key={catIdx} className="faq-category">
-              <h3 className="category-title">{cat.category}</h3>
+              <h3 className="category-title">{cat.emoji} {cat.category}</h3>
               <div className="faq-list">
                 {cat.questions.map((faq, faqIdx) => {
                   const id = `${catIdx}-${faqIdx}`;

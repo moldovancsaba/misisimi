@@ -12,8 +12,8 @@ export default function Hero() {
               We diagnose the right opportunity, design the right system, and implement AI solutions that automate workflows, reduce costs, and produce measurable operational value.
             </p>
             <div className="cta-group">
-              <Link href="#contact" className="btn btn-primary">Get Your AI Diagnostic</Link>
-              <Link href="#how-it-works" className="btn btn-secondary">See How It Works</Link>
+              <Link href="#contact" className="btn btn-primary">🎯 Get Your AI Diagnostic</Link>
+              <Link href="#how-it-works" className="btn btn-secondary">🛠️ See How It Works</Link>
             </div>
           </div>
           <div className="hero-visual">

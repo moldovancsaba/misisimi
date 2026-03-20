@@ -39,15 +39,15 @@ export default function ContactForm() {
             <p>Start with a clear understanding of where AI fits your business. We review your operations, identify the best AI opportunity, and outline the fastest path to implementation.</p>
             <div className="contact-trust-list">
               <div className="contact-trust-row">
-                <span className="part-label">Response</span>
+                <span className="part-label">✨ Response</span>
                 <p>Initial reply within 24-72 hours.</p>
               </div>
               <div className="contact-trust-row">
-                <span className="part-label part-label-primary">Engagement</span>
+                <span className="part-label part-label-primary">🛠️ Engagement</span>
                 <p>Diagnostic first, then scoped delivery based on clear implementation priorities.</p>
               </div>
               <div className="contact-trust-row">
-                <span className="part-label part-label-secondary">Scope</span>
+                <span className="part-label part-label-secondary">🌐 Scope</span>
                 <p>Suitable for automation, internal tools, applied AI systems, and operational integration projects.</p>
               </div>
             </div>

@@ -1,6 +1,7 @@
 'use client';
 const cases = [
   {
+    emoji: "⚙️",
     title: "Operations Automation",
     eyebrow: "Process Efficiency",
     problem: "Manual workflows consume time and create bottlenecks.",
@@ -8,6 +9,7 @@ const cases = [
     outcome: ["30–60% time reduction", "Fewer manual errors"]
   },
   {
+    emoji: "🤖",
     title: "Customer Support AI",
     eyebrow: "Service Operations",
     problem: "High volume of repetitive customer queries.",
@@ -15,6 +17,7 @@ const cases = [
     outcome: ["Faster response times", "Reduced support workload"]
   },
   {
+    emoji: "📈",
     title: "Data Insights & Forecasting",
     eyebrow: "Commercial Intelligence",
     problem: "Decisions made without structured data insights.",
@@ -34,7 +37,7 @@ export default function UseCases() {
         <div className="grid-3">
           {cases.map((item, i) => (
             <div key={i} className="card-group">
-              <span className="capability-eyebrow card-group-eyebrow">{item.eyebrow}</span>
+              <span className="capability-eyebrow card-group-eyebrow">{item.emoji} {item.eyebrow}</span>
               <div className="card use-case-card card-portrait">
                 <h3>{item.title}</h3>
                 <div className="case-content">

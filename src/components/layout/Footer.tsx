@@ -29,14 +29,14 @@ export default function Footer() {
           </div>
           
           <nav className="footer-column">
-            <h4>Solutions</h4>
+            <h4>🛠️ Solutions</h4>
             <Link href="#pricing">AI Diagnostic</Link>
             <Link href="#services">Custom Models</Link>
             <Link href="#services">Automation</Link>
           </nav>
 
           <nav className="footer-column">
-            <h4>Company</h4>
+            <h4>🌐 Company</h4>
             <Link href="#services">Services</Link>
             <Link href="#how-it-works">How It Works</Link>
             <Link href="#faq">FAQ</Link>
@@ -44,7 +44,7 @@ export default function Footer() {
           </nav>
 
           <div className="footer-column">
-            <h4>Connect</h4>
+            <h4>✨ Connect</h4>
             <a href="mailto:hello@misisimi.com" className="email-link">hello@misisimi.com</a>
           </div>
         </div>

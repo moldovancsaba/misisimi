@@ -1,18 +1,21 @@
 'use client';
 const solutions = [
   {
+    emoji: "🔍",
     step: "Diagnose",
     title: "Find the highest-value AI opportunity first",
     description: "We review operations, data, constraints, and handoff points to identify where AI can create measurable business value.",
     output: "Output: diagnostic brief, prioritized use cases, ROI direction"
   },
   {
+    emoji: "🛠️",
     step: "Build",
     title: "Design and implement the right system",
     description: "We translate the selected opportunity into architecture, workflows, integrations, and production-ready engineering work.",
     output: "Output: solution design, implementation, and integrated delivery"
   },
   {
+    emoji: "🚀",
     step: "Deploy",
     title: "Launch with ownership and iteration",
     description: "We deploy the system into real operations, validate outcomes, and refine performance based on live usage.",
@@ -31,7 +34,7 @@ export default function Solution() {
         <div className="grid-3">
           {solutions.map((item, i) => (
             <div key={i} className="card-group">
-              <span className="capability-eyebrow card-group-eyebrow">Step {i + 1}</span>
+              <span className="capability-eyebrow card-group-eyebrow">{item.emoji} Step {i + 1}</span>
               <div className="card step-card card-portrait">
                 <h3>{item.step}</h3>
                 <div className="case-content">

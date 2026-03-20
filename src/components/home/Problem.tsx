@@ -3,6 +3,7 @@
 export default function Problem() {
   const problems = [
     {
+      emoji: "⚙️",
       eyebrow: "Operational Drag",
       title: "Manual work creates avoidable cost and throughput loss",
       problem: "Teams still rely on repetitive handoffs, spreadsheet work, and manual follow-up across core processes.",
@@ -10,6 +11,7 @@ export default function Problem() {
       opportunity: "MISISIMI automates the bottlenecks so teams can focus on higher-value execution."
     },
     {
+      emoji: "🔮",
       eyebrow: "Unused Data",
       title: "Business data exists, but it does not drive daily decisions",
       problem: "Important operational and commercial data is scattered across systems and rarely turned into actionable insight.",
@@ -17,6 +19,7 @@ export default function Problem() {
       opportunity: "MISISIMI turns raw data into usable models, dashboards, and decision support."
     },
     {
+      emoji: "🔗",
       eyebrow: "Fragmented Stack",
       title: "Tools do not talk to each other in a usable workflow",
       problem: "Businesses often have multiple SaaS tools, but no integrated flow connecting data, actions, and business outcomes.",
@@ -24,6 +27,7 @@ export default function Problem() {
       opportunity: "MISISIMI connects tools, workflows, and AI logic into one operational system."
     },
     {
+      emoji: "🎯",
       eyebrow: "Execution Risk",
       title: "AI sounds valuable, but buying and implementation feel unclear",
       problem: "Leaders know AI matters, but many projects stall because the path from idea to deployment feels expensive, risky, or vague.",
@@ -42,7 +46,7 @@ export default function Problem() {
         <div className="grid-3">
           {problems.map((problem, i) => (
             <div key={i} className="problem-card-group">
-              <span className="capability-eyebrow problem-card-eyebrow">{problem.eyebrow}</span>
+              <span className="capability-eyebrow problem-card-eyebrow">{problem.emoji} {problem.eyebrow}</span>
               <div className="card problem-item card-portrait">
                 <h3>{problem.title}</h3>
                 <div className="case-content">
