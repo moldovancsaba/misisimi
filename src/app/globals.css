@@ -319,25 +319,20 @@ p {
 }
 
 .problem-row {
-  display: grid;
-  grid-template-columns: var(--feature-image-size) minmax(0, 1fr);
+  display: flex;
   gap: 2rem;
   align-items: stretch;
 }
 
-.problem-row-reverse .problem-row-media {
-  order: 2;
-}
-
-.problem-row-reverse .problem-item-landscape {
-  order: 1;
+.problem-row-reverse {
+  flex-direction: row-reverse;
 }
 
 .problem-row-media {
   position: relative;
-  width: min(100%, var(--feature-image-size));
+  flex: 0 0 var(--feature-image-size);
+  width: var(--feature-image-size);
   min-width: 0;
-  justify-self: center;
   border-radius: var(--radius-card);
   overflow: hidden;
   background:
@@ -367,9 +362,10 @@ p {
 }
 
 .problem-item-landscape {
+  flex: 1 1 0;
   aspect-ratio: auto;
   min-height: 0;
-  height: 100%;
+  height: auto;
 }
 
 .card-group-eyebrow,
@@ -885,17 +881,13 @@ p {
   }
 
   .problem-row {
-    grid-template-columns: 1fr;
+    flex-direction: column;
     gap: 1rem;
   }
 
-  .problem-row-media,
-  .problem-row-reverse .problem-row-media,
-  .problem-row-reverse .problem-item-landscape {
-    order: initial;
-  }
-
   .problem-row-media {
+    width: 100%;
+    flex-basis: auto;
     aspect-ratio: 1 / 1;
   }
 
