@@ -75,6 +75,10 @@ p {
   padding: var(--section-padding-desktop) 0;
 }
 
+section[id] {
+  scroll-margin-top: 7.5rem;
+}
+
 .section-header {
   text-align: center;
   margin-bottom: 3rem;
@@ -1099,6 +1103,9 @@ p {
 @media (max-width: 640px) {
   .section-padding {
     padding: var(--section-padding-mobile) 0;
+  }
+  section[id] {
+    scroll-margin-top: 6rem;
   }
   .container {
     padding: 0 1.25rem;
