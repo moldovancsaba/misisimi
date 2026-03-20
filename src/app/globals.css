@@ -167,7 +167,7 @@ p {
   justify-content: flex-start;
   gap: clamp(0.4rem, 1.5cqi, 0.65rem);
   background:
-    var(--gradient-soft) padding-box,
+    rgba(3, 3, 3, 0.82) padding-box,
     var(--gradient-reverse) border-box;
   backdrop-filter: blur(25px);
   -webkit-backdrop-filter: blur(25px);
@@ -490,7 +490,7 @@ p {
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(circle at top left, rgba(236, 72, 153, 0.05) 0%, transparent 60%);
+  background: var(--gradient-soft);
   z-index: 0;
   pointer-events: none;
 }
@@ -503,7 +503,7 @@ p {
 .card:hover {
   transform: translateY(-8px) scale(1.01);
   background:
-    var(--gradient-soft) padding-box,
+    rgba(3, 3, 3, 0.78) padding-box,
     var(--gradient-reverse) border-box;
   box-shadow: 
     0 30px 60px rgba(0, 0, 0, 0.6),
