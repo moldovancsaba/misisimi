@@ -226,12 +226,13 @@ p {
   display: flex;
   flex-direction: column;
   gap: clamp(0.5rem, 1.8cqi, 0.8rem);
-  align-items: flex-start;
+  align-items: stretch;
 }
 
 .promo-card .btn {
   width: min(220px, 100%);
   justify-content: center;
+  margin: auto auto 0;
 }
 
 .capability-list {
