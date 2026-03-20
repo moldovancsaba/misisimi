@@ -1,7 +1,7 @@
 :root {
-  --primary: #A855F7; /* Purple from logo */
-  --secondary: #EC4899; /* Pink from logo */
-  --accent: #6366F1; /* Indigo from logo */
+  --primary: #53E0FF; /* Cyan from hero art */
+  --secondary: #FF5DB7; /* Pink from hero art */
+  --accent: #8A63FF; /* Violet from hero art */
   
   --background: #030303; /* Deep Black */
   --surface: rgba(255, 255, 255, 0.05); /* Glassy surface */
@@ -9,9 +9,9 @@
   --muted: #E2E8F0;
   --border: rgba(255, 255, 255, 0.1);
   
-  --gradient: linear-gradient(135deg, #EC4899 0%, #A855F7 50%, #6366F1 100%);
-  --gradient-reverse: linear-gradient(135deg, #6366F1 0%, #A855F7 50%, #EC4899 100%);
-  --gradient-soft: linear-gradient(135deg, rgba(236, 72, 153, 0.2) 0%, rgba(168, 85, 247, 0.2) 50%, rgba(99, 102, 241, 0.2) 100%);
+  --gradient: linear-gradient(135deg, #FF5DB7 0%, #8A63FF 50%, #53E0FF 100%);
+  --gradient-reverse: linear-gradient(135deg, #53E0FF 0%, #8A63FF 50%, #FF5DB7 100%);
+  --gradient-soft: linear-gradient(135deg, rgba(255, 93, 183, 0.2) 0%, rgba(138, 99, 255, 0.2) 50%, rgba(83, 224, 255, 0.2) 100%);
   
   --container-max: 1200px;
   --section-padding-desktop: 100px;
@@ -878,17 +878,21 @@ p {
   align-items: center;
 }
 
-.cube-wrapper {
+.hero-art-wrapper {
   position: relative;
   width: 100%;
-  max-width: 500px;
+  max-width: 560px;
   animation: float 6s ease-in-out infinite;
 }
 
 .hero-image {
+  display: block;
   width: 100%;
   height: auto;
-  filter: drop-shadow(0 20px 50px rgba(0, 0, 0, 0.5));
+  border-radius: 28px;
+  border: 4px solid transparent;
+  background: var(--gradient-reverse) border-box;
+  filter: drop-shadow(0 24px 50px rgba(0, 0, 0, 0.45));
 }
 
 @keyframes float {

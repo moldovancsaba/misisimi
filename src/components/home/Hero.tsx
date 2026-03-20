@@ -17,8 +17,8 @@ export default function Hero() {
             </div>
           </div>
           <div className="hero-visual">
-            <div className="cube-wrapper">
-              <img src="/hero-cube.png" alt="Capability Cube" className="hero-image" />
+            <div className="hero-art-wrapper">
+              <img src="/hero.png" alt="MISISIMI hero artwork" className="hero-image" />
             </div>
           </div>
         </div>
