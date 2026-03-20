@@ -34,7 +34,10 @@ export default function Solution() {
         <div className="grid-3">
           {solutions.map((item, i) => (
             <div key={i} className="card-group">
-              <span className="capability-eyebrow card-group-eyebrow">{item.emoji} Step {i + 1}</span>
+              <span className="capability-eyebrow card-group-eyebrow">
+                <span>{item.emoji}</span>
+                <span className="eyebrow-text">Step {i + 1}</span>
+              </span>
               <div className="card step-card card-portrait">
                 <h3>{item.step}</h3>
                 <div className="case-content">

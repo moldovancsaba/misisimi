@@ -10,6 +10,7 @@
   --border: rgba(255, 255, 255, 0.1);
   
   --gradient: linear-gradient(135deg, #EC4899 0%, #A855F7 50%, #6366F1 100%);
+  --gradient-reverse: linear-gradient(135deg, #6366F1 0%, #A855F7 50%, #EC4899 100%);
   --gradient-soft: linear-gradient(135deg, rgba(236, 72, 153, 0.2) 0%, rgba(168, 85, 247, 0.2) 50%, rgba(99, 102, 241, 0.2) 100%);
   
   --container-max: 1200px;
@@ -165,10 +166,12 @@ p {
   flex-direction: column;
   justify-content: flex-start;
   gap: clamp(0.4rem, 1.5cqi, 0.65rem);
-  background: var(--gradient-soft);
+  background:
+    var(--gradient-soft) padding-box,
+    var(--gradient-reverse) border-box;
   backdrop-filter: blur(25px);
   -webkit-backdrop-filter: blur(25px);
-  border: 4px solid #ffffff;
+  border: 4px solid transparent;
   border-radius: var(--radius-card);
   padding: clamp(0.95rem, 3.2cqi, 1.25rem);
   transition: all 0.5s cubic-bezier(0.2, 1, 0.3, 1);
@@ -308,6 +311,9 @@ p {
 
 .card-group-eyebrow,
 .problem-card-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
   align-self: center;
   text-align: center;
   padding: 0;
@@ -316,6 +322,10 @@ p {
   background: none;
   font-size: clamp(0.88rem, 2.2cqi, 1rem);
   letter-spacing: 0.1em;
+  color: var(--text);
+}
+
+.eyebrow-text {
   background: var(--gradient);
   -webkit-background-clip: text;
   background-clip: text;
@@ -492,8 +502,9 @@ p {
 
 .card:hover {
   transform: translateY(-8px) scale(1.01);
-  border-color: #ffffff;
-  background: linear-gradient(135deg, rgba(236, 72, 153, 0.28) 0%, rgba(168, 85, 247, 0.28) 50%, rgba(99, 102, 241, 0.28) 100%);
+  background:
+    linear-gradient(135deg, rgba(236, 72, 153, 0.28) 0%, rgba(168, 85, 247, 0.28) 50%, rgba(99, 102, 241, 0.28) 100%) padding-box,
+    var(--gradient-reverse) border-box;
   box-shadow: 
     0 30px 60px rgba(0, 0, 0, 0.6),
     0 0 20px rgba(168, 85, 247, 0.15),

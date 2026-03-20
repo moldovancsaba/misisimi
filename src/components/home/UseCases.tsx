@@ -37,7 +37,10 @@ export default function UseCases() {
         <div className="grid-3">
           {cases.map((item, i) => (
             <div key={i} className="card-group">
-              <span className="capability-eyebrow card-group-eyebrow">{item.emoji} {item.eyebrow}</span>
+              <span className="capability-eyebrow card-group-eyebrow">
+                <span>{item.emoji}</span>
+                <span className="eyebrow-text">{item.eyebrow}</span>
+              </span>
               <div className="card use-case-card card-portrait">
                 <h3>{item.title}</h3>
                 <div className="case-content">

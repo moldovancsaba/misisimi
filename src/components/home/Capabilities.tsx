@@ -72,7 +72,10 @@ export default function WhatWeBuild() {
         <div className="grid-3">
           {deliverables.map((item, i) => (
             <div key={i} className="card-group">
-              <span className="capability-eyebrow card-group-eyebrow">{item.emoji} {item.eyebrow}</span>
+              <span className="capability-eyebrow card-group-eyebrow">
+                <span>{item.emoji}</span>
+                <span className="eyebrow-text">{item.eyebrow}</span>
+              </span>
               <article className="card card-portrait capability-card">
                 <h3>{item.title}</h3>
                 <div className="case-content">

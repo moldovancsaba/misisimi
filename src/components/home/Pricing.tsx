@@ -17,7 +17,10 @@ export default function Pricing() {
         </div>
         <div className="grid-3 pricing-grid">
           <div className="card-group">
-            <span className="capability-eyebrow card-group-eyebrow">💎 Pricing Principle</span>
+            <span className="capability-eyebrow card-group-eyebrow">
+              <span>💎</span>
+              <span className="eyebrow-text">Pricing Principle</span>
+            </span>
             <div className="card pricing-card card-portrait">
               <h3>Value Credit System</h3>
               <div className="case-content">
@@ -42,7 +45,10 @@ export default function Pricing() {
             </div>
           </div>
           <div className="card-group">
-            <span className="capability-eyebrow card-group-eyebrow">🎯 Entry Offer</span>
+            <span className="capability-eyebrow card-group-eyebrow">
+              <span>🎯</span>
+              <span className="eyebrow-text">Entry Offer</span>
+            </span>
             <div className="card pricing-card promo-card card-portrait">
               <h4>AI Diagnostic</h4>
               <div className="case-content">
@@ -67,7 +73,10 @@ export default function Pricing() {
             </div>
           </div>
           <div className="card-group">
-            <span className="capability-eyebrow card-group-eyebrow">📊 Project Range</span>
+            <span className="capability-eyebrow card-group-eyebrow">
+              <span>📊</span>
+              <span className="eyebrow-text">Project Range</span>
+            </span>
             <div className="card pricing-card table-card card-portrait">
               <h4 className="table-title">Credit Scale</h4>
               <div className="case-content">

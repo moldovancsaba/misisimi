@@ -46,7 +46,10 @@ export default function Problem() {
         <div className="grid-3">
           {problems.map((problem, i) => (
             <div key={i} className="problem-card-group">
-              <span className="capability-eyebrow problem-card-eyebrow">{problem.emoji} {problem.eyebrow}</span>
+              <span className="capability-eyebrow problem-card-eyebrow">
+                <span>{problem.emoji}</span>
+                <span className="eyebrow-text">{problem.eyebrow}</span>
+              </span>
               <div className="card problem-item card-portrait">
                 <h3>{problem.title}</h3>
                 <div className="case-content">
