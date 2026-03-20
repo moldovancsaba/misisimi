@@ -231,6 +231,63 @@ p {
   margin: auto auto 0;
 }
 
+.credit-scale {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.credit-scale-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 0.75rem;
+  align-items: center;
+  padding: 0.65rem 0.75rem;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.credit-scale-type {
+  font-size: clamp(0.94rem, 3.6cqi, 1.02rem);
+  line-height: 1.28;
+  color: var(--text);
+}
+
+.credit-scale-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 6.5rem;
+  padding: 0.32rem 0.75rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  font-size: clamp(0.82rem, 2.9cqi, 0.92rem);
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  color: var(--text);
+  white-space: nowrap;
+}
+
+.pricing-note-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.12rem;
+  padding: 0.8rem 0.9rem;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.pricing-note-strong {
+  font-size: clamp(0.84rem, 2.8cqi, 0.92rem);
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text);
+}
+
 .capability-list {
   list-style: none;
   display: flex;

@@ -82,18 +82,23 @@ export default function Pricing() {
               <div className="case-content">
                 <div className="case-part">
                   <span className="part-label">Examples</span>
-                  <div className="table">
-                    {credits.map((item, i) => (
-                      <div key={i} className="table-row">
-                        <span className="item-type">{item.type}</span>
-                        <span className="credit-val">{item.value} {item.value === 1 ? 'Credit' : 'Credits'}</span>
+                  <div className="credit-scale" role="table" aria-label="Credit scale examples">
+                    {credits.map((item) => (
+                      <div key={item.type} className="credit-scale-row" role="row">
+                        <span className="credit-scale-type" role="cell">{item.type}</span>
+                        <span className="credit-scale-badge" role="cell">
+                          {item.value} {item.value === 1 ? 'Credit' : 'Credits'}
+                        </span>
                       </div>
                     ))}
                   </div>
                 </div>
                 <div className="case-part">
                   <span className="part-label part-label-secondary">Typical Engagement</span>
-                  <p className="note">Typical projects: 25–60 credits (€5,000 – €12,000+)</p>
+                  <div className="pricing-note-card">
+                    <span className="pricing-note-strong">Typical projects</span>
+                    <p className="pricing-detail">25-60 credits (€5,000 - €12,000+)</p>
+                  </div>
                 </div>
                 <div className="case-part">
                   <span className="part-label part-label-primary">Use</span>
