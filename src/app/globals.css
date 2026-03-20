@@ -211,6 +211,68 @@ p {
   background: var(--gradient);
 }
 
+.case-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-top: 0.5rem;
+}
+
+.case-part {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.part-label {
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.part-label-primary {
+  color: var(--primary);
+}
+
+.part-label-secondary {
+  color: var(--secondary);
+}
+
+.case-text {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.outcome-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin: 0;
+  padding: 0;
+}
+
+.outcome-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  color: var(--text);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.outcome-list li::before {
+  content: '';
+  width: 0.65rem;
+  height: 0.65rem;
+  border-radius: 50%;
+  margin-top: 0.4rem;
+  flex-shrink: 0;
+  background: var(--gradient);
+}
+
 /* FAQ ACCORDION */
 .faq-container {
   max-width: 800px;
@@ -449,6 +511,27 @@ p {
   max-width: 520px;
 }
 
+.contact-trust {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+.contact-trust-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  padding: 1.25rem 1.5rem;
+  border: 2px solid rgba(255, 255, 255, 0.12);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.contact-trust-item p {
+  font-size: 1rem;
+}
+
 .form {
   display: flex;
   flex-direction: column;
@@ -648,6 +731,18 @@ p {
   color: var(--muted);
   line-height: 1.7;
   max-width: 300px;
+}
+
+.footer-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-top: 1.5rem;
+}
+
+.footer-meta p {
+  font-size: 0.95rem;
+  color: var(--muted);
 }
 
 .footer-column h4 {

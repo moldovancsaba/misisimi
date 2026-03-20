@@ -21,6 +21,11 @@ export default function Footer() {
             <p className="footer-tagline">
               Turning AI concept into production-ready business value.
             </p>
+            <div className="footer-meta">
+              <p>Diagnostic-first engagement</p>
+              <p>Operational AI, automation, and integration delivery</p>
+              <p>Response target: 24-72 hours</p>
+            </div>
           </div>
           
           <nav className="footer-column">
