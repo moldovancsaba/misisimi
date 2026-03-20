@@ -937,6 +937,14 @@ p {
   line-height: 1.1;
 }
 
+.hero .text-gradient {
+  background: none !important;
+  -webkit-background-clip: border-box !important;
+  background-clip: border-box !important;
+  -webkit-text-fill-color: #FFFFFF !important;
+  color: #FFFFFF !important;
+}
+
 .hero-subtitle {
   font-size: 1.15rem;
   line-height: 1.7;
