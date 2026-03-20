@@ -163,34 +163,34 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: clamp(0.65rem, 2.2cqi, 0.9rem);
+  gap: clamp(0.4rem, 1.5cqi, 0.65rem);
   background: rgba(13, 13, 20, 0.4);
   backdrop-filter: blur(25px);
   -webkit-backdrop-filter: blur(25px);
   border: 4px solid #ffffff;
   border-radius: var(--radius-card);
-  padding: clamp(1.2rem, 5cqi, 1.9rem);
+  padding: clamp(0.95rem, 3.2cqi, 1.25rem);
   transition: all 0.5s cubic-bezier(0.2, 1, 0.3, 1);
   overflow: hidden;
   box-shadow: 
     0 10px 30px rgba(0, 0, 0, 0.35),
     inset 0 0 0 1px rgba(255, 255, 255, 0.05);
   aspect-ratio: 2 / 3;
-  min-height: 320px;
+  min-height: 280px;
   align-self: stretch;
   container-type: inline-size;
 }
 
 .card h3,
 .card h4 {
-  font-size: clamp(1.05rem, 7cqi, 1.35rem);
-  line-height: 1.2;
+  font-size: clamp(1.2rem, 5.4cqi, 1.55rem);
+  line-height: 1.12;
 }
 
 .card p,
 .card li {
-  font-size: clamp(0.84rem, 4.5cqi, 1rem);
-  line-height: 1.5;
+  font-size: clamp(0.98rem, 3.9cqi, 1.08rem);
+  line-height: 1.42;
 }
 
 .capability-card {
@@ -200,10 +200,10 @@ p {
 .capability-eyebrow {
   display: inline-flex;
   width: fit-content;
-  padding: clamp(0.28rem, 1.5cqi, 0.4rem) clamp(0.55rem, 3cqi, 0.8rem);
+  padding: clamp(0.2rem, 1cqi, 0.28rem) clamp(0.45rem, 1.8cqi, 0.6rem);
   border-radius: 999px;
   border: 2px solid rgba(255, 255, 255, 0.2);
-  font-size: clamp(0.62rem, 3cqi, 0.75rem);
+  font-size: clamp(0.72rem, 2.2cqi, 0.82rem);
   font-weight: 800;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -212,8 +212,8 @@ p {
 
 .solution-output,
 .pricing-detail {
-  font-size: clamp(0.8rem, 4.2cqi, 0.94rem);
-  line-height: 1.4;
+  font-size: clamp(0.92rem, 3.6cqi, 1rem);
+  line-height: 1.36;
   color: var(--muted);
   margin-top: auto;
 }
@@ -221,7 +221,7 @@ p {
 .promo-card {
   display: flex;
   flex-direction: column;
-  gap: clamp(0.75rem, 3cqi, 1.2rem);
+  gap: clamp(0.5rem, 1.8cqi, 0.8rem);
   align-items: flex-start;
 }
 
@@ -234,7 +234,7 @@ p {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: clamp(0.35rem, 1.8cqi, 0.55rem);
+  gap: clamp(0.22rem, 1cqi, 0.35rem);
   margin: 0;
   padding: 0;
 }
@@ -242,18 +242,18 @@ p {
 .capability-list li {
   display: flex;
   align-items: flex-start;
-  gap: clamp(0.4rem, 2cqi, 0.6rem);
-  font-size: clamp(0.82rem, 4.2cqi, 0.96rem);
-  line-height: 1.4;
+  gap: clamp(0.35rem, 1.4cqi, 0.45rem);
+  font-size: clamp(0.94rem, 3.6cqi, 1.02rem);
+  line-height: 1.32;
   color: var(--text);
 }
 
 .capability-list li::before {
   content: '';
-  width: clamp(0.42rem, 2.4cqi, 0.65rem);
-  height: clamp(0.42rem, 2.4cqi, 0.65rem);
+  width: clamp(0.38rem, 1.6cqi, 0.48rem);
+  height: clamp(0.38rem, 1.6cqi, 0.48rem);
   border-radius: 50%;
-  margin-top: clamp(0.18rem, 1.2cqi, 0.4rem);
+  margin-top: clamp(0.22rem, 0.8cqi, 0.28rem);
   flex-shrink: 0;
   background: var(--gradient);
 }
@@ -261,20 +261,20 @@ p {
 .case-content {
   display: flex;
   flex-direction: column;
-  gap: clamp(0.65rem, 2.6cqi, 0.9rem);
-  margin-top: clamp(0.1rem, 1cqi, 0.25rem);
+  gap: clamp(0.45rem, 1.5cqi, 0.6rem);
+  margin-top: 0;
 }
 
 .case-part {
   display: flex;
   flex-direction: column;
-  gap: clamp(0.2rem, 1.4cqi, 0.35rem);
+  gap: clamp(0.14rem, 0.8cqi, 0.22rem);
 }
 
 .part-label {
-  font-size: clamp(0.62rem, 3cqi, 0.76rem);
+  font-size: clamp(0.78rem, 2.1cqi, 0.9rem);
   font-weight: 800;
-  letter-spacing: 0.07em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--muted);
 }
@@ -288,13 +288,13 @@ p {
 }
 
 .case-text {
-  font-size: clamp(0.82rem, 4.2cqi, 0.96rem);
-  line-height: 1.45;
+  font-size: clamp(0.96rem, 3.7cqi, 1.04rem);
+  line-height: 1.36;
 }
 
 .problem-opportunity {
-  font-size: clamp(0.82rem, 4.2cqi, 0.96rem);
-  line-height: 1.45;
+  font-size: clamp(0.96rem, 3.7cqi, 1.04rem);
+  line-height: 1.36;
   color: var(--muted);
 }
 
@@ -302,7 +302,7 @@ p {
 .problem-card-group {
   display: flex;
   flex-direction: column;
-  gap: clamp(0.35rem, 1.8cqi, 0.65rem);
+  gap: clamp(0.2rem, 0.8cqi, 0.35rem);
 }
 
 .card-group-eyebrow,
@@ -315,7 +315,7 @@ p {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: clamp(0.3rem, 1.8cqi, 0.45rem);
+  gap: clamp(0.18rem, 0.8cqi, 0.28rem);
   margin: 0;
   padding: 0;
 }
@@ -323,18 +323,18 @@ p {
 .outcome-list li {
   display: flex;
   align-items: flex-start;
-  gap: clamp(0.4rem, 2cqi, 0.6rem);
+  gap: clamp(0.35rem, 1.4cqi, 0.45rem);
   color: var(--text);
-  font-size: clamp(0.82rem, 4.2cqi, 0.96rem);
-  line-height: 1.4;
+  font-size: clamp(0.94rem, 3.6cqi, 1.02rem);
+  line-height: 1.32;
 }
 
 .outcome-list li::before {
   content: '';
-  width: clamp(0.42rem, 2.4cqi, 0.65rem);
-  height: clamp(0.42rem, 2.4cqi, 0.65rem);
+  width: clamp(0.38rem, 1.6cqi, 0.48rem);
+  height: clamp(0.38rem, 1.6cqi, 0.48rem);
   border-radius: 50%;
-  margin-top: clamp(0.18rem, 1.2cqi, 0.4rem);
+  margin-top: clamp(0.22rem, 0.8cqi, 0.28rem);
   flex-shrink: 0;
   background: var(--gradient);
 }
