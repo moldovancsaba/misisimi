@@ -13,10 +13,11 @@ export default function Pricing() {
       <div className="container">
         <div className="section-header">
           <h2 className="section-title">Pricing aligned with delivered capabilities — not hours</h2>
-          <p className="section-subtitle">Transparent, modular, and outcome-based pricing using Value Credits.</p>
+          <p className="section-subtitle">Pricing is structured around deliverables and business scope, not time spent. The diagnostic is the entry point, then project scope expands through value credits.</p>
         </div>
         <div className="grid-3">
           <div className="card pricing-card card-portrait">
+            <span className="capability-eyebrow">Pricing Principle</span>
             <h3>Value Credit System</h3>
             <p className="credit-rate">1 Value Credit = €200</p>
             <ul className="benefits-list">
@@ -27,16 +28,18 @@ export default function Pricing() {
             </ul>
           </div>
           <div className="card pricing-card promo-card card-portrait">
-            <span className="badge">Entry Offer</span>
+            <span className="capability-eyebrow">Entry Offer</span>
             <h4>AI Diagnostic</h4>
             <div className="promo-content">
               <p className="price">3–5 credits</p>
               <p className="price-eur">(€600 – €1,000)</p>
               <p className="delivery">24–72 hours</p>
             </div>
+            <p className="pricing-detail">You get a clear problem framing, opportunity map, and recommendation for what to build next.</p>
             <a href="#contact" className="btn btn-secondary btn-sm">Get Diagnostic</a>
           </div>
           <div className="card pricing-card table-card card-portrait">
+            <span className="capability-eyebrow">Project Range</span>
             <h4 className="table-title">Credit Scale</h4>
             <div className="table">
               {credits.map((item, i) => (
@@ -46,7 +49,7 @@ export default function Pricing() {
                 </div>
               ))}
             </div>
-            <p className="note">Typical projects: 25–60 credits</p>
+            <p className="note">Typical projects: 25–60 credits (€5,000 – €12,000+)</p>
           </div>
         </div>
       </div>

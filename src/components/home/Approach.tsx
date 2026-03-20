@@ -1,8 +1,23 @@
 'use client';
 const solutions = [
-  { step: "Diagnose", title: "Identify where AI creates real value", description: "Business analysis, data review, and opportunity mapping." },
-  { step: "Build", title: "Develop custom models, workflows, and integrations", description: "Architecture design, tool selection, and engineering." },
-  { step: "Deploy", title: "Launch production-ready systems with measurable impact", description: "Launch, monitoring, and ongoing optimization." }
+  {
+    step: "Diagnose",
+    title: "Find the highest-value AI opportunity first",
+    description: "We review operations, data, constraints, and handoff points to identify where AI can create measurable business value.",
+    output: "Output: diagnostic brief, prioritized use cases, ROI direction"
+  },
+  {
+    step: "Build",
+    title: "Design and implement the right system",
+    description: "We translate the selected opportunity into architecture, workflows, integrations, and production-ready engineering work.",
+    output: "Output: solution design, implementation, and integrated delivery"
+  },
+  {
+    step: "Deploy",
+    title: "Launch with ownership and iteration",
+    description: "We deploy the system into real operations, validate outcomes, and refine performance based on live usage.",
+    output: "Output: production release, monitoring, and optimization loop"
+  }
 ];
 
 export default function Solution() {
@@ -10,8 +25,8 @@ export default function Solution() {
     <section id="how-it-works" className="section-padding">
       <div className="container">
         <div className="section-header">
-          <h2 className="section-title">We turn AI from concept into working systems</h2>
-          <p className="section-subtitle">MISISIMI combines strategy, engineering, and automation to deliver AI solutions that integrate directly into your business operations.</p>
+          <h2 className="section-title">How engagement works from first diagnostic to production rollout</h2>
+          <p className="section-subtitle">One engagement model: diagnose the opportunity, build the system, then deploy and improve it inside real business operations.</p>
         </div>
         <div className="grid-3">
           {solutions.map((item, i) => (
@@ -20,6 +35,7 @@ export default function Solution() {
               <h3>{item.step}</h3>
               <p className="solution-title">{item.title}</p>
               <p className="solution-desc">{item.description}</p>
+              <p className="solution-output">{item.output}</p>
             </div>
           ))}
         </div>

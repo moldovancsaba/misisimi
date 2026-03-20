@@ -10,8 +10,8 @@ type DeliverableCard = {
 const deliverables: DeliverableCard[] = [
   {
     eyebrow: 'AI Development',
-    title: 'Primary offer (50%)',
-    body: 'We design and build custom AI systems tailored to your operations.'
+    title: 'AI Development',
+    body: 'We design and build custom AI systems tailored to your operations and data model.'
   },
   {
     eyebrow: 'AI Development',
@@ -34,8 +34,8 @@ const deliverables: DeliverableCard[] = [
   },
   {
     eyebrow: 'AI Consulting',
-    title: 'Strategic layer (35%)',
-    body: 'We help you understand where AI creates ROI and how to implement it.'
+    title: 'AI Consulting',
+    body: 'We help you identify where AI creates ROI, what to prioritize, and how to implement it.'
   },
   {
     eyebrow: 'AI Consulting',
@@ -56,8 +56,8 @@ const deliverables: DeliverableCard[] = [
   },
   {
     eyebrow: 'AI Automation Tools',
-    title: 'Fast execution (15%)',
-    body: 'Lightweight tools to automate repetitive processes quickly.'
+    title: 'AI Automation Tools',
+    body: 'We ship lightweight tools that automate repetitive work quickly and integrate with your existing stack.'
   },
   {
     eyebrow: 'AI Automation Tools',
@@ -85,7 +85,7 @@ export default function WhatWeBuild() {
         <div className="section-header">
           <h2 className="section-title">What we actually deliver</h2>
           <p className="section-subtitle">
-            The homepage now carries the full service structure instead of the previous stripped-down summary.
+            Three service layers, each broken down into scope, implementation inputs, and concrete outputs.
           </p>
         </div>
         <div className="grid-3">

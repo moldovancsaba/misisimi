@@ -175,6 +175,14 @@ p {
   line-height: 1.6;
 }
 
+.solution-output,
+.pricing-detail {
+  font-size: 0.98rem;
+  line-height: 1.55;
+  color: var(--muted);
+  margin-top: auto;
+}
+
 .capability-list {
   list-style: none;
   display: flex;

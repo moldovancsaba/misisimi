@@ -9,7 +9,7 @@ export default function Hero() {
           <div className="hero-content">
             <h1 className="text-gradient">Build and deploy practical AI systems for your business — without complexity</h1>
             <p className="hero-subtitle">
-              We diagnose, design, and implement custom AI solutions that automate workflows, reduce costs, and unlock actionable insights.
+              We diagnose the right opportunity, design the right system, and implement AI solutions that automate workflows, reduce costs, and produce measurable operational value.
             </p>
             <div className="cta-group">
               <Link href="#contact" className="btn btn-primary">Get Your AI Diagnostic</Link>

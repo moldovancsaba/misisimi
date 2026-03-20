@@ -37,7 +37,7 @@ export default function ContactForm() {
         <div className="contact-grid">
           <div className="contact-info">
             <h2 className="section-title">Get Your AI Diagnostic</h2>
-            <p>Start with a clear understanding of where AI fits your business. We&apos;ll review your operations and identify high-ROI automation opportunities.</p>
+            <p>Start with a clear understanding of where AI fits your business. We review your operations, identify the best AI opportunity, and outline the fastest path to implementation.</p>
           </div>
           <form className="form" onSubmit={handleSubmit}>
             <div className="form-group">
