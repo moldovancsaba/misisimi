@@ -916,7 +916,6 @@ p {
   overflow: hidden;
   padding: 96px 0 72px;
   background: var(--background);
-  isolation: isolate;
 }
 
 .hero-grid {
@@ -1000,7 +999,6 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  isolation: isolate;
 }
 
 .hero-art-wrapper {
@@ -1010,7 +1008,6 @@ p {
   overflow: hidden;
   border-radius: 28px;
   background: #09090c;
-  contain: paint;
 }
 
 .hero-image {
