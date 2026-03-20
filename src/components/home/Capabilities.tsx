@@ -3,30 +3,23 @@
 type DeliverableCard = {
   title: string;
   eyebrow: string;
-  body?: string;
-  items?: string[];
+  body: string;
+  includes: string[];
+  output: string[];
 };
 
 const deliverables: DeliverableCard[] = [
   {
     eyebrow: 'AI Development',
     title: 'AI Development',
-    body: 'We design and build custom AI systems tailored to your operations and data model.'
-  },
-  {
-    eyebrow: 'AI Development',
-    title: 'Includes',
-    items: [
+    body: 'We design and build custom AI systems tailored to your operations and data model.',
+    includes: [
       'Machine learning models',
       'NLP systems',
       'Recommendation engines',
       'Automation pipelines'
-    ]
-  },
-  {
-    eyebrow: 'AI Development',
-    title: 'Output',
-    items: [
+    ],
+    output: [
       'Production-ready system',
       'Documentation',
       'Integration into your stack'
@@ -35,21 +28,13 @@ const deliverables: DeliverableCard[] = [
   {
     eyebrow: 'AI Consulting',
     title: 'AI Consulting',
-    body: 'We help you identify where AI creates ROI, what to prioritize, and how to implement it.'
-  },
-  {
-    eyebrow: 'AI Consulting',
-    title: 'Includes',
-    items: [
+    body: 'We help you identify where AI creates ROI, what to prioritize, and how to implement it.',
+    includes: [
       'AI opportunity mapping',
       'Data readiness assessment',
       'Roadmap creation'
-    ]
-  },
-  {
-    eyebrow: 'AI Consulting',
-    title: 'Output',
-    items: [
+    ],
+    output: [
       'AI strategy document',
       'Prioritised use cases'
     ]
@@ -57,21 +42,13 @@ const deliverables: DeliverableCard[] = [
   {
     eyebrow: 'AI Automation Tools',
     title: 'AI Automation Tools',
-    body: 'We ship lightweight tools that automate repetitive work quickly and integrate with your existing stack.'
-  },
-  {
-    eyebrow: 'AI Automation Tools',
-    title: 'Includes',
-    items: [
+    body: 'We ship lightweight tools that automate repetitive work quickly and integrate with your existing stack.',
+    includes: [
       'Workflow automation',
       'AI assistants',
       'Internal productivity tools'
-    ]
-  },
-  {
-    eyebrow: 'AI Automation Tools',
-    title: 'Output',
-    items: [
+    ],
+    output: [
       'Functional tool or script',
       'Setup guide'
     ]
@@ -85,7 +62,7 @@ export default function WhatWeBuild() {
         <div className="section-header">
           <h2 className="section-title">What we actually deliver</h2>
           <p className="section-subtitle">
-            Three service layers, each broken down into scope, implementation inputs, and concrete outputs.
+            Three service layers, each presented as a complete offer with scope, implementation components, and concrete outputs.
           </p>
         </div>
         <div className="grid-3">
@@ -93,14 +70,25 @@ export default function WhatWeBuild() {
             <article key={i} className="card card-portrait capability-card">
               <span className="capability-eyebrow">{item.eyebrow}</span>
               <h3>{item.title}</h3>
-              {item.body ? <p className="capability-body">{item.body}</p> : null}
-              {item.items ? (
-                <ul className="capability-list">
-                  {item.items.map((entry) => (
-                    <li key={entry}>{entry}</li>
-                  ))}
-                </ul>
-              ) : null}
+              <p className="capability-body">{item.body}</p>
+              <div className="case-content">
+                <div className="case-part">
+                  <span className="part-label">Includes</span>
+                  <ul className="capability-list">
+                    {item.includes.map((entry) => (
+                      <li key={entry}>{entry}</li>
+                    ))}
+                  </ul>
+                </div>
+                <div className="case-part">
+                  <span className="part-label part-label-secondary">Output</span>
+                  <ul className="capability-list">
+                    {item.output.map((entry) => (
+                      <li key={entry}>{entry}</li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
             </article>
           ))}
         </div>
