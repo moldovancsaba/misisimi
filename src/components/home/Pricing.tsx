@@ -27,7 +27,7 @@ export default function Pricing() {
                 </div>
                 <div className="case-part">
                   <span className="part-label part-label-primary">How It Works</span>
-                  <ul className="benefits-list">
+                  <ul className="capability-list">
                     <li>No hourly billing</li>
                     <li>No hidden scope expansion</li>
                     <li>Cost tied to deliverables</li>
