@@ -53,6 +53,7 @@ p {
 
 .text-gradient {
   color: #FFFFFF;
+  display: inline-block;
 }
 
 .glass {
@@ -86,6 +87,8 @@ p {
   margin-bottom: 1rem;
   color: #FFFFFF;
   text-align: center;
+  display: inline-block;
+  max-width: 100%;
 }
 
 .bg-accent-soft {
@@ -384,9 +387,10 @@ p {
 
 .eyebrow-text {
   color: #FFFFFF;
+  display: inline-block;
 }
 
-@supports ((-webkit-background-clip: text) and (-webkit-text-fill-color: transparent)) or (background-clip: text) {
+@supports ((-webkit-background-clip: text) and (-webkit-text-fill-color: transparent)) {
   .text-gradient,
   .section-title,
   .eyebrow-text {
