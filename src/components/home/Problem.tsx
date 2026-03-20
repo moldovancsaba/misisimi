@@ -41,25 +41,27 @@ export default function Problem() {
         </div>
         <div className="grid-3">
           {problems.map((problem, i) => (
-            <div key={i} className="card problem-item card-portrait">
-              <span className="capability-eyebrow">{problem.eyebrow}</span>
-              <h3>{problem.title}</h3>
-              <div className="case-content">
-                <div className="case-part">
-                  <span className="part-label">Problem</span>
-                  <p className="case-text">{problem.problem}</p>
-                </div>
-                <div className="case-part">
-                  <span className="part-label part-label-primary">Business Impact</span>
-                  <ul className="outcome-list">
-                    {problem.impact.map((item) => (
-                      <li key={item}>{item}</li>
-                    ))}
-                  </ul>
-                </div>
-                <div className="case-part">
-                  <span className="part-label part-label-secondary">What We Change</span>
-                  <p className="problem-opportunity">{problem.opportunity}</p>
+            <div key={i} className="problem-card-group">
+              <span className="capability-eyebrow problem-card-eyebrow">{problem.eyebrow}</span>
+              <div className="card problem-item card-portrait">
+                <h3>{problem.title}</h3>
+                <div className="case-content">
+                  <div className="case-part">
+                    <span className="part-label">Problem</span>
+                    <p className="case-text">{problem.problem}</p>
+                  </div>
+                  <div className="case-part">
+                    <span className="part-label part-label-primary">Business Impact</span>
+                    <ul className="outcome-list">
+                      {problem.impact.map((item) => (
+                        <li key={item}>{item}</li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div className="case-part">
+                    <span className="part-label part-label-secondary">What We Change</span>
+                    <p className="problem-opportunity">{problem.opportunity}</p>
+                  </div>
                 </div>
               </div>
             </div>

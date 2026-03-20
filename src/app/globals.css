@@ -125,7 +125,17 @@ p {
   max-width: none;
 }
 
+.grid-3 > .problem-card-group {
+  grid-column: span 2;
+  width: 100%;
+  max-width: none;
+}
+
 .grid-3 > .card:last-child:nth-child(3n + 1) {
+  grid-column: 3 / span 2;
+}
+
+.grid-3 > .problem-card-group:last-child:nth-child(3n + 1) {
   grid-column: 3 / span 2;
 }
 
@@ -133,7 +143,15 @@ p {
   grid-column: 2 / span 2;
 }
 
+.grid-3 > .problem-card-group:nth-last-child(2):nth-child(3n + 1) {
+  grid-column: 2 / span 2;
+}
+
 .grid-3 > .card:last-child:nth-child(3n + 2) {
+  grid-column: 4 / span 2;
+}
+
+.grid-3 > .problem-card-group:last-child:nth-child(3n + 2) {
   grid-column: 4 / span 2;
 }
 
@@ -278,6 +296,16 @@ p {
   font-size: 1rem;
   line-height: 1.6;
   color: var(--muted);
+}
+
+.problem-card-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.problem-card-eyebrow {
+  margin-left: 0.25rem;
 }
 
 .outcome-list {
@@ -716,12 +744,19 @@ p {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .grid-3 > .card,
+  .grid-3 > .problem-card-group,
   .grid-3 > .card:nth-last-child(2):nth-child(3n + 1),
+  .grid-3 > .problem-card-group:nth-last-child(2):nth-child(3n + 1),
   .grid-3 > .card:last-child:nth-child(3n + 1),
+  .grid-3 > .problem-card-group:last-child:nth-child(3n + 1),
   .grid-3 > .card:last-child:nth-child(3n + 2) {
     grid-column: span 1;
   }
-  .grid-3 > .card:last-child:nth-child(2n + 1) {
+  .grid-3 > .problem-card-group:last-child:nth-child(3n + 2) {
+    grid-column: span 1;
+  }
+  .grid-3 > .card:last-child:nth-child(2n + 1),
+  .grid-3 > .problem-card-group:last-child:nth-child(2n + 1) {
     grid-column: 1 / span 2;
     max-width: calc(50% - 1rem);
     justify-self: center;
@@ -733,10 +768,15 @@ p {
     grid-template-columns: 1fr;
   }
   .grid-3 > .card,
+  .grid-3 > .problem-card-group,
   .grid-3 > .card:nth-last-child(2):nth-child(3n + 1),
+  .grid-3 > .problem-card-group:nth-last-child(2):nth-child(3n + 1),
   .grid-3 > .card:last-child:nth-child(3n + 1),
+  .grid-3 > .problem-card-group:last-child:nth-child(3n + 1),
   .grid-3 > .card:last-child:nth-child(3n + 2),
-  .grid-3 > .card:last-child:nth-child(2n + 1) {
+  .grid-3 > .problem-card-group:last-child:nth-child(3n + 2),
+  .grid-3 > .card:last-child:nth-child(2n + 1),
+  .grid-3 > .problem-card-group:last-child:nth-child(2n + 1) {
     grid-column: 1 / span 1;
     max-width: none;
   }
