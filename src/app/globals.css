@@ -503,7 +503,7 @@ p {
 .card:hover {
   transform: translateY(-8px) scale(1.01);
   background:
-    linear-gradient(135deg, rgba(236, 72, 153, 0.28) 0%, rgba(168, 85, 247, 0.28) 50%, rgba(99, 102, 241, 0.28) 100%) padding-box,
+    var(--gradient-soft) padding-box,
     var(--gradient-reverse) border-box;
   box-shadow: 
     0 30px 60px rgba(0, 0, 0, 0.6),
