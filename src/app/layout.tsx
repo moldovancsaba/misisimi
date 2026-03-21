@@ -1,5 +1,25 @@
 import type { Metadata, Viewport } from "next";
+import { Anton, Noto_Sans, Noto_Sans_Hebrew } from "next/font/google";
 import "./globals.css";
+
+const notoSans = Noto_Sans({
+  subsets: ["latin", "latin-ext", "cyrillic"],
+  variable: "--font-body",
+  display: "swap",
+});
+
+const notoSansHebrew = Noto_Sans_Hebrew({
+  subsets: ["hebrew"],
+  variable: "--font-hebrew",
+  display: "swap",
+});
+
+const anton = Anton({
+  weight: "400",
+  subsets: ["latin", "latin-ext"],
+  variable: "--font-display-latin",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.misisimi.com"),
@@ -39,7 +59,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${notoSans.variable} ${notoSansHebrew.variable} ${anton.variable}`}>
       <body>{children}</body>
     </html>
   );

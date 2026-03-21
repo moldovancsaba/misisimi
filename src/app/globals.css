@@ -21,6 +21,10 @@
   --radius-btn: 100px; /* Pill buttons for premium feel */
   --radius-card: 24px;
   --footer-bg: #030303;
+  --font-ui: var(--font-body), system-ui, sans-serif;
+  --font-heading-display: var(--font-display-latin), var(--font-body), system-ui, sans-serif;
+  --font-heading-safe: var(--font-body), system-ui, sans-serif;
+  --font-heading-hebrew: var(--font-hebrew), var(--font-body), system-ui, sans-serif;
 }
 
 * {
@@ -32,7 +36,7 @@
 html, body {
   background: var(--background);
   color: var(--text);
-  font-family: 'Inter', system-ui, sans-serif;
+  font-family: var(--font-ui);
   line-height: 1.6;
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
@@ -42,24 +46,28 @@ html, body {
   direction: rtl;
 }
 
+h1, h2, h3, h4 {
+  font-family: var(--font-heading-display);
+  color: #FFFFFF !important;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+}
+
 .locale-shell[data-locale="ru"] h1,
 .locale-shell[data-locale="ru"] h2,
 .locale-shell[data-locale="ru"] h3,
-.locale-shell[data-locale="ru"] h4,
+.locale-shell[data-locale="ru"] h4 {
+  font-family: var(--font-heading-safe);
+  letter-spacing: -0.02em;
+}
+
 .locale-shell[data-locale="he"] h1,
 .locale-shell[data-locale="he"] h2,
 .locale-shell[data-locale="he"] h3,
 .locale-shell[data-locale="he"] h4 {
-  font-family: 'Inter', system-ui, sans-serif;
+  font-family: var(--font-heading-hebrew);
   letter-spacing: -0.02em;
-}
-
-h1, h2, h3, h4 {
-  font-family: 'Sora', sans-serif;
-  color: #FFFFFF !important;
-  font-weight: 800;
-  line-height: 1.1;
-  letter-spacing: -0.04em;
 }
 
 p {
@@ -627,7 +635,7 @@ section[id] {
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   text-decoration: none;
-  font-family: 'Sora', sans-serif;
+  font-family: var(--font-heading-display);
   letter-spacing: -0.02em;
   border: 4px solid transparent;
   box-sizing: border-box;
@@ -1247,6 +1255,14 @@ section[id] {
 .locale-shell[dir="rtl"] .footer-column,
 .locale-shell[dir="rtl"] .footer-brand {
   text-align: right;
+}
+
+.locale-shell[data-locale="ru"] .btn {
+  font-family: var(--font-heading-safe);
+}
+
+.locale-shell[data-locale="he"] .btn {
+  font-family: var(--font-heading-hebrew);
 }
 
 .locale-shell[dir="rtl"] .faq-question {

@@ -271,7 +271,8 @@
         "outcome": [
           "30–60%-os időmegtakarítás",
           "Kevesebb manuális hiba"
-        ]
+        ],
+        "image": "/11_process_efficiency.png"
       },
       {
         "emoji": "🤖",
@@ -282,7 +283,8 @@
         "outcome": [
           "Gyorsabb válaszidő",
           "Kisebb support terhelés"
-        ]
+        ],
+        "image": "/12_service_operations.png"
       },
       {
         "emoji": "📈",
@@ -293,7 +295,8 @@
         "outcome": [
           "Pontosabb előrejelzés",
           "Jobb döntési minőség"
-        ]
+        ],
+        "image": "/13_commercial_intelligence.png"
       }
     ]
   },

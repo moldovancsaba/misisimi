@@ -271,7 +271,8 @@
         "outcome": [
           "30–60% time reduction",
           "Fewer manual errors"
-        ]
+        ],
+        "image": "/11_process_efficiency.png"
       },
       {
         "emoji": "🤖",
@@ -282,7 +283,8 @@
         "outcome": [
           "Faster response times",
           "Reduced support workload"
-        ]
+        ],
+        "image": "/12_service_operations.png"
       },
       {
         "emoji": "📈",
@@ -293,7 +295,8 @@
         "outcome": [
           "Better forecasting",
           "Higher decision quality"
-        ]
+        ],
+        "image": "/13_commercial_intelligence.png"
       }
     ]
   },
