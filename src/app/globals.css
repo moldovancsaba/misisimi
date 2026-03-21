@@ -363,24 +363,25 @@ section[id] {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.15fr) minmax(320px, 0.85fr);
-  gap: clamp(2rem, 4vw, 4rem);
+  grid-template-columns: minmax(0, 1.35fr) minmax(320px, 0.65fr);
+  gap: clamp(1rem, 2.6vw, 2.5rem);
   align-items: center;
 }
 
 .hero-copy {
   display: grid;
   gap: 1.35rem;
+  max-width: 100%;
 }
 
 .hero-title {
   font-size: clamp(3.1rem, 8vw, 6.7rem);
-  max-width: 9ch;
+  max-width: 11ch;
   text-wrap: balance;
 }
 
 .hero-subtitle {
-  max-width: 32rem;
+  max-width: 40rem;
   font-size: clamp(1.05rem, 1.8vw, 1.3rem);
 }
 
@@ -393,7 +394,8 @@ section[id] {
 
 .hero-visual {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .hero-image-shell {
@@ -405,6 +407,7 @@ section[id] {
   background: #0d0f15;
   border: 5px solid rgba(231, 217, 193, 0.55);
   box-shadow: var(--shadow);
+  transform: translateX(-10%);
 }
 
 .hero-image {
@@ -770,6 +773,7 @@ section[id] {
 
   .hero-visual {
     order: -1;
+    justify-content: center;
   }
 
   .pricing-layout,
@@ -843,6 +847,10 @@ section[id] {
   .hero-title,
   .section-title {
     max-width: 100%;
+  }
+
+  .hero-image-shell {
+    transform: none;
   }
 
   .hero-actions {
