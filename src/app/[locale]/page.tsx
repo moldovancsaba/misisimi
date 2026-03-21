@@ -3,10 +3,10 @@ import Navbar from '@/components/layout/Navbar';
 import Approach from '@/components/home/Approach';
 import Capabilities from '@/components/home/Capabilities';
 import ContactForm from '@/components/home/ContactForm';
-import FAQ from '@/components/home/FAQ';
 import Hero from '@/components/home/Hero';
 import Pricing from '@/components/home/Pricing';
 import Problem from '@/components/home/Problem';
+import StickyCTA from '@/components/home/StickyCTA';
 import UseCases from '@/components/home/UseCases';
 import { getDictionary } from '@/i18n/dictionaries';
 import { isLocale, localeInfo, locales, type Locale } from '@/i18n/config';
@@ -36,23 +36,22 @@ export default async function LocalizedHomePage({
     flag: localeInfo[code].flag
   }));
 
-  const sections = [
-    <Navbar
-      key="navbar"
-      locale={locale as Locale}
-      nav={dict.nav}
-      localeOptions={localeOptions}
-    />,
-    <Hero key="hero" locale={locale as Locale} content={dict.hero} />,
-    <Problem key="problem" content={dict.problem} />,
-    <Capabilities key="services" content={dict.services} />,
-    <Approach key="approach" content={dict.approach} />,
-    <Pricing key="pricing" content={dict.pricing} />,
-    <UseCases key="use-cases" content={dict.useCases} />,
-    <FAQ key="faq" content={dict.faq} />,
-    <ContactForm key="contact" content={dict.contact} />,
-    <Footer key="footer" locale={locale as Locale} content={dict.footer} />
-  ];
-
-  return <main id="top">{sections}</main>;
+  return (
+    <main id="top">
+      <Navbar
+        locale={locale as Locale}
+        nav={dict.nav}
+        localeOptions={localeOptions}
+      />
+      <StickyCTA locale={locale as Locale} label={dict.nav.stickyCta} />
+      <Hero locale={locale as Locale} content={dict.hero} />
+      <Problem content={dict.trust} />
+      <Capabilities content={dict.outcomes} />
+      <Approach content={dict.process} />
+      <UseCases content={dict.capabilities} />
+      <Pricing content={dict.pricing} />
+      <ContactForm content={dict.contact} />
+      <Footer locale={locale as Locale} content={dict.footer} />
+    </main>
+  );
 }

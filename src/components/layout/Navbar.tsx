@@ -11,15 +11,12 @@ type NavbarProps = {
   localeOptions: Array<{ code: Locale; nativeLabel: string; flag: string }>;
 };
 
-export default function Navbar({
-  locale,
-  nav,
-  localeOptions
-}: NavbarProps) {
+export default function Navbar({ locale, nav, localeOptions }: NavbarProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   const closeMenu = () => setIsOpen(false);
   const sectionHref = (id: string) => `/${locale}${id}`;
+
   const handleLocaleChange = (nextLocale: Locale) => {
     const hash = typeof window !== 'undefined' ? window.location.hash : '';
     closeMenu();
@@ -29,12 +26,11 @@ export default function Navbar({
   return (
     <nav className="navbar">
       <div className="container nav-content">
-        <div className="logo-group">
-          <Link href={`/${locale}#top`} className="logo-link" onClick={closeMenu}>
-            <img src="/logo-misisimi-line.png" alt="MISISIMI" className="brand-logo brand-logo-desktop" />
-            <img src="/logo-misisimi-rectangle.png" alt="MISISIMI" className="brand-logo brand-logo-mobile" />
-          </Link>
-        </div>
+        <Link href={`/${locale}#top`} className="logo-link" onClick={closeMenu}>
+          <img src="/logo-misisimi-line.png" alt="MISISIMI" className="brand-logo brand-logo-desktop" />
+          <img src="/logo-misisimi-rectangle.png" alt="MISISIMI" className="brand-logo brand-logo-mobile" />
+        </Link>
+
         <button
           type="button"
           className="nav-toggle"
@@ -47,12 +43,13 @@ export default function Navbar({
           <span className={`nav-toggle-line ${isOpen ? 'open' : ''}`}></span>
           <span className={`nav-toggle-line ${isOpen ? 'open' : ''}`}></span>
         </button>
+
         <div id="site-navigation" className={`nav-links ${isOpen ? 'nav-links-open' : ''}`}>
           <Link href={`/${locale}#top`} className="nav-item" onClick={closeMenu}>{nav.home}</Link>
-          <Link href={sectionHref('#services')} className="nav-item" onClick={closeMenu}>{nav.services}</Link>
-          <Link href={sectionHref('#how-it-works')} className="nav-item" onClick={closeMenu}>{nav.howItWorks}</Link>
+          <Link href={sectionHref('#trust')} className="nav-item" onClick={closeMenu}>{nav.trust}</Link>
+          <Link href={sectionHref('#outcomes')} className="nav-item" onClick={closeMenu}>{nav.outcomes}</Link>
+          <Link href={sectionHref('#process')} className="nav-item" onClick={closeMenu}>{nav.process}</Link>
           <Link href={sectionHref('#pricing')} className="nav-item" onClick={closeMenu}>{nav.pricing}</Link>
-          <Link href={sectionHref('#faq')} className="nav-item" onClick={closeMenu}>{nav.faq}</Link>
           <Link href={sectionHref('#contact')} className="nav-item btn btn-nav" onClick={closeMenu}>{nav.contact}</Link>
           <div className="locale-switcher">
             <label className="locale-select-wrap" aria-label={nav.language}>

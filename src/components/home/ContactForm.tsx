@@ -15,61 +15,45 @@ export default function ContactForm({ content }: ContactFormProps) {
     setSubmitted(true);
   };
 
-  if (submitted) {
-    return (
-      <section id="contact" className="section-padding">
-        <div className="container">
-          <div className="contact-success">
-            <h2 className="section-title">{content.success.title}</h2>
-            <p className="contact-success-text">{content.success.text}</p>
+  return (
+    <section id="contact" className="section final-cta" aria-labelledby="contact-title">
+      <div className="container final-cta-layout">
+        <div className="final-cta-copy reveal">
+          <p className="section-kicker">{content.kicker}</p>
+          <h2 id="contact-title" className="section-title section-title-left">{submitted ? content.success.title : content.title}</h2>
+          <ul className="cta-list">
+            {(submitted ? content.success.points : content.points).map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
+          <p className="final-cta-note">{submitted ? content.success.text : content.note}</p>
+        </div>
+
+        <div className="final-cta-card reveal">
+          {submitted ? (
             <button
+              type="button"
+              className="btn btn-primary final-cta-button"
               onClick={() => setSubmitted(false)}
-              className="btn btn-primary contact-success-btn"
             >
               {content.success.back}
             </button>
-          </div>
-        </div>
-      </section>
-    );
-  }
-
-  return (
-    <section id="contact" className="section-padding">
-      <div className="container">
-        <div className="contact-grid">
-          <div className="contact-info">
-            <h2 className="section-title">{content.title}</h2>
-            <p>{content.description}</p>
-            <div className="contact-trust-list">
-              {content.trust.map((item, index) => (
-                <div key={`${item.label}-${index}`} className="contact-trust-row">
-                  <span className={`part-label ${index === 1 ? 'part-label-primary' : index === 2 ? 'part-label-secondary' : ''}`}>
-                    {item.emoji} {item.label}
-                  </span>
-                  <p>{item.text}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-          <form className="form" onSubmit={handleSubmit}>
-            <div className="form-group">
-              <input type="text" placeholder={content.form.name} required />
-            </div>
-            <div className="form-group">
-              <input type="email" placeholder={content.form.email} required />
-            </div>
-            <div className="form-group">
-              <input type="text" placeholder={content.form.company} required />
-            </div>
-            <div className="form-group">
-              <input type="text" placeholder={content.form.industry} required />
-            </div>
-            <div className="form-group">
-              <textarea placeholder={content.form.message} required />
-            </div>
-            <button type="submit" className="btn btn-primary">{content.form.submit}</button>
-          </form>
+          ) : (
+            <form className="form" onSubmit={handleSubmit}>
+              <div className="form-group">
+                <input type="text" placeholder={content.form.company} required />
+              </div>
+              <div className="form-group">
+                <textarea placeholder={content.form.problem} required rows={4} />
+              </div>
+              <div className="form-group">
+                <input type="email" placeholder={content.form.email} required />
+              </div>
+              <button type="submit" className="btn btn-primary final-cta-button" data-track="contact-submit">
+                {content.form.submit}
+              </button>
+            </form>
+          )}
         </div>
       </div>
     </section>

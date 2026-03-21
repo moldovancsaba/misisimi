@@ -23,11 +23,11 @@ const anton = Anton({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.misisimi.com"),
-  title: "misisimi — Zero2Done Execution",
-  description: "misisimi is a client-first execution partner for SMEs. We embed AI into daily operations to increase efficiency and profitability.",
+  title: "misisimi — AI execution that goes live",
+  description: "Production-ready AI systems in weeks. No pilots. No hourly billing. Start with a diagnostic.",
   openGraph: {
-    title: "misisimi — Zero2Done Execution",
-    description: "misisimi is a client-first execution partner for SMEs. We embed AI into daily operations to increase efficiency and profitability.",
+    title: "misisimi — AI execution that goes live",
+    description: "Production-ready AI systems in weeks. No pilots. No hourly billing. Start with a diagnostic.",
     url: "https://www.misisimi.com",
     siteName: "misisimi",
     type: "website",
@@ -36,14 +36,14 @@ export const metadata: Metadata = {
         url: "/hero.png",
         width: 768,
         height: 768,
-        alt: "misisimi hero artwork",
+        alt: "MISISIMI hero artwork",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "misisimi — Zero2Done Execution",
-    description: "misisimi is a client-first execution partner for SMEs. We embed AI into daily operations to increase efficiency and profitability.",
+    title: "misisimi — AI execution that goes live",
+    description: "Production-ready AI systems in weeks. No pilots. No hourly billing. Start with a diagnostic.",
     images: ["/hero.png"],
   },
 };
