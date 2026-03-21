@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Anton, Noto_Sans, Noto_Sans_Hebrew } from "next/font/google";
+import { Noto_Sans, Noto_Sans_Hebrew, Sigmar } from "next/font/google";
 import "./globals.css";
 
 const notoSans = Noto_Sans({
@@ -14,7 +14,7 @@ const notoSansHebrew = Noto_Sans_Hebrew({
   display: "swap",
 });
 
-const anton = Anton({
+const sigmar = Sigmar({
   weight: "400",
   subsets: ["latin", "latin-ext"],
   variable: "--font-display-latin",
@@ -59,7 +59,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${notoSans.variable} ${notoSansHebrew.variable} ${anton.variable}`}>
+    <html lang="en" className={`${notoSans.variable} ${notoSansHebrew.variable} ${sigmar.variable}`}>
       <body>{children}</body>
     </html>
   );

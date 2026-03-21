@@ -74,8 +74,8 @@ h4 {
   margin: 0;
   font-family: var(--font-heading-display);
   font-weight: 400;
-  line-height: 0.94;
-  letter-spacing: -0.03em;
+  line-height: 1;
+  letter-spacing: -0.015em;
 }
 
 .locale-shell[data-locale='ru'] h1,
