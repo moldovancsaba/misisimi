@@ -4,14 +4,13 @@ type TrustProps = {
   content: Dictionary['trust'];
 };
 
-export default function Problem({ content }: TrustProps) {
+export default function Trust({ content }: TrustProps) {
   return (
     <section id="trust" className="section section-dark" aria-labelledby="trust-title">
       <div className="container">
         <div className="section-header reveal">
           <p className="section-kicker">{content.kicker}</p>
           <h2 id="trust-title" className="section-title">{content.title}</h2>
-          <p className="section-subtitle">{content.subtitle}</p>
         </div>
 
         <div className="metric-grid reveal">

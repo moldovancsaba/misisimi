@@ -1,7 +1,10 @@
 import type { Metadata } from 'next';
-import { notFound } from 'next/navigation';
+import Footer from '@/components/layout/Footer';
+import Navbar from '@/components/layout/Navbar';
+import StickyCTA from '@/components/home/StickyCTA';
 import { getDictionary } from '@/i18n/dictionaries';
 import { isLocale, localeInfo, locales, type Locale } from '@/i18n/config';
+import { notFound } from 'next/navigation';
 
 type LocaleLayoutProps = {
   children: React.ReactNode;
@@ -12,9 +15,7 @@ export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
 
-export async function generateMetadata({
-  params
-}: LocaleLayoutProps): Promise<Metadata> {
+export async function generateMetadata({ params }: LocaleLayoutProps): Promise<Metadata> {
   const { locale } = await params;
 
   if (!isLocale(locale)) {
@@ -57,10 +58,7 @@ export async function generateMetadata({
   };
 }
 
-export default async function LocaleLayout({
-  children,
-  params
-}: LocaleLayoutProps) {
+export default async function LocaleLayout({ children, params }: LocaleLayoutProps) {
   const { locale } = await params;
 
   if (!isLocale(locale)) {
@@ -68,15 +66,19 @@ export default async function LocaleLayout({
   }
 
   const info = localeInfo[locale as Locale];
+  const dict = getDictionary(locale);
+  const localeOptions = locales.map((code) => ({
+    code,
+    nativeLabel: localeInfo[code].nativeLabel,
+    flag: localeInfo[code].flag
+  }));
 
   return (
-    <div
-      className="locale-shell"
-      data-locale={locale}
-      lang={locale}
-      dir={info.dir}
-    >
+    <div className="locale-shell" data-locale={locale} lang={locale} dir={info.dir}>
+      <Navbar locale={locale as Locale} nav={dict.nav} localeOptions={localeOptions} />
+      <StickyCTA locale={locale as Locale} label={dict.nav.stickyCta} />
       {children}
+      <Footer locale={locale as Locale} content={dict.footer} />
     </div>
   );
 }

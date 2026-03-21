@@ -3,15 +3,15 @@
 import { useState } from 'react';
 import { type Dictionary } from '@/i18n/dictionaries';
 
-type ContactFormProps = {
+type FinalCTAProps = {
   content: Dictionary['contact'];
 };
 
-export default function ContactForm({ content }: ContactFormProps) {
+export default function FinalCTA({ content }: FinalCTAProps) {
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
+  const handleSubmit = (event: React.FormEvent) => {
+    event.preventDefault();
     setSubmitted(true);
   };
 
@@ -20,7 +20,7 @@ export default function ContactForm({ content }: ContactFormProps) {
       <div className="container final-cta-layout">
         <div className="final-cta-copy reveal">
           <p className="section-kicker">{content.kicker}</p>
-          <h2 id="contact-title" className="section-title section-title-left">{submitted ? content.success.title : content.title}</h2>
+          <h2 id="contact-title" className="section-title">{submitted ? content.success.title : content.title}</h2>
           <ul className="cta-list">
             {(submitted ? content.success.points : content.points).map((item) => (
               <li key={item}>{item}</li>

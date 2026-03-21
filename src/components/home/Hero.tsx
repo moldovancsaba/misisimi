@@ -23,13 +23,6 @@ export default function Hero({ locale, content }: HeroProps) {
             >
               {content.primaryCta}
             </Link>
-            <Link
-              href={`/${locale}#process`}
-              className="btn btn-secondary"
-              data-track="hero-secondary-cta"
-            >
-              {content.secondaryCta}
-            </Link>
           </div>
         </div>
         <div className="hero-visual reveal">

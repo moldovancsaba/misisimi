@@ -1,23 +1,32 @@
+import Image from 'next/image';
 import { type Dictionary } from '@/i18n/dictionaries';
 
-type OutcomesProps = {
-  content: Dictionary['outcomes'];
+type CapabilitiesProps = {
+  content: Dictionary['capabilities'];
 };
 
-export default function Capabilities({ content }: OutcomesProps) {
+export default function Capabilities({ content }: CapabilitiesProps) {
   return (
-    <section id="outcomes" className="section" aria-labelledby="outcomes-title">
+    <section id="capabilities" className="section" aria-labelledby="capabilities-title">
       <div className="container">
         <div className="section-header reveal">
           <p className="section-kicker">{content.kicker}</p>
-          <h2 id="outcomes-title" className="section-title">{content.title}</h2>
+          <h2 id="capabilities-title" className="section-title">{content.title}</h2>
         </div>
 
-        <div className="outcome-grid">
+        <div className="comic-grid">
           {content.items.map((item) => (
-            <article key={item.title} className="outcome-card reveal">
-              <span className="outcome-icon" aria-hidden="true">{item.emoji}</span>
+            <article key={item.title} className="comic-card reveal">
               <h3>{item.title}</h3>
+              <div className="comic-visual">
+                <Image
+                  src={item.image}
+                  alt={item.title}
+                  fill
+                  sizes="(max-width: 720px) 100vw, (max-width: 1100px) 50vw, 33vw"
+                  className="comic-image"
+                />
+              </div>
             </article>
           ))}
         </div>

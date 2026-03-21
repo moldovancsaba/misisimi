@@ -5,14 +5,13 @@ type ProcessProps = {
   content: Dictionary['process'];
 };
 
-export default function Approach({ content }: ProcessProps) {
+export default function Process({ content }: ProcessProps) {
   return (
     <section id="process" className="section section-dark" aria-labelledby="process-title">
       <div className="container">
         <div className="section-header reveal">
           <p className="section-kicker">{content.kicker}</p>
           <h2 id="process-title" className="section-title">{content.title}</h2>
-          <p className="section-subtitle">{content.subtitle}</p>
         </div>
 
         <div className="step-grid">
