@@ -223,16 +223,30 @@
       "eyebrow": "Projekt tartomány",
       "title": "Credit skála",
       "labels": {
-        "examples": "Példák",
         "typicalEngagement": "Tipikus együttműködés",
         "use": "Mire jó"
       },
       "scale": [
-        { "type": "Kisebb fejlesztés", "credits": "1 credit" },
-        { "type": "Kisebb funkció", "credits": "2 credit" },
-        { "type": "Standard funkció", "credits": "3 credit" },
-        { "type": "Nagyobb modul", "credits": "5 credit" },
-        { "type": "Stratégiai komponens", "credits": "8 credit" }
+        {
+          "type": "Kisebb fejlesztés",
+          "credits": "1 credit"
+        },
+        {
+          "type": "Kisebb funkció",
+          "credits": "2 credit"
+        },
+        {
+          "type": "Standard funkció",
+          "credits": "3 credit"
+        },
+        {
+          "type": "Nagyobb modul",
+          "credits": "5 credit"
+        },
+        {
+          "type": "Stratégiai komponens",
+          "credits": "8 credit"
+        }
       ],
       "typicalProjectsLabel": "Tipikus projektek",
       "typicalProjectsValue": "25–60 credit (5 000–12 000 €+)",

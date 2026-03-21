@@ -223,16 +223,30 @@
       "eyebrow": "טווח פרויקט",
       "title": "סקאלת credits",
       "labels": {
-        "examples": "דוגמאות",
         "typicalEngagement": "היקף טיפוסי",
         "use": "למה זה משמש"
       },
       "scale": [
-        { "type": "שיפור קטן", "credits": "1 Credit" },
-        { "type": "פיצ'ר קטן", "credits": "2 Credits" },
-        { "type": "פיצ'ר סטנדרטי", "credits": "3 Credits" },
-        { "type": "מודול גדול", "credits": "5 Credits" },
-        { "type": "רכיב אסטרטגי", "credits": "8 Credits" }
+        {
+          "type": "שיפור קטן",
+          "credits": "1 Credit"
+        },
+        {
+          "type": "פיצ'ר קטן",
+          "credits": "2 Credits"
+        },
+        {
+          "type": "פיצ'ר סטנדרטי",
+          "credits": "3 Credits"
+        },
+        {
+          "type": "מודול גדול",
+          "credits": "5 Credits"
+        },
+        {
+          "type": "רכיב אסטרטגי",
+          "credits": "8 Credits"
+        }
       ],
       "typicalProjectsLabel": "פרויקטים טיפוסיים",
       "typicalProjectsValue": "25–60 credits (€5,000–€12,000+)",

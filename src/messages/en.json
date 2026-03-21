@@ -223,16 +223,30 @@
       "eyebrow": "Project Range",
       "title": "Credit Scale",
       "labels": {
-        "examples": "Examples",
         "typicalEngagement": "Typical Engagement",
         "use": "Use"
       },
       "scale": [
-        { "type": "Small improvement", "credits": "1 Credit" },
-        { "type": "Minor feature", "credits": "2 Credits" },
-        { "type": "Standard feature", "credits": "3 Credits" },
-        { "type": "Large module", "credits": "5 Credits" },
-        { "type": "Strategic component", "credits": "8 Credits" }
+        {
+          "type": "Small improvement",
+          "credits": "1 Credit"
+        },
+        {
+          "type": "Minor feature",
+          "credits": "2 Credits"
+        },
+        {
+          "type": "Standard feature",
+          "credits": "3 Credits"
+        },
+        {
+          "type": "Large module",
+          "credits": "5 Credits"
+        },
+        {
+          "type": "Strategic component",
+          "credits": "8 Credits"
+        }
       ],
       "typicalProjectsLabel": "Typical projects",
       "typicalProjectsValue": "25–60 credits (€5,000 – €12,000+)",

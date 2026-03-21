@@ -223,16 +223,30 @@
       "eyebrow": "Диапазон проекта",
       "title": "Шкала credit-ов",
       "labels": {
-        "examples": "Примеры",
         "typicalEngagement": "Типичный объем",
         "use": "Для чего это нужно"
       },
       "scale": [
-        { "type": "Небольшое улучшение", "credits": "1 Credit" },
-        { "type": "Небольшая функция", "credits": "2 Credits" },
-        { "type": "Стандартная функция", "credits": "3 Credits" },
-        { "type": "Крупный модуль", "credits": "5 Credits" },
-        { "type": "Стратегический компонент", "credits": "8 Credits" }
+        {
+          "type": "Небольшое улучшение",
+          "credits": "1 Credit"
+        },
+        {
+          "type": "Небольшая функция",
+          "credits": "2 Credits"
+        },
+        {
+          "type": "Стандартная функция",
+          "credits": "3 Credits"
+        },
+        {
+          "type": "Крупный модуль",
+          "credits": "5 Credits"
+        },
+        {
+          "type": "Стратегический компонент",
+          "credits": "8 Credits"
+        }
       ],
       "typicalProjectsLabel": "Типичные проекты",
       "typicalProjectsValue": "25–60 credits (5 000–12 000 €+)",

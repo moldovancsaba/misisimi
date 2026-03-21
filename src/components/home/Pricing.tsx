@@ -77,7 +77,6 @@ export default function Pricing({ content }: PricingProps) {
               <h4 className="table-title">{content.projectRange.title}</h4>
               <div className="case-content">
                 <div className="case-part">
-                  <span className="part-label">{content.projectRange.labels.examples}</span>
                   <div className="credit-scale" role="table" aria-label={content.projectRange.title}>
                     {content.projectRange.scale.map((item) => (
                       <div key={item.type} className="credit-scale-row" role="row">
