@@ -36,7 +36,7 @@ export const metadata: Metadata = {
         url: "/hero.png",
         width: 768,
         height: 768,
-        alt: "MISISIMI hero artwork",
+        alt: "MISISIMI site illustration",
       },
     ],
   },

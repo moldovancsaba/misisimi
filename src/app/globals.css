@@ -152,13 +152,6 @@ section[id] {
   text-transform: uppercase;
 }
 
-.section-subtitle {
-  max-width: 42rem;
-  font-size: clamp(1rem, 1.5vw, 1.2rem);
-  color: var(--muted-strong);
-  text-wrap: balance;
-}
-
 .reveal {
   opacity: 1;
 }
@@ -205,11 +198,6 @@ section[id] {
   background: var(--gradient);
   color: #fff;
   box-shadow: 0 14px 34px rgba(138, 99, 255, 0.28);
-}
-
-.btn-secondary {
-  background: rgba(9, 10, 14, 0.95);
-  color: #fff;
 }
 
 .btn-nav {
@@ -632,6 +620,7 @@ section[id] {
   background: rgba(255, 255, 255, 0.04);
   font-size: 1.1rem;
   font-weight: 800;
+  unicode-bidi: plaintext;
 }
 
 .pricing-support,
@@ -657,6 +646,7 @@ section[id] {
   gap: 1rem;
   padding-bottom: 0.8rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  unicode-bidi: plaintext;
 }
 
 .pricing-example-row span {
@@ -753,7 +743,6 @@ section[id] {
 .locale-shell[dir='rtl'] .case-card,
 .locale-shell[dir='rtl'] .outcome-card,
 .locale-shell[dir='rtl'] .section-title-left,
-.locale-shell[dir='rtl'] .section-subtitle,
 .locale-shell[dir='rtl'] .footer-brand,
 .locale-shell[dir='rtl'] .footer-meta {
   text-align: right;

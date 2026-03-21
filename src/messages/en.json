@@ -2,7 +2,7 @@
   "meta": {
     "title": "misisimi — AI execution that goes live",
     "description": "Production-ready AI systems in weeks. No pilots. No hourly billing. Start with a diagnostic.",
-    "ogAlt": "MISISIMI hero artwork"
+    "ogAlt": "MISISIMI site illustration"
   },
   "nav": {
     "home": "Home",
@@ -20,13 +20,11 @@
     "title": "We turn AI into working systems in your business",
     "subtitle": "No pilots. No experiments. Production-ready AI in weeks.",
     "primaryCta": "Get Diagnostic (48h)",
-    "secondaryCta": "How it works",
-    "imageAlt": "MISISIMI hero artwork"
+    "imageAlt": "MISISIMI site illustration"
   },
   "trust": {
     "kicker": "Trust",
     "title": "Why teams start here",
-    "subtitle": "Fast scope. Fast rollout. Clear value.",
     "metrics": [
       {
         "value": "30–60%",
@@ -96,7 +94,6 @@
   "process": {
     "kicker": "Process",
     "title": "How it works",
-    "subtitle": "Simple path from first signal to live system.",
     "items": [
       {
         "step": "STEP 1",
@@ -118,7 +115,6 @@
   "capabilities": {
     "kicker": "Capabilities",
     "title": "Where we can create leverage",
-    "subtitle": "Common friction points and delivery paths.",
     "items": [
       {
         "title": "Operational Drag",
@@ -164,8 +160,7 @@
     "lineOne": "No hourly billing.",
     "lineTwo": "You pay for outcomes.",
     "rate": "1 Credit = €200",
-    "support": "Credits map to deliverables, not time.",
-    "examplesTitle": "Examples",
+    "support": "Credits map to delivery, not hours.",
     "examples": [
       {
         "name": "AI automation script",

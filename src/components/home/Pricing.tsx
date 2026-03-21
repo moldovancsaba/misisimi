@@ -21,7 +21,6 @@ export default function Pricing({ content }: PricingProps) {
         </div>
 
         <aside className="pricing-panel reveal">
-          <h3>{content.examplesTitle}</h3>
           <div className="pricing-example-list">
             {content.examples.map((item) => (
               <div key={item.name} className="pricing-example-row">
