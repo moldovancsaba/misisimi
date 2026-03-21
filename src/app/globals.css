@@ -1078,7 +1078,22 @@ section[id] {
   position: relative;
   overflow: hidden;
   padding: 96px 0 72px;
-  background: var(--background);
+  background: #030303 !important;
+  background-image: none !important;
+}
+
+.hero::before,
+.hero::after,
+.hero-grid::before,
+.hero-grid::after,
+.hero-content::before,
+.hero-content::after,
+.hero-visual::before,
+.hero-visual::after,
+.hero-art-wrapper::before,
+.hero-art-wrapper::after {
+  display: none !important;
+  content: none !important;
 }
 
 .hero-grid {
@@ -1088,11 +1103,15 @@ section[id] {
   align-items: center;
   position: relative;
   z-index: 1;
+  background: transparent !important;
+  background-image: none !important;
 }
 
 .hero-content {
   position: relative;
   z-index: 10;
+  background: transparent !important;
+  background-image: none !important;
 }
 
 .large-logo-wrapper {
@@ -1138,6 +1157,7 @@ section[id] {
 
 .hero-btn-primary {
   background: #8A63FF;
+  background-image: none !important;
   color: #FFFFFF;
   border: 4px solid #FFFFFF !important;
   box-shadow: 0 10px 24px rgba(138, 99, 255, 0.28);
@@ -1150,6 +1170,7 @@ section[id] {
 
 .hero-btn-secondary {
   background: #101018;
+  background-image: none !important;
   color: #FFFFFF;
   border: 4px solid #FFFFFF;
   -webkit-backdrop-filter: none;
@@ -1165,6 +1186,8 @@ section[id] {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: transparent !important;
+  background-image: none !important;
 }
 
 .hero-art-wrapper {
@@ -1174,6 +1197,7 @@ section[id] {
   overflow: hidden;
   border-radius: 28px;
   background: #09090c;
+  background-image: none !important;
 }
 
 .hero-image {
@@ -1183,6 +1207,7 @@ section[id] {
   border-radius: 28px;
   border: 4px solid rgba(255, 255, 255, 0.16);
   background: #09090c;
+  background-image: none !important;
   filter: none;
   position: relative;
   z-index: 1;
