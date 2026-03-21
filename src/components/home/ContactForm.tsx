@@ -1,13 +1,17 @@
 'use client';
 
 import { useState } from 'react';
+import { type Dictionary } from '@/i18n/dictionaries';
 
-export default function ContactForm() {
+type ContactFormProps = {
+  content: Dictionary['contact'];
+};
+
+export default function ContactForm({ content }: ContactFormProps) {
   const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Simulate form submission
     setSubmitted(true);
   };
 
@@ -16,13 +20,13 @@ export default function ContactForm() {
       <section id="contact" className="section-padding">
         <div className="container">
           <div className="contact-success">
-            <h2 className="section-title">Diagnostic Requested</h2>
-            <p className="contact-success-text">Thank you. We&apos;ll review your business profile and contact you within 24–72 hours.</p>
+            <h2 className="section-title">{content.success.title}</h2>
+            <p className="contact-success-text">{content.success.text}</p>
             <button
               onClick={() => setSubmitted(false)}
               className="btn btn-primary contact-success-btn"
             >
-              Back to Form
+              {content.success.back}
             </button>
           </div>
         </div>
@@ -35,43 +39,39 @@ export default function ContactForm() {
       <div className="container">
         <div className="contact-grid">
           <div className="contact-info">
-            <h2 className="section-title">Get Your AI Diagnostic</h2>
-            <p>Start with a clear understanding of where AI fits your business. We review your operations, identify the best AI opportunity, and outline the fastest path to implementation.</p>
+            <h2 className="section-title">{content.title}</h2>
+            <p>{content.description}</p>
             <div className="contact-trust-list">
-              <div className="contact-trust-row">
-                <span className="part-label">✨ Response</span>
-                <p>Initial reply within 24-72 hours.</p>
-              </div>
-              <div className="contact-trust-row">
-                <span className="part-label part-label-primary">🛠️ Engagement</span>
-                <p>Diagnostic first, then scoped delivery based on clear implementation priorities.</p>
-              </div>
-              <div className="contact-trust-row">
-                <span className="part-label part-label-secondary">🌐 Scope</span>
-                <p>Suitable for automation, internal tools, applied AI systems, and operational integration projects.</p>
-              </div>
+              {content.trust.map((item, index) => (
+                <div key={`${item.label}-${index}`} className="contact-trust-row">
+                  <span className={`part-label ${index === 1 ? 'part-label-primary' : index === 2 ? 'part-label-secondary' : ''}`}>
+                    {item.emoji} {item.label}
+                  </span>
+                  <p>{item.text}</p>
+                </div>
+              ))}
             </div>
           </div>
           <form className="form" onSubmit={handleSubmit}>
             <div className="form-group">
-              <input type="text" placeholder="Name" required />
+              <input type="text" placeholder={content.form.name} required />
             </div>
             <div className="form-group">
-              <input type="email" placeholder="Email" required />
+              <input type="email" placeholder={content.form.email} required />
             </div>
             <div className="form-group">
-              <input type="text" placeholder="Company" required />
+              <input type="text" placeholder={content.form.company} required />
             </div>
             <div className="form-group">
-              <input type="text" placeholder="Industry" required />
+              <input type="text" placeholder={content.form.industry} required />
             </div>
             <div className="form-group">
-              <textarea placeholder="Tell us about the core complexity or bottleneck you want to solve" required />
+              <textarea placeholder={content.form.message} required />
             </div>
-            <button type="submit" className="btn btn-primary">Request Free Diagnostic</button>
+            <button type="submit" className="btn btn-primary">{content.form.submit}</button>
           </form>
         </div>
       </div>
     </section>
-  )
+  );
 }

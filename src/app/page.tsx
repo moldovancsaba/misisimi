@@ -1,29 +1,6 @@
-'use client';
+import { redirect } from 'next/navigation';
+import { defaultLocale } from '@/i18n/config';
 
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
-import Hero from "@/components/home/Hero";
-import Problem from "@/components/home/Problem";
-import Solution from "@/components/home/Approach";
-import WhatWeBuild from "@/components/home/Capabilities";
-import Pricing from "@/components/home/Pricing";
-import UseCases from "@/components/home/UseCases";
-import FAQ from "@/components/home/FAQ";
-import ContactForm from "@/components/home/ContactForm";
-
-export default function Home() {
-  const sections = [
-    <Navbar key="navbar" />,
-    <Hero key="hero" />,
-    <Problem key="problem" />,
-    <WhatWeBuild key="capabilities" />,
-    <Solution key="solution" />,
-    <Pricing key="pricing" />,
-    <UseCases key="use-cases" />,
-    <FAQ key="faq" />,
-    <ContactForm key="contact" />,
-    <Footer key="footer" />
-  ];
-
-  return <main id="top">{sections}</main>;
+export default function RootPage() {
+  redirect(`/${defaultLocale}`);
 }

@@ -38,6 +38,22 @@ html, body {
   -webkit-font-smoothing: antialiased;
 }
 
+.locale-shell[dir="rtl"] {
+  direction: rtl;
+}
+
+.locale-shell[data-locale="ru"] h1,
+.locale-shell[data-locale="ru"] h2,
+.locale-shell[data-locale="ru"] h3,
+.locale-shell[data-locale="ru"] h4,
+.locale-shell[data-locale="he"] h1,
+.locale-shell[data-locale="he"] h2,
+.locale-shell[data-locale="he"] h3,
+.locale-shell[data-locale="he"] h4 {
+  font-family: 'Inter', system-ui, sans-serif;
+  letter-spacing: -0.02em;
+}
+
 h1, h2, h3, h4 {
   font-family: 'Sora', sans-serif;
   color: #FFFFFF !important;
@@ -726,6 +742,40 @@ section[id] {
   align-items: center;
 }
 
+.locale-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-left: 0.5rem;
+}
+
+.locale-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.25rem;
+  padding: 0.4rem 0.75rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.84rem;
+  font-weight: 700;
+  transition: border-color 0.2s ease, background 0.2s ease, color 0.2s ease;
+}
+
+.locale-link:hover {
+  color: var(--text);
+  border-color: rgba(255, 255, 255, 0.22);
+}
+
+.locale-link-active {
+  color: var(--text);
+  border-color: var(--primary);
+  background: rgba(83, 224, 255, 0.08);
+}
+
 .nav-item {
   font-size: 0.95rem;
   font-weight: 500;
@@ -871,6 +921,13 @@ section[id] {
     border-radius: 22px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
   }
+  .locale-switcher {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 0;
+    margin-top: 0.2rem;
+  }
   .nav-links.nav-links-open {
     display: flex;
   }
@@ -891,6 +948,9 @@ section[id] {
   .contact-grid {
     grid-template-columns: 1fr;
     text-align: center;
+  }
+  .form {
+    margin: 0 auto;
   }
   .cta-banner {
     padding: 3rem 1.75rem;
@@ -1081,6 +1141,36 @@ section[id] {
   filter: none;
   position: relative;
   z-index: 1;
+}
+
+.locale-shell[dir="rtl"] .hero-content,
+.locale-shell[dir="rtl"] .contact-info,
+.locale-shell[dir="rtl"] .form,
+.locale-shell[dir="rtl"] .case-content,
+.locale-shell[dir="rtl"] .faq-answer-content,
+.locale-shell[dir="rtl"] .footer-column,
+.locale-shell[dir="rtl"] .footer-brand {
+  text-align: right;
+}
+
+.locale-shell[dir="rtl"] .faq-question {
+  text-align: right;
+}
+
+.locale-shell[dir="rtl"] .capability-list li,
+.locale-shell[dir="rtl"] .outcome-list li {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.locale-shell[dir="rtl"] .footer-column a:hover {
+  transform: translateX(-6px);
+}
+
+.locale-shell[dir="rtl"] .footer-legal,
+.locale-shell[dir="rtl"] .nav-links,
+.locale-shell[dir="rtl"] .cta-group {
+  direction: rtl;
 }
 
 @media (max-width: 968px) {

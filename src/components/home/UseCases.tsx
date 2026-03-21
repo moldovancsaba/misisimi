@@ -1,42 +1,20 @@
-'use client';
-const cases = [
-  {
-    emoji: "⚙️",
-    title: "Operations Automation",
-    eyebrow: "Process Efficiency",
-    problem: "Manual workflows consume time and create bottlenecks.",
-    solution: "Automated workflows using AI + integrations.",
-    outcome: ["30–60% time reduction", "Fewer manual errors"]
-  },
-  {
-    emoji: "🤖",
-    title: "Customer Support AI",
-    eyebrow: "Service Operations",
-    problem: "High volume of repetitive customer queries.",
-    solution: "AI assistant trained on company data.",
-    outcome: ["Faster response times", "Reduced support workload"]
-  },
-  {
-    emoji: "📈",
-    title: "Data Insights & Forecasting",
-    eyebrow: "Commercial Intelligence",
-    problem: "Decisions made without structured data insights.",
-    solution: "Predictive models and dashboards.",
-    outcome: ["Better forecasting", "Improved decision quality"]
-  }
-];
+import { type Dictionary } from '@/i18n/dictionaries';
 
-export default function UseCases() {
+type UseCasesProps = {
+  content: Dictionary['useCases'];
+};
+
+export default function UseCases({ content }: UseCasesProps) {
   return (
     <section id="use-cases" className="section-padding">
       <div className="container">
         <div className="section-header">
-          <h2 className="section-title">Where AI creates immediate value</h2>
-          <p className="section-subtitle">Representative problem-solution-outcome patterns that translate well into fast, measurable implementations.</p>
+          <h2 className="section-title">{content.title}</h2>
+          <p className="section-subtitle">{content.subtitle}</p>
         </div>
         <div className="grid-3">
-          {cases.map((item, i) => (
-            <div key={i} className="card-group">
+          {content.items.map((item) => (
+            <div key={item.eyebrow} className="card-group">
               <span className="capability-eyebrow card-group-eyebrow">
                 <span>{item.emoji}</span>
                 <span className="eyebrow-text">{item.eyebrow}</span>
@@ -45,18 +23,18 @@ export default function UseCases() {
                 <h3>{item.title}</h3>
                 <div className="case-content">
                   <div className="case-part">
-                    <span className="part-label">Problem</span>
+                    <span className="part-label">{content.labels.problem}</span>
                     <p className="case-text">{item.problem}</p>
                   </div>
                   <div className="case-part">
-                    <span className="part-label part-label-primary">Solution</span>
+                    <span className="part-label part-label-primary">{content.labels.solution}</span>
                     <p className="case-text">{item.solution}</p>
                   </div>
                   <div className="case-part outcome">
-                    <span className="part-label part-label-secondary">Outcome</span>
+                    <span className="part-label part-label-secondary">{content.labels.outcome}</span>
                     <ul className="outcome-list">
-                      {item.outcome.map((text, j) => (
-                        <li key={j}>{text}</li>
+                      {item.outcome.map((text) => (
+                        <li key={text}>{text}</li>
                       ))}
                     </ul>
                   </div>

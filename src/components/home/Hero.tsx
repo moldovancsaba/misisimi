@@ -1,28 +1,32 @@
-'use client';
-import Link from 'next/link'
+import Link from 'next/link';
+import { type Dictionary } from '@/i18n/dictionaries';
+import { type Locale } from '@/i18n/config';
 
-export default function Hero() {
+type HeroProps = {
+  locale: Locale;
+  content: Dictionary['hero'];
+};
+
+export default function Hero({ locale, content }: HeroProps) {
   return (
     <section className="hero section-padding">
       <div className="container">
         <div className="hero-grid">
           <div className="hero-content">
-            <h1 className="hero-heading">Build and deploy practical AI systems for your business — without complexity</h1>
-            <p className="hero-subtitle">
-              We diagnose the right opportunity, design the right system, and implement AI solutions that automate workflows, reduce costs, and produce measurable operational value.
-            </p>
+            <h1 className="hero-heading">{content.title}</h1>
+            <p className="hero-subtitle">{content.subtitle}</p>
             <div className="cta-group">
-              <Link href="#contact" className="btn hero-btn-primary">🎯 Get Your AI Diagnostic</Link>
-              <Link href="#how-it-works" className="btn hero-btn-secondary">🛠️ See How It Works</Link>
+              <Link href={`/${locale}#contact`} className="btn hero-btn-primary">🎯 {content.primaryCta}</Link>
+              <Link href={`/${locale}#how-it-works`} className="btn hero-btn-secondary">🛠️ {content.secondaryCta}</Link>
             </div>
           </div>
           <div className="hero-visual">
             <div className="hero-art-wrapper">
-              <img src="/hero.png" alt="MISISIMI hero artwork" className="hero-image" />
+              <img src="/hero.png" alt={content.imageAlt} className="hero-image" />
             </div>
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }
