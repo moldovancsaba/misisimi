@@ -32,7 +32,8 @@ export default async function LocalizedHomePage({
   const dict = getDictionary(locale);
   const localeOptions = locales.map((code) => ({
     code,
-    nativeLabel: localeInfo[code].nativeLabel
+    nativeLabel: localeInfo[code].nativeLabel,
+    flag: localeInfo[code].flag
   }));
 
   const sections = [

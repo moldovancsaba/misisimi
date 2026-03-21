@@ -754,35 +754,63 @@ section[id] {
 .locale-switcher {
   display: inline-flex;
   align-items: center;
-  gap: 0.45rem;
   margin-left: 0.5rem;
 }
 
-.locale-link {
+.locale-select-wrap {
+  position: relative;
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  min-height: 2.25rem;
-  padding: 0.4rem 0.75rem;
+  min-height: 2.5rem;
+  min-width: 9.5rem;
+  padding: 0;
   border-radius: 999px;
   border: 1px solid rgba(255, 255, 255, 0.12);
   background: rgba(255, 255, 255, 0.03);
+  overflow: hidden;
+}
+
+.locale-select-globe,
+.locale-select-caret {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   color: var(--muted);
-  text-decoration: none;
+  pointer-events: none;
+}
+
+.locale-select-globe {
+  left: 0.8rem;
+  font-size: 0.95rem;
+}
+
+.locale-select-caret {
+  right: 0.8rem;
+  font-size: 0.8rem;
+}
+
+.locale-select {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 100%;
+  min-height: 2.5rem;
+  padding: 0.45rem 2rem 0.45rem 2.1rem;
+  border: 0;
+  background: transparent;
+  color: var(--text);
   font-size: 0.84rem;
   font-weight: 700;
-  transition: border-color 0.2s ease, background 0.2s ease, color 0.2s ease;
+  line-height: 1.2;
+  cursor: pointer;
 }
 
-.locale-link:hover {
-  color: var(--text);
-  border-color: rgba(255, 255, 255, 0.22);
+.locale-select:focus {
+  outline: none;
 }
 
-.locale-link-active {
-  color: var(--text);
-  border-color: var(--primary);
-  background: rgba(83, 224, 255, 0.08);
+.locale-select-wrap:focus-within {
+  border-color: rgba(255, 255, 255, 0.24);
+  background: rgba(255, 255, 255, 0.05);
 }
 
 .nav-item {
@@ -933,9 +961,12 @@ section[id] {
   .locale-switcher {
     width: 100%;
     justify-content: center;
-    flex-wrap: wrap;
     margin-left: 0;
     margin-top: 0.2rem;
+  }
+  .locale-select-wrap {
+    width: 100%;
+    max-width: 15rem;
   }
   .nav-links.nav-links-open {
     display: flex;
@@ -1035,6 +1066,8 @@ section[id] {
 
   .problem-item-landscape,
   .media-item-landscape {
+    flex: 0 0 auto;
+    width: 100%;
     height: auto;
   }
 }

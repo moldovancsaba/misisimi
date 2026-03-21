@@ -8,7 +8,7 @@ import { type Locale } from '@/i18n/config';
 type NavbarProps = {
   locale: Locale;
   nav: Dictionary['nav'];
-  localeOptions: Array<{ code: Locale; nativeLabel: string }>;
+  localeOptions: Array<{ code: Locale; nativeLabel: string; flag: string }>;
 };
 
 export default function Navbar({
@@ -20,6 +20,11 @@ export default function Navbar({
 
   const closeMenu = () => setIsOpen(false);
   const sectionHref = (id: string) => `/${locale}${id}`;
+  const handleLocaleChange = (nextLocale: Locale) => {
+    const hash = typeof window !== 'undefined' ? window.location.hash : '';
+    closeMenu();
+    window.location.href = `/${nextLocale}${hash}`;
+  };
 
   return (
     <nav className="navbar">
@@ -49,18 +54,22 @@ export default function Navbar({
           <Link href={sectionHref('#pricing')} className="nav-item" onClick={closeMenu}>{nav.pricing}</Link>
           <Link href={sectionHref('#faq')} className="nav-item" onClick={closeMenu}>{nav.faq}</Link>
           <Link href={sectionHref('#contact')} className="nav-item btn btn-nav" onClick={closeMenu}>{nav.contact}</Link>
-          <div className="locale-switcher" aria-label={nav.language}>
-            {localeOptions.map((option) => (
-              <Link
-                key={option.code}
-                href={`/${option.code}`}
-                className={`locale-link ${option.code === locale ? 'locale-link-active' : ''}`}
-                onClick={closeMenu}
-                lang={option.code}
+          <div className="locale-switcher">
+            <label className="locale-select-wrap" aria-label={nav.language}>
+              <span className="locale-select-globe" aria-hidden="true">🌐</span>
+              <select
+                className="locale-select"
+                value={locale}
+                onChange={(event) => handleLocaleChange(event.target.value as Locale)}
               >
-                {option.nativeLabel}
-              </Link>
-            ))}
+                {localeOptions.map((option) => (
+                  <option key={option.code} value={option.code} lang={option.code}>
+                    {option.flag} {option.nativeLabel}
+                  </option>
+                ))}
+              </select>
+              <span className="locale-select-caret" aria-hidden="true">▾</span>
+            </label>
           </div>
         </div>
       </div>
