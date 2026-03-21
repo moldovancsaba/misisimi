@@ -117,8 +117,8 @@
   },
   "capabilities": {
     "kicker": "Capabilities",
-    "title": "Comic card grid",
-    "subtitle": "One card. One idea.",
+    "title": "Where we can create leverage",
+    "subtitle": "Common friction points and delivery paths.",
     "items": [
       {
         "title": "Operational Drag",
@@ -179,7 +179,7 @@
     "cta": "Get Diagnostic (48h)"
   },
   "contact": {
-    "kicker": "Final CTA",
+    "kicker": "Start here",
     "title": "Get Diagnostic",
     "points": [
       "48h turnaround",

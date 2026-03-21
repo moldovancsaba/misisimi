@@ -49,7 +49,12 @@ export default function FinalCTA({ content }: FinalCTAProps) {
               <div className="form-group">
                 <input type="email" placeholder={content.form.email} required />
               </div>
-              <button type="submit" className="btn btn-primary final-cta-button" data-track="contact-submit">
+              <button
+                type="submit"
+                className="btn btn-primary final-cta-button"
+                data-track="contact-submit"
+                data-inline-cta
+              >
                 {content.form.submit}
               </button>
             </form>

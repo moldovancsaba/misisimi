@@ -117,8 +117,8 @@
   },
   "capabilities": {
     "kicker": "Képességek",
-    "title": "Képregény kártyarács",
-    "subtitle": "Egy kártya. Egy probléma.",
+    "title": "Ahol gyorsan értéket teremtünk",
+    "subtitle": "Tipikus súrlódások és megoldási irányok.",
     "items": [
       {
         "title": "Operatív súrlódás",
@@ -179,7 +179,7 @@
     "cta": "Diagnózis (48 óra)"
   },
   "contact": {
-    "kicker": "Utolsó CTA",
+    "kicker": "Kezdjük itt",
     "title": "Diagnózis kérése",
     "points": [
       "48 órás válasz",

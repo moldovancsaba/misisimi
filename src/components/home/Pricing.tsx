@@ -30,7 +30,7 @@ export default function Pricing({ content }: PricingProps) {
               </div>
             ))}
           </div>
-          <Link href="#contact" className="btn btn-primary" data-track="pricing-cta">
+          <Link href="#contact" className="btn btn-primary" data-track="pricing-cta" data-inline-cta>
             {content.cta}
           </Link>
         </aside>

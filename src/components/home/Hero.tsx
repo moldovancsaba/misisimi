@@ -20,6 +20,7 @@ export default function Hero({ locale, content }: HeroProps) {
               href={`/${locale}#contact`}
               className="btn btn-primary"
               data-track="hero-primary-cta"
+              data-inline-cta
             >
               {content.primaryCta}
             </Link>
