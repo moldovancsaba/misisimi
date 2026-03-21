@@ -110,6 +110,7 @@ section[id] {
   text-align: center;
   display: inline-block;
   max-width: 100%;
+  text-wrap: balance;
 }
 
 .bg-accent-soft {
@@ -124,6 +125,8 @@ section[id] {
   font-size: 1.15rem;
   line-height: 1.7;
   color: var(--muted);
+  text-wrap: pretty;
+  overflow-wrap: anywhere;
 }
 
 .grid-3 {
@@ -205,6 +208,7 @@ section[id] {
 .card h4 {
   font-size: clamp(1.2rem, 5.4cqi, 1.55rem);
   line-height: 1.12;
+  text-wrap: balance;
 }
 
 .card p,
@@ -228,6 +232,7 @@ section[id] {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: var(--muted);
+  text-wrap: balance;
 }
 
 .solution-output,
@@ -236,6 +241,7 @@ section[id] {
   line-height: 1.36;
   color: var(--muted);
   margin-top: auto;
+  overflow-wrap: anywhere;
 }
 
 .promo-card {
@@ -272,6 +278,7 @@ section[id] {
   font-size: clamp(0.94rem, 3.6cqi, 1.02rem);
   line-height: 1.28;
   color: var(--text);
+  overflow-wrap: anywhere;
 }
 
 .credit-scale-badge {
@@ -368,12 +375,14 @@ section[id] {
 .case-text {
   font-size: clamp(0.96rem, 3.7cqi, 1.04rem);
   line-height: 1.36;
+  overflow-wrap: anywhere;
 }
 
 .problem-opportunity {
   font-size: clamp(0.96rem, 3.7cqi, 1.04rem);
   line-height: 1.36;
   color: var(--muted);
+  overflow-wrap: anywhere;
 }
 
 .card-group,
@@ -1076,6 +1085,7 @@ section[id] {
   background-clip: border-box !important;
   -webkit-text-fill-color: #FFFFFF !important;
   text-shadow: none;
+  text-wrap: balance;
 }
 
 .hero-subtitle {
@@ -1084,6 +1094,8 @@ section[id] {
   max-width: 640px;
   margin-bottom: 2.5rem;
   color: #E2E8F0;
+  text-wrap: pretty;
+  overflow-wrap: anywhere;
 }
 
 .cta-group {
@@ -1305,6 +1317,8 @@ section[id] {
   color: var(--muted);
   line-height: 1.7;
   max-width: 300px;
+  text-wrap: pretty;
+  overflow-wrap: anywhere;
 }
 
 .footer-meta {

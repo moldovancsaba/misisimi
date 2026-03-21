@@ -6,25 +6,25 @@
   },
   "nav": {
     "home": "Home",
-    "services": "Services",
-    "howItWorks": "How It Works",
+    "services": "Work",
+    "howItWorks": "Process",
     "pricing": "Pricing",
-    "faq": "FAQ",
+    "faq": "Questions",
     "contact": "Contact",
     "openMenu": "Open navigation menu",
     "closeMenu": "Close navigation menu",
     "language": "Language"
   },
   "hero": {
-    "title": "Build and deploy practical AI systems for your business — without complexity",
-    "subtitle": "We diagnose the right opportunity, design the right system, and implement AI solutions that automate workflows, reduce costs, and produce measurable operational value.",
+    "title": "Practical AI systems that make the business run better",
+    "subtitle": "We find the right starting point, build the right system, and get it working inside day-to-day operations.",
     "primaryCta": "Get Your AI Diagnostic",
-    "secondaryCta": "See How It Works",
+    "secondaryCta": "How it works",
     "imageAlt": "MISISIMI hero artwork"
   },
   "problem": {
-    "title": "Most businesses know AI matters — but don’t know where to start",
-    "subtitle": "The problem is rarely a lack of interest. It is usually a lack of operational clarity, integration, and a realistic path to execution.",
+    "title": "Most teams know AI matters. The hard part is where to start.",
+    "subtitle": "Usually the blocker is not interest. It is messy processes, scattered data, disconnected tools, and no clear first move.",
     "labels": {
       "problem": "Problem",
       "businessImpact": "Business Impact",
@@ -35,59 +35,59 @@
         "emoji": "⚙️",
         "eyebrow": "Operational Drag",
         "image": "/01_operational_drag.png",
-        "title": "Manual work creates avoidable cost and throughput loss",
-        "problem": "Teams still rely on repetitive handoffs, spreadsheet work, and manual follow-up across core processes.",
+        "title": "Manual work slows the team down",
+        "problem": "Core workflows still depend on handoffs, spreadsheets, and manual follow-up.",
         "impact": [
-          "Longer cycle times",
-          "Higher operating cost",
-          "More avoidable human error"
+          "Slower cycle times",
+          "Higher cost",
+          "More avoidable errors"
         ],
-        "opportunity": "MISISIMI automates the bottlenecks so teams can focus on higher-value execution."
+        "opportunity": "We automate the bottlenecks so the team can focus on work that matters."
       },
       {
         "emoji": "🔮",
         "eyebrow": "Unused Data",
         "image": "/02_unused_data.png",
-        "title": "Business data exists, but it does not drive daily decisions",
-        "problem": "Important operational and commercial data is scattered across systems and rarely turned into actionable insight.",
+        "title": "Good data sits unused",
+        "problem": "Important business data lives across tools and rarely shapes day-to-day decisions.",
         "impact": [
-          "Slow decision-making",
-          "Weak forecasting",
-          "Missed optimization opportunities"
+          "Slower decisions",
+          "Weaker forecasting",
+          "Missed improvement chances"
         ],
-        "opportunity": "MISISIMI turns raw data into usable models, dashboards, and decision support."
+        "opportunity": "We turn raw data into useful views, models, and decision support."
       },
       {
         "emoji": "🔗",
         "eyebrow": "Fragmented Stack",
         "image": "/03_fragmented_stack.png",
-        "title": "Tools do not talk to each other in a usable workflow",
-        "problem": "Businesses often have multiple SaaS tools, but no integrated flow connecting data, actions, and business outcomes.",
+        "title": "Tools do not work as one system",
+        "problem": "You may already have the tools, but not the flow between data, actions, and outcomes.",
         "impact": [
           "Duplicate work",
-          "Broken process visibility",
-          "Low system leverage"
+          "Poor process visibility",
+          "Weak system leverage"
         ],
-        "opportunity": "MISISIMI connects tools, workflows, and AI logic into one operational system."
+        "opportunity": "We connect tools, workflows, and AI into one operating system."
       },
       {
         "emoji": "🎯",
         "eyebrow": "Execution Risk",
         "image": "/04_execution_risk.png",
-        "title": "AI sounds valuable, but buying and implementation feel unclear",
-        "problem": "Leaders know AI matters, but many projects stall because the path from idea to deployment feels expensive, risky, or vague.",
+        "title": "AI sounds useful, but the next step is fuzzy",
+        "problem": "Many projects stall because the path from idea to rollout feels expensive, risky, or vague.",
         "impact": [
-          "Delayed adoption",
-          "Poor prioritization",
-          "Wasted experimentation"
+          "Slower adoption",
+          "Weak prioritization",
+          "Wasteful experiments"
         ],
-        "opportunity": "MISISIMI starts with a diagnostic and translates AI into a scoped, practical rollout."
+        "opportunity": "We start with a diagnostic and turn AI into a practical next step."
       }
     ]
   },
   "services": {
-    "title": "What we actually deliver",
-    "subtitle": "Three service layers, each presented as a complete offer with scope, implementation components, and concrete outputs.",
+    "title": "What we deliver",
+    "subtitle": "Three ways to work with us. Each one is scoped, practical, and tied to a real outcome.",
     "labels": {
       "overview": "Overview",
       "includes": "Includes",
@@ -99,7 +99,7 @@
         "eyebrow": "AI Development",
         "image": "/05_ai_development.png",
         "title": "AI Development",
-        "body": "We design and build custom AI systems tailored to your operations and data model.",
+        "body": "We design and build AI systems around your operations and data.",
         "includes": [
           "Machine learning models",
           "NLP systems",
@@ -117,14 +117,14 @@
         "eyebrow": "AI Consulting",
         "image": "/06_ai_consulting.png",
         "title": "AI Consulting",
-        "body": "We help you identify where AI creates ROI, what to prioritize, and how to implement it.",
+        "body": "We help you decide where AI will pay off and what to do first.",
         "includes": [
           "AI opportunity mapping",
           "Data readiness assessment",
           "Roadmap creation"
         ],
         "output": [
-          "AI strategy document",
+          "AI strategy brief",
           "Prioritized use cases"
         ]
       },
@@ -133,22 +133,22 @@
         "eyebrow": "AI Automation Tools",
         "image": "/07_ai_automation_tools.png",
         "title": "AI Automation Tools",
-        "body": "We ship lightweight tools that automate repetitive work quickly and integrate with your existing stack.",
+        "body": "We ship lightweight tools that remove repetitive work fast.",
         "includes": [
           "Workflow automation",
           "AI assistants",
           "Internal productivity tools"
         ],
         "output": [
-          "Functional tool or script",
-          "Setup guide"
+          "Working tool or script",
+          "Quick setup guide"
         ]
       }
     ]
   },
   "approach": {
-    "title": "How engagement works from first diagnostic to production rollout",
-    "subtitle": "One engagement model: diagnose the opportunity, build the system, then deploy and improve it inside real business operations.",
+    "title": "How the work moves from first call to rollout",
+    "subtitle": "One simple model: find the right use case, build the system, then launch and improve it.",
     "labels": {
       "focus": "Focus",
       "execution": "Execution",
@@ -160,33 +160,33 @@
         "eyebrow": "Step 1",
         "image": "/08_step_1.png",
         "step": "Diagnose",
-        "title": "Find the highest-value AI opportunity first",
-        "description": "We review operations, data, constraints, and handoff points to identify where AI can create measurable business value.",
-        "output": "Diagnostic brief, prioritized use cases, and ROI direction"
+        "title": "Find the best place to start",
+        "description": "We review the workflow, data, and constraints to see where AI can create measurable value first.",
+        "output": "Diagnostic brief, priority use cases, and ROI direction"
       },
       {
         "emoji": "🛠️",
         "eyebrow": "Step 2",
         "image": "/09_step_2.png",
         "step": "Build",
-        "title": "Design and implement the right system",
-        "description": "We translate the selected opportunity into architecture, workflows, integrations, and production-ready engineering work.",
-        "output": "Solution design, implementation, and integrated delivery"
+        "title": "Build the right system",
+        "description": "We turn the chosen use case into architecture, workflows, integrations, and production-ready delivery.",
+        "output": "Solution design, implementation, and integrated rollout"
       },
       {
         "emoji": "🚀",
         "eyebrow": "Step 3",
         "image": "/10_step_3.png",
         "step": "Deploy",
-        "title": "Launch with ownership and iteration",
-        "description": "We deploy the system into real operations, validate outcomes, and refine performance based on live usage.",
-        "output": "Production release, monitoring, and an optimization loop"
+        "title": "Launch, learn, improve",
+        "description": "We put the system into live operations, check the outcome, and refine it based on real usage.",
+        "output": "Production release, monitoring, and ongoing optimization"
       }
     ]
   },
   "pricing": {
-    "title": "Pricing aligned with delivered capabilities — not hours",
-    "subtitle": "Pricing is structured around deliverables and business scope, not time spent. The diagnostic is the entry point, then project scope expands through value credits.",
+    "title": "Pricing tied to delivered value — not hours",
+    "subtitle": "Start with a diagnostic. Then scope the work in value credits, based on what actually needs to be delivered.",
     "principle": {
       "eyebrow": "Pricing Principle",
       "title": "Value Credit System",
@@ -198,11 +198,11 @@
       "rate": "1 Value Credit = €200",
       "bullets": [
         "No hourly billing",
-        "No hidden scope expansion",
+        "No surprise scope creep",
         "Cost tied to deliverables",
-        "Full transparency upfront"
+        "Clear from the start"
       ],
-      "benefit": "Commercial scope stays tied to outputs, which makes planning, approval, and expectation-setting much clearer."
+      "benefit": "The cost stays tied to concrete outcomes, which makes planning much easier."
     },
     "entryOffer": {
       "eyebrow": "Entry Offer",
@@ -215,8 +215,8 @@
       "credits": "3–5 credits",
       "price": "(€600 – €1,000)",
       "timeline": "24–72 hours",
-      "output": "You get a clear problem framing, opportunity map, and recommendation for what to build next.",
-      "action": "Use the diagnostic to decide whether the next step should be automation, a custom system, or a phased delivery roadmap.",
+      "output": "A clear problem frame, opportunity map, and next-step recommendation.",
+      "action": "From there it is easy to choose between automation, a custom system, or a phased rollout.",
       "cta": "Get Diagnostic"
     },
     "projectRange": {
@@ -250,12 +250,12 @@
       ],
       "typicalProjectsLabel": "Typical projects",
       "typicalProjectsValue": "25–60 credits (€5,000 – €12,000+)",
-      "use": "This gives a realistic range for phased delivery instead of an abstract estimate disconnected from deliverables."
+      "use": "A practical reference for size and cost before you commit to a larger rollout."
     }
   },
   "useCases": {
-    "title": "Where AI creates immediate value",
-    "subtitle": "Representative problem-solution-outcome patterns that translate well into fast, measurable implementations.",
+    "title": "Where AI creates value fastest",
+    "subtitle": "A few common problem-solution-outcome patterns that turn into measurable wins quickly.",
     "labels": {
       "problem": "Problem",
       "solution": "Solution",
@@ -266,8 +266,8 @@
         "emoji": "⚙️",
         "eyebrow": "Process Efficiency",
         "title": "Operations Automation",
-        "problem": "Manual workflows consume time and create bottlenecks.",
-        "solution": "Automated workflows using AI plus integrations.",
+        "problem": "Manual workflows waste time and create bottlenecks.",
+        "solution": "AI-driven automation plus integrations.",
         "outcome": [
           "30–60% time reduction",
           "Fewer manual errors"
@@ -277,8 +277,8 @@
         "emoji": "🤖",
         "eyebrow": "Service Operations",
         "title": "Customer Support AI",
-        "problem": "High volume of repetitive customer queries.",
-        "solution": "AI assistants trained on company data and operating logic.",
+        "problem": "Support teams face the same questions again and again.",
+        "solution": "AI assistants trained on your company context and process rules.",
         "outcome": [
           "Faster response times",
           "Reduced support workload"
@@ -288,8 +288,8 @@
         "emoji": "📈",
         "eyebrow": "Commercial Intelligence",
         "title": "Data Insights and Forecasting",
-        "problem": "Decisions are made without structured operational insight.",
-        "solution": "Predictive models, dashboards, and data-backed decision support.",
+        "problem": "Teams make decisions without a clear operational picture.",
+        "solution": "Forecasting models, dashboards, and decision support built on real data.",
         "outcome": [
           "Better forecasting",
           "Higher decision quality"
@@ -299,7 +299,7 @@
   },
   "faq": {
     "title": "FAQ",
-    "subtitle": "The core questions buyers usually need answered before starting a diagnostic or delivery engagement.",
+    "subtitle": "The main questions teams usually want answered before starting.",
     "categories": [
       {
         "emoji": "🎯",
@@ -307,11 +307,11 @@
         "questions": [
           {
             "q": "What does MISISIMI actually deliver?",
-            "a": "We deliver AI diagnostics, strategic roadmaps, automation workflows, custom AI systems, and production-ready implementations integrated into existing business operations."
+            "a": "We deliver diagnostics, roadmaps, automations, custom AI systems, and working implementations inside real operations."
           },
           {
             "q": "Who is this for?",
-            "a": "The service is built for businesses that want applied AI outcomes without hiring a full internal AI team. It fits especially well when operations, customer workflows, or internal decision-making already generate useful data."
+            "a": "It fits teams that want useful AI outcomes without building a full internal AI function first."
           }
         ]
       },
@@ -321,11 +321,11 @@
         "questions": [
           {
             "q": "What happens during the diagnostic?",
-            "a": "The diagnostic reviews your business process, current tools, data readiness, bottlenecks, and opportunities. The output is a clear recommendation on what to automate or build first and why."
+            "a": "We review the workflow, current tools, data readiness, bottlenecks, and likely opportunities. You leave with a clear recommendation on what to build first and why."
           },
           {
             "q": "How long does it take?",
-            "a": "Diagnostics usually take 24 to 72 hours. Delivery projects typically run between 2 and 8 weeks depending on integration complexity, data quality, and scope."
+            "a": "Diagnostics usually take 24 to 72 hours. Delivery work often runs 2 to 8 weeks, depending on scope and integration depth."
           }
         ]
       },
@@ -335,11 +335,11 @@
         "questions": [
           {
             "q": "Do I need internal technical knowledge?",
-            "a": "No. MISISIMI handles architecture, implementation, and deployment. Your team mainly provides business context, access to relevant systems, and feedback during validation."
+            "a": "No. We handle architecture, build, and rollout. Your team mainly brings business context, access, and feedback."
           },
           {
             "q": "Do you integrate with existing systems?",
-            "a": "Yes. Integration is part of the delivery model. The goal is not a disconnected demo, but a working system that fits into your existing stack and operating process."
+            "a": "Yes. The goal is not a disconnected demo. It is a working system that fits your existing stack and process."
           }
         ]
       },
@@ -349,11 +349,11 @@
         "questions": [
           {
             "q": "How is pricing structured?",
-            "a": "Pricing starts with a fixed diagnostic and then expands through scope-based value credits. This keeps costs tied to actual deliverables rather than open-ended hourly billing."
+            "a": "Pricing starts with a fixed diagnostic, then grows through value credits tied to deliverables instead of open-ended hourly work."
           },
           {
             "q": "What happens after the diagnostic?",
-            "a": "After the diagnostic, you receive a recommendation for the next implementation step. That may be a focused automation, a custom AI system, or a phased roadmap, depending on what creates the best return."
+            "a": "You get a recommended next step. That can be a focused automation, a custom AI system, or a phased roadmap."
           }
         ]
       },
@@ -363,11 +363,11 @@
         "questions": [
           {
             "q": "What about data security?",
-            "a": "Only the data required for the engagement is accessed. The default approach is to minimize access, work inside existing operational boundaries, and define what data is needed before implementation starts."
+            "a": "We only access the data that is needed. The default approach is minimal access, clear boundaries, and agreed scope before implementation starts."
           },
           {
             "q": "Do you provide support?",
-            "a": "Yes. Post-deployment support and optimization can be included when the solution needs monitoring, iteration, or operational handoff."
+            "a": "Yes. Support and optimization can be included when the system needs monitoring, iteration, or handoff."
           }
         ]
       }
@@ -375,22 +375,22 @@
   },
   "contact": {
     "title": "Get Your AI Diagnostic",
-    "description": "Start with a clear understanding of where AI fits your business. We review your operations, identify the best AI opportunity, and outline the fastest path to implementation.",
+    "description": "Start with a clear view of where AI can help most. We review the workflow, spot the best opportunity, and outline the fastest path forward.",
     "trust": [
       {
         "label": "Response",
         "emoji": "✨",
-        "text": "Initial reply within 24–72 hours."
+        "text": "First reply within 24–72 hours."
       },
       {
         "label": "Engagement",
         "emoji": "🛠️",
-        "text": "Diagnostic first, then scoped delivery based on clear implementation priorities."
+        "text": "Diagnostic first. Clear delivery scope next."
       },
       {
         "label": "Scope",
         "emoji": "🌐",
-        "text": "Suitable for automation, internal tools, applied AI systems, and operational integration projects."
+        "text": "Fits automation, internal tools, applied AI systems, and integration-heavy work."
       }
     ],
     "form": {
@@ -398,21 +398,21 @@
       "email": "Email",
       "company": "Company",
       "industry": "Industry",
-      "message": "Tell us about the core complexity or bottleneck you want to solve",
+      "message": "Tell us which workflow, bottleneck, or repeated task you want to improve",
       "submit": "Request Free Diagnostic"
     },
     "success": {
       "title": "Diagnostic Requested",
-      "text": "Thank you. We'll review your business profile and contact you within 24–72 hours.",
+      "text": "Thank you. We will review the details and get back to you within 24–72 hours.",
       "back": "Back to Form"
     }
   },
   "footer": {
-    "tagline": "Turning AI concept into production-ready business value.",
+    "tagline": "From AI idea to something your team can actually use.",
     "meta": [
-      "Diagnostic-first engagement",
-      "Operational AI, automation, and integration delivery",
-      "Response target: 24–72 hours"
+      "Start with a diagnostic",
+      "Automation, AI systems, and integration",
+      "Reply target: 24–72 hours"
     ],
     "columns": {
       "solutions": "Solutions",
@@ -423,9 +423,9 @@
       "diagnostic": "AI Diagnostic",
       "customModels": "Custom Models",
       "automation": "Automation",
-      "services": "Services",
-      "howItWorks": "How It Works",
-      "faq": "FAQ",
+      "services": "Work",
+      "howItWorks": "Process",
+      "faq": "Questions",
       "contact": "Contact"
     },
     "copyright": "misisimi — Zero2Done Execution"

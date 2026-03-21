@@ -5,89 +5,89 @@
     "ogAlt": "misisimi hero grafika"
   },
   "nav": {
-    "home": "Főoldal",
-    "services": "Szolgáltatások",
-    "howItWorks": "Hogyan működik",
-    "pricing": "Árazás",
-    "faq": "GYIK",
+    "home": "Kezdő",
+    "services": "Ajánlat",
+    "howItWorks": "Folyamat",
+    "pricing": "Árak",
+    "faq": "Kérdések",
     "contact": "Kapcsolat",
     "openMenu": "Navigációs menü megnyitása",
     "closeMenu": "Navigációs menü bezárása",
     "language": "Nyelv"
   },
   "hero": {
-    "title": "Gyakorlati AI rendszerek tervezése és bevezetése a vállalkozásodba — felesleges komplexitás nélkül",
-    "subtitle": "Feltárjuk a megfelelő lehetőséget, megtervezzük a megfelelő rendszert, majd olyan AI megoldást vezetünk be, amely automatizál, költséget csökkent és mérhető üzleti eredményt hoz.",
+    "title": "Gyakorlati AI rendszerek, amelyek tényleg jobbá teszik a működést",
+    "subtitle": "Segítünk megtalálni a jó kezdőpontot, felépítjük a rendszert, és működésbe állítjuk a napi folyamatokban.",
     "primaryCta": "Kérem az AI diagnózist",
-    "secondaryCta": "Megnézem, hogyan működik",
+    "secondaryCta": "Hogyan működik",
     "imageAlt": "MISISIMI hero grafika"
   },
   "problem": {
-    "title": "A legtöbb cég érzi, hogy az AI fontos — csak nem tudja, hol kezdje",
-    "subtitle": "A gond ritkán az érdeklődés hiánya. Sokkal inkább az operatív tisztánlátás, az integráció és a reális megvalósítási út hiánya.",
+    "title": "A legtöbb cég tudja, hogy az AI számít — a nehéz rész az első lépés.",
+    "subtitle": "A gond általában nem az érdeklődés hiánya, hanem a kusza folyamatok, a szétszórt adatok és a tiszta következő lépés hiánya.",
     "labels": {
       "problem": "Probléma",
       "businessImpact": "Üzleti hatás",
-      "whatWeChange": "Mit változtatunk meg"
+      "whatWeChange": "Mit javítunk"
     },
     "items": [
       {
         "emoji": "⚙️",
         "eyebrow": "Operatív súrlódás",
         "image": "/01_operational_drag.png",
-        "title": "A manuális munka elkerülhető költséget és kapacitásveszteséget okoz",
-        "problem": "A csapatok még mindig ismétlődő átadásokra, táblázatokra és manuális utánkövetésre támaszkodnak a kulcsfolyamatokban.",
+        "title": "A manuális munka lassítja a csapatot",
+        "problem": "A kulcsfolyamatok még mindig átadásokon, táblázatokon és kézi utánkövetésen futnak.",
         "impact": [
-          "Hosszabb átfutási idő",
-          "Magasabb működési költség",
-          "Több elkerülhető emberi hiba"
+          "Lassabb átfutás",
+          "Magasabb költség",
+          "Több elkerülhető hiba"
         ],
-        "opportunity": "A MISISIMI automatizálja a szűk keresztmetszeteket, hogy a csapat a nagyobb értékű munkára koncentrálhasson."
+        "opportunity": "Az ismétlődő részeket automatizáljuk, hogy a csapat az érdemi munkára figyelhessen."
       },
       {
         "emoji": "🔮",
-        "eyebrow": "Kihasználatlan adatok",
+        "eyebrow": "Rejtett adat",
         "image": "/02_unused_data.png",
-        "title": "Az üzleti adatok megvannak, de nem támogatják a napi döntéseket",
-        "problem": "A fontos operatív és kereskedelmi adatok rendszerek között szóródnak szét, és ritkán válnak használható insighttá.",
+        "title": "Az adat megvan, de nem segít",
+        "problem": "A fontos üzleti adatok több rendszerben élnek, és ritkán jutnak el a napi döntésekig.",
         "impact": [
-          "Lassabb döntéshozatal",
-          "Gyengébb előrejelzés",
-          "Elszalasztott optimalizálási lehetőségek"
+          "Lassabb döntések",
+          "Gyengébb tervezés",
+          "Kimaradó javulások"
         ],
-        "opportunity": "A MISISIMI a nyers adatot használható modellekké, dashboardokká és döntéstámogatássá alakítja."
+        "opportunity": "A nyers adatból használható nézetet, modellt és döntéstámogatást készítünk."
       },
       {
         "emoji": "🔗",
         "eyebrow": "Széttöredezett stack",
         "image": "/03_fragmented_stack.png",
-        "title": "Az eszközök nem állnak össze valóban működő folyamattá",
-        "problem": "A cégeknek sok SaaS eszközük van, de nincs köztük olyan integrált áramlás, amely összekötné az adatot, az akciókat és az üzleti eredményeket.",
+        "title": "Az eszközök nem állnak össze egy folyamattá",
+        "problem": "Sok rendszer fut egymás mellett, de nincs köztük stabil adat- és munkafolyam.",
         "impact": [
-          "Duplikált munka",
-          "Hiányos folyamatláthatóság",
-          "Alacsony rendszerkihasználás"
+          "Több dupla munka",
+          "Gyenge folyamatkép",
+          "Kevés rendszerhaszon"
         ],
-        "opportunity": "A MISISIMI egyetlen operatív rendszerré kapcsolja össze az eszközöket, a workflow-kat és az AI logikát."
+        "opportunity": "Az eszközöket, a workflow-kat és az AI logikát egy működő rendszerré kapcsoljuk."
       },
       {
         "emoji": "🎯",
-        "eyebrow": "Megvalósítási kockázat",
+        "eyebrow": "Kockázatos indulás",
         "image": "/04_execution_risk.png",
-        "title": "Az AI értékesnek tűnik, de a beszerzés és a bevezetés nem átlátható",
-        "problem": "A vezetők érzik az AI jelentőségét, de sok projekt elakad, mert az ötlettől a bevezetésig vezető út drágának, kockázatosnak vagy homályosnak tűnik.",
+        "title": "Az AI ígéretes, de a következő lépés nem tiszta",
+        "problem": "Sok kezdeményezés azért áll meg, mert az ötlettől a bevezetésig vezető út drágának vagy homályosnak tűnik.",
         "impact": [
-          "Késleltetett adaptáció",
-          "Rossz priorizálás",
-          "Elpazarolt kísérletezés"
+          "Lassabb indulás",
+          "Gyenge prioritás",
+          "Pazarló kísérletek"
         ],
-        "opportunity": "A MISISIMI diagnózissal indul, és az AI-t kézzelfogható, jól körülhatárolt megvalósítási tervvé fordítja le."
+        "opportunity": "Diagnózissal kezdünk, és egy vállalható következő lépést adunk."
       }
     ]
   },
   "services": {
-    "title": "Amit ténylegesen szállítunk",
-    "subtitle": "Három szolgáltatási réteg, mindegyik teljes ajánlatként bemutatva: fókusz, megvalósítási elemek és konkrét eredmények.",
+    "title": "Amit szállítunk",
+    "subtitle": "Három együttműködési forma. Mindegyik világos scope-pal és kézzelfogható eredménnyel.",
     "labels": {
       "overview": "Áttekintés",
       "includes": "Tartalmazza",
@@ -99,7 +99,7 @@
         "eyebrow": "AI fejlesztés",
         "image": "/05_ai_development.png",
         "title": "AI fejlesztés",
-        "body": "Egyedi AI rendszereket tervezünk és építünk a működésetekhez és adatmodellhez igazítva.",
+        "body": "AI rendszereket tervezünk és építünk a működésetekhez és adataitokhoz igazítva.",
         "includes": [
           "Gépi tanulási modellek",
           "NLP rendszerek",
@@ -117,23 +117,23 @@
         "eyebrow": "AI tanácsadás",
         "image": "/06_ai_consulting.png",
         "title": "AI tanácsadás",
-        "body": "Segítünk meghatározni, hol termel valós ROI-t az AI, mit érdemes előre venni, és hogyan érdemes bevezetni.",
+        "body": "Segítünk eldönteni, hol térül meg az AI, és mi legyen az első lépés.",
         "includes": [
           "AI lehetőségtérkép",
           "Adatérettségi felmérés",
           "Roadmap készítés"
         ],
         "output": [
-          "AI stratégiai dokumentum",
-          "Prioritásba rendezett use case-ek"
+          "AI stratégiai brief",
+          "Priorizált use case-ek"
         ]
       },
       {
         "emoji": "⚡",
-        "eyebrow": "AI automatizációs eszközök",
+        "eyebrow": "AI eszközök",
         "image": "/07_ai_automation_tools.png",
-        "title": "AI automatizációs eszközök",
-        "body": "Könnyű, gyorsan bevezethető eszközöket szállítunk, amelyek automatizálják az ismétlődő munkát és illeszkednek a meglévő rendszerhez.",
+        "title": "AI eszközök",
+        "body": "Gyors AI eszközöket adunk az ismétlődő munka levételére.",
         "includes": [
           "Workflow automatizáció",
           "AI asszisztensek",
@@ -141,14 +141,14 @@
         ],
         "output": [
           "Működő eszköz vagy script",
-          "Beállítási útmutató"
+          "Rövid beállítási leírás"
         ]
       }
     ]
   },
   "approach": {
-    "title": "Így zajlik az együttműködés az első diagnózistól az éles bevezetésig",
-    "subtitle": "Egyetlen működési modell: feltárjuk a lehetőséget, felépítjük a rendszert, majd bevezetjük és finomhangoljuk a valódi üzemi környezetben.",
+    "title": "Így jutunk el az első egyeztetéstől az éles működésig",
+    "subtitle": "Egyszerű menet: kiválasztjuk a jó use case-t, felépítjük a rendszert, majd bevezetjük és finomítjuk.",
     "labels": {
       "focus": "Fókusz",
       "execution": "Megvalósítás",
@@ -160,33 +160,33 @@
         "eyebrow": "1. lépés",
         "image": "/08_step_1.png",
         "step": "Diagnózis",
-        "title": "Először a legnagyobb értékű AI lehetőséget találjuk meg",
-        "description": "Átnézzük a működést, az adatokat, a korlátokat és az átadási pontokat, hogy azonosítsuk, hol hozhat az AI mérhető üzleti értéket.",
-        "output": "Diagnosztikai összefoglaló, priorizált use case-ek és ROI irány"
+        "title": "Megtaláljuk a legjobb kezdőpontot",
+        "description": "Átnézzük a folyamatot, az adatokat és a korlátokat, hogy lássuk, hol hoz először mérhető értéket az AI.",
+        "output": "Diagnosztikai összefoglaló, prioritási lista és ROI-irány"
       },
       {
         "emoji": "🛠️",
         "eyebrow": "2. lépés",
         "image": "/09_step_2.png",
         "step": "Építés",
-        "title": "Megtervezzük és megvalósítjuk a megfelelő rendszert",
-        "description": "A kiválasztott lehetőséget architektúrává, workflow-vá, integrációvá és éles fejlesztési feladattá bontjuk.",
-        "output": "Megoldástervezés, implementáció és integrált szállítás"
+        "title": "Felépítjük a jó rendszert",
+        "description": "A kiválasztott use case-ből architektúrát, workflow-t, integrációt és éles szállítást csinálunk.",
+        "output": "Megoldásterv, implementáció és integrált bevezetés"
       },
       {
         "emoji": "🚀",
         "eyebrow": "3. lépés",
         "image": "/10_step_3.png",
-        "step": "Bevezetés",
-        "title": "Éles indulás felelősséggel és iterációval",
-        "description": "A rendszert a valós működésbe helyezzük, validáljuk az eredményeket, majd élő használat alapján finomítjuk a teljesítményt.",
-        "output": "Éles release, monitorozás és optimalizációs ciklus"
+        "step": "Indulás",
+        "title": "Elindítjuk, mérjük, javítjuk",
+        "description": "Éles működésbe tesszük a rendszert, megnézzük az eredményt, majd valós használat alapján finomítunk.",
+        "output": "Éles indulás, monitorozás és folyamatos optimalizálás"
       }
     ]
   },
   "pricing": {
-    "title": "Árazás a szállított képességekhez igazítva — nem óradíj alapon",
-    "subtitle": "Az árazás deliverable-ök és üzleti scope alapján épül fel, nem ledolgozott idő alapján. A belépőpont a diagnózis, utána a scope value crediteken keresztül bővül.",
+    "title": "Az árazás a szállított értékhez igazodik — nem az órákhoz",
+    "subtitle": "Először diagnózis. Utána jól körülhatárolt scope value creditekben.",
     "principle": {
       "eyebrow": "Árazási elv",
       "title": "Value Credit rendszer",
@@ -197,12 +197,12 @@
       },
       "rate": "1 Value Credit = 200 €",
       "bullets": [
-        "Nincs óradíjas elszámolás",
-        "Nincs rejtett scope-növekedés",
-        "A költség a deliverable-ökhöz kötött",
-        "Teljes átláthatóság előre"
+        "Nincs óradíj",
+        "Nincs meglepetés scope-bővülés",
+        "A költség a kimenethez kötött",
+        "Minden tiszta az elején"
       ],
-      "benefit": "Az üzleti scope közvetlenül az eredményekhez kötődik, így a tervezés, jóváhagyás és elváráskezelés sokkal tisztább."
+      "benefit": "Így a költség végig a konkrét eredményhez kötődik."
     },
     "entryOffer": {
       "eyebrow": "Belépő ajánlat",
@@ -210,13 +210,13 @@
       "labels": {
         "scope": "Scope",
         "output": "Kimenet",
-        "action": "Következő lépés"
+        "action": "Tovább"
       },
       "credits": "3–5 credit",
       "price": "(600–1 000 €)",
       "timeline": "24–72 óra",
-      "output": "Világos probléma-keretet, lehetőségtérképet és ajánlást kapsz arra, hogy mit érdemes megépíteni következőként.",
-      "action": "A diagnózis alapján eldönthető, hogy a következő lépés automatizáció, egyedi rendszer vagy egy fázisolt megvalósítási roadmap legyen.",
+      "output": "Világos problémakép, lehetőségtérkép és javasolt következő lépés.",
+      "action": "Ebből gyorsan eldől, hogy automatizáció, egyedi rendszer vagy fokozatos rollout érdemes-e.",
       "cta": "Kérem a diagnózist"
     },
     "projectRange": {
@@ -250,12 +250,12 @@
       ],
       "typicalProjectsLabel": "Tipikus projektek",
       "typicalProjectsValue": "25–60 credit (5 000–12 000 €+)",
-      "use": "Ez reális tartományt ad a fázisolt szállításhoz, egy homályos, deliverable-öktől elszakadt becslés helyett."
+      "use": "Reális képet ad a várható méretről és költségről."
     }
   },
   "useCases": {
-    "title": "Ahol az AI azonnali értéket teremt",
-    "subtitle": "Olyan tipikus probléma–megoldás–eredmény minták, amelyek gyorsan és mérhetően ültethetők át a gyakorlatba.",
+    "title": "Ahol az AI a leggyorsabban hoz értéket",
+    "subtitle": "Tipikus probléma–megoldás–eredmény minták, amelyekből gyorsan lesz mérhető haszon.",
     "labels": {
       "problem": "Probléma",
       "solution": "Megoldás",
@@ -266,8 +266,8 @@
         "emoji": "⚙️",
         "eyebrow": "Folyamathatékonyság",
         "title": "Működési automatizáció",
-        "problem": "A manuális workflow-k időt visznek el és szűk keresztmetszeteket hoznak létre.",
-        "solution": "AI-val és integrációval támogatott automatizált workflow-k.",
+        "problem": "A kézi folyamatok időt visznek el és szűk keresztmetszetet okoznak.",
+        "solution": "AI-alapú automatizáció integrációkkal.",
         "outcome": [
           "30–60%-os időmegtakarítás",
           "Kevesebb manuális hiba"
@@ -277,8 +277,8 @@
         "emoji": "🤖",
         "eyebrow": "Szolgáltatási működés",
         "title": "Ügyfélszolgálati AI",
-        "problem": "Nagy mennyiségű ismétlődő ügyfélkérdés terheli a csapatot.",
-        "solution": "Céges tudásra és működési logikára tanított AI asszisztensek.",
+        "problem": "A támogatási csapat újra és újra ugyanazokat a kérdéseket kapja.",
+        "solution": "AI asszisztensek a cég tudására és működésére tanítva.",
         "outcome": [
           "Gyorsabb válaszidő",
           "Kisebb support terhelés"
@@ -288,8 +288,8 @@
         "emoji": "📈",
         "eyebrow": "Kereskedelmi intelligencia",
         "title": "Adatalapú insight és előrejelzés",
-        "problem": "A döntések strukturált operatív insight nélkül születnek meg.",
-        "solution": "Prediktív modellek, dashboardok és adatalapú döntéstámogatás.",
+        "problem": "A csapatok tiszta operatív kép nélkül döntenek.",
+        "solution": "Előrejelző modellek, dashboardok és adatvezérelt döntéstámogatás.",
         "outcome": [
           "Pontosabb előrejelzés",
           "Jobb döntési minőség"
@@ -299,7 +299,7 @@
   },
   "faq": {
     "title": "GYIK",
-    "subtitle": "A legfontosabb kérdések, amelyeket a döntéshozók jellemzően tisztázni akarnak, mielőtt diagnózist vagy szállítást indítanak.",
+    "subtitle": "A fő kérdések, amelyeket a csapatok általában szeretnének tisztázni a kezdés előtt.",
     "categories": [
       {
         "emoji": "🎯",
@@ -307,11 +307,11 @@
         "questions": [
           {
             "q": "Mit szállít valójában a MISISIMI?",
-            "a": "AI diagnózist, stratégiai roadmapet, automatizációs workflow-kat, egyedi AI rendszereket és élesre kész megoldásokat, a meglévő üzleti működésbe integrálva."
+            "a": "AI diagnózist, roadmapet, automatizációt, egyedi AI rendszert és működő bevezetést szállítunk valódi üzemi környezetbe."
           },
           {
             "q": "Kinek szól ez?",
-            "a": "Olyan vállalatoknak, akik kézzelfogható AI eredményeket akarnak elérni anélkül, hogy teljes belső AI csapatot építenének. Különösen jó illeszkedés, ha a működés, az ügyfélfolyamatok vagy a belső döntéshozatal már ma is hasznos adatot termel."
+            "a": "Azoknak a cégeknek való, akik kézzelfogható AI eredményt akarnak anélkül, hogy rögtön teljes belső AI csapatot építenének."
           }
         ]
       },
@@ -321,11 +321,11 @@
         "questions": [
           {
             "q": "Mi történik a diagnózis során?",
-            "a": "A diagnózis áttekinti az üzleti folyamatokat, a jelenlegi eszközöket, az adatérettséget, a szűk keresztmetszeteket és a lehetőségeket. Az eredmény egy világos ajánlás arról, hogy mit és miért érdemes először automatizálni vagy felépíteni."
+            "a": "Átnézzük a folyamatot, az eszközöket, az adatokat, a szűk keresztmetszeteket és a lehetőségeket. A végén világos lesz, mivel érdemes kezdeni és miért."
           },
           {
             "q": "Mennyi időt vesz igénybe?",
-            "a": "A diagnózis általában 24–72 óra. A megvalósítási projektek tipikusan 2–8 hétig tartanak az integrációs összetettségtől, az adatok minőségétől és a scope-tól függően."
+            "a": "A diagnózis jellemzően 24–72 óra. A szállítás legtöbbször 2–8 hét, a scope és az integráció mélysége szerint."
           }
         ]
       },
@@ -335,11 +335,11 @@
         "questions": [
           {
             "q": "Szükség van belső technikai tudásra?",
-            "a": "Nem. A MISISIMI kezeli az architektúrát, a megvalósítást és a bevezetést. A csapatod főleg üzleti kontextust, hozzáférést a releváns rendszerekhez és visszajelzést ad a validálás során."
+            "a": "Nem. Az architektúrát, a megvalósítást és a bevezetést mi visszük. Tőletek főleg üzleti kontextus, hozzáférés és visszajelzés kell."
           },
           {
             "q": "Integráltok meglévő rendszerekkel?",
-            "a": "Igen. Az integráció része a delivery modellnek. A cél nem egy elszigetelt demo, hanem egy működő rendszer, amely beilleszkedik a meglévő stackbe és folyamatokba."
+            "a": "Igen. Nem elszigetelt demót építünk, hanem működő rendszert a meglévő stackbe és folyamatba."
           }
         ]
       },
@@ -349,11 +349,11 @@
         "questions": [
           {
             "q": "Hogyan épül fel az árazás?",
-            "a": "Az árazás fix diagnózissal indul, majd scope-alapú value crediteken keresztül bővül. Így a költség valós deliverable-ökhöz kötődik, nem nyitott végű óradíjas elszámoláshoz."
+            "a": "Az árazás fix diagnózissal indul, majd value creditekkel bővül a konkrét szállítandó eredményekhez kötve."
           },
           {
             "q": "Mi történik a diagnózis után?",
-            "a": "A diagnózis után ajánlást kapsz a következő megvalósítási lépésre. Ez lehet fókuszált automatizáció, egyedi AI rendszer vagy fázisolt roadmap — attól függően, mi hozza a legjobb megtérülést."
+            "a": "Egy ajánlott következő lépést kaptok. Ez lehet célzott automatizáció, egyedi AI rendszer vagy fokozatos roadmap."
           }
         ]
       },
@@ -363,11 +363,11 @@
         "questions": [
           {
             "q": "Mi a helyzet az adatbiztonsággal?",
-            "a": "Csak az együttműködéshez szükséges adatokhoz férünk hozzá. Az alapelv a hozzáférés minimalizálása, a meglévő működési kereteken belüli munka, és az, hogy előre pontosan definiáljuk, milyen adatra van szükség."
+            "a": "Csak ahhoz az adathoz kérünk hozzáférést, ami tényleg kell. Alapértelmezés a minimális hozzáférés és az előre tisztázott scope."
           },
           {
             "q": "Biztosítotok támogatást is?",
-            "a": "Igen. Az éles indulás utáni támogatás és optimalizáció is része lehet a megállapodásnak, ha a megoldás monitorozást, iterációt vagy operatív átadást igényel."
+            "a": "Igen. Támogatás és finomhangolás is lehet része a munkának, ha a megoldás ezt igényli."
           }
         ]
       }
@@ -375,22 +375,22 @@
   },
   "contact": {
     "title": "Kérem az AI diagnózist",
-    "description": "Kezdjük azzal, hogy tisztán lássuk, hol illik az AI a vállalkozásodba. Átnézzük a működést, azonosítjuk a legjobb lehetőséget, és felvázoljuk a leggyorsabb megvalósítási utat.",
+    "description": "Egy világos képpel kezdünk arról, hol segít a legtöbbet az AI. Átnézzük a működést, kijelöljük a legjobb lehetőséget és a leggyorsabb utat előre.",
     "trust": [
       {
         "label": "Válaszidő",
         "emoji": "✨",
-        "text": "Első visszajelzés 24–72 órán belül."
+        "text": "Első válasz 24–72 órán belül."
       },
       {
         "label": "Együttműködés",
         "emoji": "🛠️",
-        "text": "Először diagnózis, utána világos prioritások mentén körülhatárolt megvalósítás."
+        "text": "Először diagnózis, utána tiszta szállítási scope."
       },
       {
         "label": "Scope",
         "emoji": "🌐",
-        "text": "Alkalmas automatizációs, belső eszközös, alkalmazott AI és operatív integrációs projektekhez."
+        "text": "Automatizációhoz, belső eszközökhöz, alkalmazott AI rendszerekhez és integrációs projektekhez is illik."
       }
     ],
     "form": {
@@ -398,21 +398,21 @@
       "email": "E-mail",
       "company": "Cég",
       "industry": "Iparág",
-      "message": "Írd le azt a fő komplexitást vagy szűk keresztmetszetet, amit meg szeretnél oldani",
+      "message": "Írd le, melyik folyamatot, szűk keresztmetszetet vagy ismétlődő feladatot javítanád",
       "submit": "Ingyenes diagnózist kérek"
     },
     "success": {
       "title": "Diagnózis igényelve",
-      "text": "Köszönjük. Átnézzük a vállalkozásod profilját, és 24–72 órán belül jelentkezünk.",
-      "back": "Vissza az űrlaphoz"
+      "text": "Köszönjük. Átnézzük a részleteket, és 24–72 órán belül jelentkezünk.",
+      "back": "Vissza az űrlapra"
     }
   },
   "footer": {
-    "tagline": "Az AI ötletből éles üzleti érték lesz.",
+    "tagline": "AI ötletből működő megoldás lesz.",
     "meta": [
-      "Diagnózissal induló együttműködés",
-      "Operatív AI, automatizáció és integrációs delivery",
-      "Válaszidő: 24–72 óra"
+      "Diagnózissal indulunk",
+      "Automatizáció, AI rendszerek, integráció",
+      "Válasz: 24–72 óra"
     ],
     "columns": {
       "solutions": "Megoldások",
@@ -423,9 +423,9 @@
       "diagnostic": "AI diagnózis",
       "customModels": "Egyedi modellek",
       "automation": "Automatizáció",
-      "services": "Szolgáltatások",
-      "howItWorks": "Hogyan működik",
-      "faq": "GYIK",
+      "services": "Ajánlat",
+      "howItWorks": "Folyamat",
+      "faq": "Kérdések",
       "contact": "Kapcsolat"
     },
     "copyright": "misisimi — Zero2Done Execution"
