@@ -186,16 +186,16 @@
   },
   "pricing": {
     "title": "Az árazás a szállított értékhez igazodik — nem az órákhoz",
-    "subtitle": "Először diagnózis. Utána jól körülhatárolt scope value creditekben.",
+    "subtitle": "Először diagnózis. Utána kredit alapú, jól körülhatárolt megvalósítás.",
     "principle": {
       "eyebrow": "Árazási elv",
-      "title": "Value Credit rendszer",
+      "title": "Értékalapú kreditrendszer",
       "labels": {
         "rate": "Díj",
         "howItWorks": "Hogyan működik",
         "benefit": "Előny"
       },
-      "rate": "1 Value Credit = 200 €",
+      "rate": "1 kredit = 200 €",
       "bullets": [
         "Nincs óradíj",
         "Nincs meglepetés scope-bővülés",
@@ -208,20 +208,20 @@
       "eyebrow": "Belépő ajánlat",
       "title": "AI diagnózis",
       "labels": {
-        "scope": "Scope",
+        "scope": "Keret",
         "output": "Kimenet",
         "action": "Tovább"
       },
-      "credits": "3–5 credit",
+      "credits": "3–5 kredit",
       "price": "(600–1 000 €)",
       "timeline": "24–72 óra",
       "output": "Világos problémakép, lehetőségtérkép és javasolt következő lépés.",
-      "action": "Ebből gyorsan eldől, hogy automatizáció, egyedi rendszer vagy fokozatos rollout érdemes-e.",
+      "action": "Innen gyorsan eldől, hogy automatizáció, egyedi rendszer vagy fokozatos bevezetés a jó irány.",
       "cta": "Kérem a diagnózist"
     },
     "projectRange": {
       "eyebrow": "Projekt tartomány",
-      "title": "Credit skála",
+      "title": "Kreditskála",
       "labels": {
         "typicalEngagement": "Tipikus együttműködés",
         "use": "Mire jó"
@@ -229,27 +229,27 @@
       "scale": [
         {
           "type": "Kisebb fejlesztés",
-          "credits": "1 credit"
+          "credits": "1 kredit"
         },
         {
           "type": "Kisebb funkció",
-          "credits": "2 credit"
+          "credits": "2 kredit"
         },
         {
           "type": "Standard funkció",
-          "credits": "3 credit"
+          "credits": "3 kredit"
         },
         {
           "type": "Nagyobb modul",
-          "credits": "5 credit"
+          "credits": "5 kredit"
         },
         {
           "type": "Stratégiai komponens",
-          "credits": "8 credit"
+          "credits": "8 kredit"
         }
       ],
       "typicalProjectsLabel": "Tipikus projektek",
-      "typicalProjectsValue": "25–60 credit (5 000–12 000 €+)",
+      "typicalProjectsValue": "25–60 kredit (5 000–12 000 €+)",
       "use": "Reális képet ad a várható méretről és költségről."
     }
   },

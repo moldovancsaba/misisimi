@@ -23,7 +23,7 @@ export default function Pricing({ content }: PricingProps) {
               <div className="case-content">
                 <div className="case-part">
                   <span className="part-label">{content.principle.labels.rate}</span>
-                  <p className="credit-rate">{content.principle.rate}</p>
+                  <p className="credit-rate mixed-copy">{content.principle.rate}</p>
                 </div>
                 <div className="case-part">
                   <span className="part-label part-label-primary">{content.principle.labels.howItWorks}</span>
@@ -51,9 +51,9 @@ export default function Pricing({ content }: PricingProps) {
                 <div className="case-part">
                   <span className="part-label">{content.entryOffer.labels.scope}</span>
                   <div className="promo-content">
-                    <p className="price">{content.entryOffer.credits}</p>
-                    <p className="price-eur">{content.entryOffer.price}</p>
-                    <p className="delivery">{content.entryOffer.timeline}</p>
+                    <p className="price mixed-copy">{content.entryOffer.credits}</p>
+                    <p className="price-eur mixed-copy">{content.entryOffer.price}</p>
+                    <p className="delivery mixed-copy">{content.entryOffer.timeline}</p>
                   </div>
                 </div>
                 <div className="case-part">
@@ -81,7 +81,7 @@ export default function Pricing({ content }: PricingProps) {
                     {content.projectRange.scale.map((item) => (
                       <div key={item.type} className="credit-scale-row" role="row">
                         <span className="credit-scale-type" role="cell">{item.type}</span>
-                        <span className="credit-scale-badge" role="cell">{item.credits}</span>
+                        <span className="credit-scale-badge mixed-copy" role="cell">{item.credits}</span>
                       </div>
                     ))}
                   </div>
@@ -90,7 +90,7 @@ export default function Pricing({ content }: PricingProps) {
                   <span className="part-label part-label-secondary">{content.projectRange.labels.typicalEngagement}</span>
                   <div className="pricing-note-card">
                     <span className="pricing-note-strong">{content.projectRange.typicalProjectsLabel}</span>
-                    <p className="pricing-detail">{content.projectRange.typicalProjectsValue}</p>
+                    <p className="pricing-detail mixed-copy">{content.projectRange.typicalProjectsValue}</p>
                   </div>
                 </div>
                 <div className="case-part">

@@ -242,6 +242,23 @@ section[id] {
   color: var(--muted);
   margin-top: auto;
   overflow-wrap: anywhere;
+  text-align: start;
+}
+
+.credit-rate,
+.price,
+.price-eur,
+.delivery {
+  font-size: clamp(1rem, 3.8cqi, 1.1rem);
+  line-height: 1.32;
+  color: var(--text);
+  text-align: start;
+}
+
+.promo-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.08rem;
 }
 
 .promo-card {
@@ -279,6 +296,7 @@ section[id] {
   line-height: 1.28;
   color: var(--text);
   overflow-wrap: anywhere;
+  text-align: start;
 }
 
 .credit-scale-badge {
@@ -313,6 +331,7 @@ section[id] {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--text);
+  text-align: start;
 }
 
 .capability-list {
@@ -331,6 +350,7 @@ section[id] {
   font-size: clamp(0.94rem, 3.6cqi, 1.02rem);
   line-height: 1.32;
   color: var(--text);
+  text-align: start;
 }
 
 .capability-list li::before {
@@ -376,6 +396,7 @@ section[id] {
   font-size: clamp(0.96rem, 3.7cqi, 1.04rem);
   line-height: 1.36;
   overflow-wrap: anywhere;
+  text-align: start;
 }
 
 .problem-opportunity {
@@ -383,6 +404,11 @@ section[id] {
   line-height: 1.36;
   color: var(--muted);
   overflow-wrap: anywhere;
+  text-align: start;
+}
+
+.mixed-copy {
+  unicode-bidi: plaintext;
 }
 
 .card-group,
@@ -1227,9 +1253,24 @@ section[id] {
   text-align: right;
 }
 
+.locale-shell[dir="rtl"] .capability-list,
+.locale-shell[dir="rtl"] .outcome-list,
+.locale-shell[dir="rtl"] .credit-scale,
+.locale-shell[dir="rtl"] .pricing-note-card,
+.locale-shell[dir="rtl"] .promo-content {
+  direction: rtl;
+}
+
 .locale-shell[dir="rtl"] .capability-list li,
 .locale-shell[dir="rtl"] .outcome-list li {
-  flex-direction: row-reverse;
+  flex-direction: row;
+  text-align: right;
+}
+
+.locale-shell[dir="rtl"] .credit-scale-row,
+.locale-shell[dir="rtl"] .pricing-note-card,
+.locale-shell[dir="rtl"] .promo-content,
+.locale-shell[dir="rtl"] .case-part {
   text-align: right;
 }
 
