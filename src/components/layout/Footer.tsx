@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Link from 'next/link';
 import { type Dictionary } from '@/i18n/dictionaries';
 import { type Locale } from '@/i18n/config';
@@ -15,13 +14,10 @@ export default function Footer({ locale, content }: FooterProps) {
         <div className="footer-grid">
           <div className="footer-brand">
             <div className="footer-logo-wrapper">
-              <Image
-                src="/misisimi_title.png"
-                alt="misisimi"
-                width={120}
-                height={25}
-                className="footer-logo"
-              />
+              <Link href={`/${locale}#top`} className="logo-link footer-logo-link">
+                <img src="/logo-misisimi-line.png" alt="MISISIMI" className="brand-logo brand-logo-desktop footer-brand-logo" />
+                <img src="/logo-misisimi-rectangle.png" alt="MISISIMI" className="brand-logo brand-logo-mobile footer-brand-logo" />
+              </Link>
             </div>
             <p className="footer-tagline">{content.tagline}</p>
             <div className="footer-meta">

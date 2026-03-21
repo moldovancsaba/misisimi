@@ -1291,10 +1291,13 @@ section[id] {
   margin-bottom: 1.5rem;
 }
 
-.footer-logo {
-  height: auto;
-  width: 140px;
-  filter: brightness(0.9);
+.footer-logo-link {
+  display: inline-flex;
+}
+
+.footer-brand-logo {
+  height: clamp(20px, 2.4vw, 28px);
+  filter: brightness(0.96);
 }
 
 .footer-tagline {
