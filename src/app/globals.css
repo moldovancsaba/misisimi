@@ -221,6 +221,12 @@ section[id] {
   transform: translateY(-2px);
 }
 
+.btn:disabled {
+  opacity: 0.7;
+  cursor: wait;
+  transform: none;
+}
+
 .btn-primary {
   background: var(--gradient);
   color: #fff;
@@ -719,6 +725,11 @@ section[id] {
 .form-group input::placeholder,
 .form-group textarea::placeholder {
   color: var(--muted-strong);
+}
+
+.form-error {
+  color: #ff8bb8;
+  font-size: 0.95rem;
 }
 
 .final-cta-button {

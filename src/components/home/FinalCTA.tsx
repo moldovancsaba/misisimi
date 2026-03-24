@@ -9,10 +9,41 @@ type FinalCTAProps = {
 
 export default function FinalCTA({ content }: FinalCTAProps) {
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState('');
 
-  const handleSubmit = (event: React.FormEvent) => {
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    setSubmitted(true);
+    setError('');
+    setSubmitting(true);
+
+    const formData = new FormData(event.currentTarget);
+    const payload = {
+      company: String(formData.get('company') || ''),
+      problem: String(formData.get('problem') || ''),
+      email: String(formData.get('email') || ''),
+    };
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(payload),
+      });
+
+      if (!response.ok) {
+        throw new Error('Request failed');
+      }
+
+      event.currentTarget.reset();
+      setSubmitted(true);
+    } catch {
+      setError(content.form.error);
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -34,28 +65,33 @@ export default function FinalCTA({ content }: FinalCTAProps) {
             <button
               type="button"
               className="btn btn-primary final-cta-button"
-              onClick={() => setSubmitted(false)}
+              onClick={() => {
+                setSubmitted(false);
+                setError('');
+              }}
             >
               {content.success.back}
             </button>
           ) : (
             <form className="form" onSubmit={handleSubmit}>
               <div className="form-group">
-                <input type="text" placeholder={content.form.company} required />
+                <input type="text" name="company" placeholder={content.form.company} required />
               </div>
               <div className="form-group">
-                <textarea placeholder={content.form.problem} required rows={4} />
+                <textarea name="problem" placeholder={content.form.problem} required rows={4} />
               </div>
               <div className="form-group">
-                <input type="email" placeholder={content.form.email} required />
+                <input type="email" name="email" placeholder={content.form.email} required />
               </div>
+              {error ? <p className="form-error">{error}</p> : null}
               <button
                 type="submit"
                 className="btn btn-primary final-cta-button"
                 data-track="contact-submit"
                 data-inline-cta
+                disabled={submitting}
               >
-                {content.form.submit}
+                {submitting ? content.form.sending : content.form.submit}
               </button>
             </form>
           )}

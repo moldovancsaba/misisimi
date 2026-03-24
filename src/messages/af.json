@@ -185,7 +185,9 @@
       "company": "Maatskappy",
       "problem": "Probleem",
       "email": "E-pos",
-      "submit": "Diagnose (48h)"
+      "submit": "Diagnose (48h)",
+      "sending": "Stuur...",
+      "error": "Die vorm kon nie gestuur word nie. Probeer weer."
     },
     "success": {
       "title": "Diagnose versoek",

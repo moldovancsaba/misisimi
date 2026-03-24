@@ -185,7 +185,9 @@
       "company": "Firma",
       "problem": "Problem",
       "email": "E-mail",
-      "submit": "Diagnoza (48h)"
+      "submit": "Diagnoza (48h)",
+      "sending": "Wysyłanie...",
+      "error": "Nie udało się wysłać formularza. Spróbuj ponownie."
     },
     "success": {
       "title": "Diagnoza została wysłana",

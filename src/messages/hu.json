@@ -185,7 +185,9 @@
       "company": "Cég",
       "problem": "Probléma",
       "email": "E-mail",
-      "submit": "Diagnózis (48 óra)"
+      "submit": "Diagnózis (48 óra)",
+      "sending": "Küldés...",
+      "error": "Nem sikerült elküldeni az űrlapot. Próbáld újra."
     },
     "success": {
       "title": "A diagnózis elküldve",

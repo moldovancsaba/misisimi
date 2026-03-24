@@ -185,7 +185,9 @@
       "company": "Company",
       "problem": "Problem",
       "email": "Email",
-      "submit": "Get Diagnostic (48h)"
+      "submit": "Get Diagnostic (48h)",
+      "sending": "Sending...",
+      "error": "Could not send the form. Try again."
     },
     "success": {
       "title": "Diagnostic requested",

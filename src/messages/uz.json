@@ -185,7 +185,9 @@
       "company": "Kompaniya",
       "problem": "Muammo",
       "email": "Email",
-      "submit": "Diagnostika (48 soat)"
+      "submit": "Diagnostika (48 soat)",
+      "sending": "Yuborilmoqda...",
+      "error": "Formani yuborib bo‘lmadi. Yana urinib ko‘ring."
     },
     "success": {
       "title": "Diagnostika so‘rovi yuborildi",

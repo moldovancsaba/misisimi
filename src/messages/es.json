@@ -185,7 +185,9 @@
       "company": "Empresa",
       "problem": "Problema",
       "email": "Correo",
-      "submit": "Diagnóstico (48h)"
+      "submit": "Diagnóstico (48h)",
+      "sending": "Enviando...",
+      "error": "No se pudo enviar el formulario. Inténtalo de nuevo."
     },
     "success": {
       "title": "Diagnóstico solicitado",

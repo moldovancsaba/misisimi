@@ -185,7 +185,9 @@
       "company": "Kampuni",
       "problem": "Tatizo",
       "email": "Barua pepe",
-      "submit": "Uchunguzi (48h)"
+      "submit": "Uchunguzi (48h)",
+      "sending": "Inatuma...",
+      "error": "Fomu haikutumwa. Jaribu tena."
     },
     "success": {
       "title": "Uchunguzi umeombwa",
