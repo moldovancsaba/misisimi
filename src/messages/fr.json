@@ -1,0 +1,212 @@
+{
+  "meta": {
+    "title": "misisimi — des systèmes IA qui tournent vraiment",
+    "description": "Nous déployons des systèmes IA en quelques semaines, pas en quelques mois. Commencez par un diagnostic rapide.",
+    "ogAlt": "Illustration MISISIMI"
+  },
+  "nav": {
+    "home": "Accueil",
+    "trust": "Preuve",
+    "outcomes": "Résultats",
+    "process": "Processus",
+    "pricing": "Tarifs",
+    "contact": "Contact",
+    "stickyCta": "Diagnostic (48h)",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu",
+    "language": "Langue"
+  },
+  "hero": {
+    "title": "On transforme l'IA en systèmes qui marchent dans votre entreprise",
+    "subtitle": "Pas de pilote. Pas de théorie. Juste des systèmes utiles dans les opérations.",
+    "primaryCta": "Diagnostic (48h)",
+    "imageAlt": "Illustration MISISIMI"
+  },
+  "trust": {
+    "kicker": "Preuve",
+    "title": "Pourquoi les équipes commencent avec nous",
+    "metrics": [
+      {
+        "value": "30–60 %",
+        "label": "de temps gagné"
+      },
+      {
+        "value": "3–6 semaines",
+        "label": "pour être en ligne"
+      },
+      {
+        "value": "Idée → live",
+        "label": "chemin clair"
+      },
+      {
+        "value": "Sans horaire",
+        "label": "mode de facturation"
+      }
+    ],
+    "cases": [
+      {
+        "title": "Automatisation du support client",
+        "before": "Réponses manuelles",
+        "after": "L'IA traite 70 % des tickets",
+        "outcomes": [
+          "Réponses plus rapides",
+          "Moins de charge support"
+        ]
+      },
+      {
+        "title": "Automatisation des opérations",
+        "before": "Relances manuelles",
+        "after": "Workflows automatisés",
+        "outcomes": [
+          "Cycle plus court",
+          "Moins d'erreurs"
+        ]
+      },
+      {
+        "title": "Prévision commerciale",
+        "before": "Intuition",
+        "after": "Décisions appuyées par les données",
+        "outcomes": [
+          "Meilleure planification",
+          "Plus de confiance"
+        ]
+      }
+    ]
+  },
+  "outcomes": {
+    "kicker": "Résultats",
+    "title": "Ce qui change en premier",
+    "items": [
+      {
+        "emoji": "⚡",
+        "title": "Automatiser le travail répétitif"
+      },
+      {
+        "emoji": "🧠",
+        "title": "Mettre l'IA dans les opérations"
+      },
+      {
+        "emoji": "📈",
+        "title": "Mieux décider avec les données"
+      }
+    ]
+  },
+  "process": {
+    "kicker": "Processus",
+    "title": "Comment ça marche",
+    "items": [
+      {
+        "step": "ÉTAPE 1",
+        "title": "Diagnostic → Trouver le levier",
+        "image": "/08_step_1.png"
+      },
+      {
+        "step": "ÉTAPE 2",
+        "title": "Construction → Créer le système",
+        "image": "/09_step_2.png"
+      },
+      {
+        "step": "ÉTAPE 3",
+        "title": "Déploiement → Le faire tourner",
+        "image": "/10_step_3.png"
+      }
+    ]
+  },
+  "capabilities": {
+    "kicker": "Capacités",
+    "title": "Là où nous aidons le plus",
+    "items": [
+      {
+        "title": "Frein opérationnel",
+        "image": "/01_operational_drag.png"
+      },
+      {
+        "title": "Données sous-exploitées",
+        "image": "/02_unused_data.png"
+      },
+      {
+        "title": "Stack fragmenté",
+        "image": "/03_fragmented_stack.png"
+      },
+      {
+        "title": "Risque d’exécution",
+        "image": "/04_execution_risk.png"
+      },
+      {
+        "title": "Conseil IA",
+        "image": "/06_ai_consulting.png"
+      },
+      {
+        "title": "Développement IA",
+        "image": "/05_ai_development.png"
+      },
+      {
+        "title": "Outils d’automatisation",
+        "image": "/07_ai_automation_tools.png"
+      },
+      {
+        "title": "Opérations de service",
+        "image": "/12_service_operations.png"
+      },
+      {
+        "title": "Intelligence commerciale",
+        "image": "/13_commercial_intelligence.png"
+      }
+    ]
+  },
+  "pricing": {
+    "kicker": "Tarifs",
+    "title": "Des tarifs liés à la livraison",
+    "lineOne": "Pas de facturation horaire.",
+    "lineTwo": "Vous payez pour le résultat.",
+    "rate": "1 crédit = 200 €",
+    "support": "Les crédits restent liés à ce qui est livré, pas au temps passé.",
+    "examples": [
+      {
+        "name": "Script d’automatisation",
+        "value": "3–5 crédits"
+      },
+      {
+        "name": "Diagnostic",
+        "value": "Forfait fixe"
+      }
+    ],
+    "cta": "Diagnostic (48h)"
+  },
+  "contact": {
+    "kicker": "Commencer ici",
+    "title": "Demander un diagnostic",
+    "points": [
+      "Réponse sous 48h",
+      "Prochaine étape claire"
+    ],
+    "note": "Formulaire court. Réponse directe.",
+    "form": {
+      "company": "Entreprise",
+      "problem": "Problème",
+      "email": "E-mail",
+      "submit": "Diagnostic (48h)"
+    },
+    "success": {
+      "title": "Diagnostic demandé",
+      "points": [
+        "Réponse sous 48h",
+        "Prochaine étape claire"
+      ],
+      "text": "Nous revenons vers vous avec la suite.",
+      "back": "Retour"
+    }
+  },
+  "footer": {
+    "label": "Navigation de pied de page",
+    "tagline": "Des systèmes IA qui passent vite en production.",
+    "links": {
+      "trust": "Preuve",
+      "outcomes": "Résultats",
+      "process": "Processus",
+      "pricing": "Tarifs",
+      "contact": "Contact"
+    },
+    "copyright": "misisimi"
+  }
+}

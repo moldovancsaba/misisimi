@@ -1,13 +1,15 @@
 import en from '@/messages/en.json';
+import es from '@/messages/es.json';
+import fr from '@/messages/fr.json';
 import he from '@/messages/he.json';
 import hu from '@/messages/hu.json';
-import ru from '@/messages/ru.json';
 import { type Locale } from '@/i18n/config';
 
 export const dictionaries = {
   en,
   hu,
-  ru,
+  fr,
+  es,
   he
 } as const;
 

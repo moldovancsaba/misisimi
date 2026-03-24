@@ -3,7 +3,7 @@ import { Noto_Sans, Noto_Sans_Hebrew, Sigmar } from "next/font/google";
 import "./globals.css";
 
 const notoSans = Noto_Sans({
-  subsets: ["latin", "latin-ext", "cyrillic"],
+  subsets: ["latin", "latin-ext"],
   variable: "--font-body",
   display: "swap",
 });

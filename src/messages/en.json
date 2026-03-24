@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "misisimi — AI execution that goes live",
-    "description": "Production-ready AI systems in weeks. No pilots. No hourly billing. Start with a diagnostic.",
+    "title": "misisimi — AI systems that actually work",
+    "description": "We build AI systems that go live in weeks, not months. Start with a fast diagnostic.",
     "ogAlt": "MISISIMI site illustration"
   },
   "nav": {
@@ -18,21 +18,21 @@
   },
   "hero": {
     "title": "We turn AI into working systems in your business",
-    "subtitle": "No pilots. No experiments. Production-ready AI in weeks.",
+    "subtitle": "No pilots. No theory. Just systems that work in real operations.",
     "primaryCta": "Get Diagnostic (48h)",
     "imageAlt": "MISISIMI site illustration"
   },
   "trust": {
     "kicker": "Trust",
-    "title": "Why teams start here",
+    "title": "Why teams start with us",
     "metrics": [
       {
         "value": "30–60%",
-        "label": "time reduction"
+        "label": "time saved"
       },
       {
         "value": "3–6 weeks",
-        "label": "to production"
+        "label": "to go live"
       },
       {
         "value": "Idea → live",
@@ -49,8 +49,8 @@
         "before": "Manual replies",
         "after": "AI handles 70% of tickets",
         "outcomes": [
-          "Response time ↓",
-          "Support workload ↓"
+          "Faster replies",
+          "Less support load"
         ]
       },
       {
@@ -58,24 +58,24 @@
         "before": "Manual follow-ups",
         "after": "Automated workflows",
         "outcomes": [
-          "Cycle time ↓",
-          "Human errors ↓"
+          "Shorter cycle time",
+          "Fewer human errors"
         ]
       },
       {
         "title": "Commercial forecasting",
         "before": "Gut feeling",
-        "after": "Data-driven decisions",
+        "after": "Data-backed decisions",
         "outcomes": [
           "Better planning",
-          "Higher confidence"
+          "More confidence"
         ]
       }
     ]
   },
   "outcomes": {
     "kicker": "Outcomes",
-    "title": "What changes first",
+    "title": "What gets better first",
     "items": [
       {
         "emoji": "⚡",
@@ -83,7 +83,7 @@
       },
       {
         "emoji": "🧠",
-        "title": "Build AI into operations"
+        "title": "Bring AI into daily operations"
       },
       {
         "emoji": "📈",
@@ -97,24 +97,24 @@
     "items": [
       {
         "step": "STEP 1",
-        "title": "Diagnose → Find ROI",
+        "title": "Diagnose → Find the leverage",
         "image": "/08_step_1.png"
       },
       {
         "step": "STEP 2",
-        "title": "Build → Create system",
+        "title": "Build → Create the system",
         "image": "/09_step_2.png"
       },
       {
         "step": "STEP 3",
-        "title": "Deploy → Run in operations",
+        "title": "Deploy → Run it live",
         "image": "/10_step_3.png"
       }
     ]
   },
   "capabilities": {
     "kicker": "Capabilities",
-    "title": "Where we can create leverage",
+    "title": "Where we help most",
     "items": [
       {
         "title": "Operational Drag",
@@ -156,31 +156,31 @@
   },
   "pricing": {
     "kicker": "Pricing",
-    "title": "Pricing that stays tied to delivery",
+    "title": "Pricing tied to delivery",
     "lineOne": "No hourly billing.",
     "lineTwo": "You pay for outcomes.",
-    "rate": "1 Credit = €200",
-    "support": "Credits map to delivery, not hours.",
+    "rate": "1 credit = €200",
+    "support": "Credits stay tied to what gets shipped, not the hours behind it.",
     "examples": [
       {
-        "name": "AI automation script",
+        "name": "Automation script",
         "value": "3–5 credits"
       },
       {
         "name": "Diagnostic",
-        "value": "Fixed credits"
+        "value": "Fixed package"
       }
     ],
     "cta": "Get Diagnostic (48h)"
   },
   "contact": {
     "kicker": "Start here",
-    "title": "Get Diagnostic",
+    "title": "Get a diagnostic",
     "points": [
       "48h turnaround",
-      "Clear ROI direction"
+      "Clear next step"
     ],
-    "note": "Short form. Fast answer.",
+    "note": "Short form. Straight answer.",
     "form": {
       "company": "Company",
       "problem": "Problem",
@@ -191,7 +191,7 @@
       "title": "Diagnostic requested",
       "points": [
         "48h turnaround",
-        "Clear ROI direction"
+        "Clear next step"
       ],
       "text": "We will reply with the next step.",
       "back": "Back"
@@ -199,7 +199,7 @@
   },
   "footer": {
     "label": "Footer navigation",
-    "tagline": "AI execution that goes live fast.",
+    "tagline": "AI systems that go live fast.",
     "links": {
       "trust": "Trust",
       "outcomes": "Outcomes",

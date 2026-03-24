@@ -78,15 +78,6 @@ h4 {
   letter-spacing: -0.015em;
 }
 
-.locale-shell[data-locale='ru'] h1,
-.locale-shell[data-locale='ru'] h2,
-.locale-shell[data-locale='ru'] h3,
-.locale-shell[data-locale='ru'] h4 {
-  font-family: var(--font-heading-safe);
-  font-weight: 800;
-  letter-spacing: -0.025em;
-}
-
 .locale-shell[data-locale='he'] h1,
 .locale-shell[data-locale='he'] h2,
 .locale-shell[data-locale='he'] h3,
@@ -605,7 +596,6 @@ section[id] {
   color: #fff;
 }
 
-.locale-shell[data-locale='ru'] .pricing-lines p,
 .locale-shell[data-locale='he'] .pricing-lines p {
   font-family: var(--font-heading-safe);
   font-weight: 800;

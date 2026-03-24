@@ -1,4 +1,4 @@
-export const locales = ['en', 'hu', 'ru', 'he'] as const;
+export const locales = ['en', 'hu', 'fr', 'es', 'he'] as const;
 
 export type Locale = (typeof locales)[number];
 
@@ -10,7 +10,8 @@ export const localeInfo: Record<
 > = {
   en: { dir: 'ltr', label: 'English', nativeLabel: 'English', flag: '🇬🇧' },
   hu: { dir: 'ltr', label: 'Hungarian', nativeLabel: 'Magyar', flag: '🇭🇺' },
-  ru: { dir: 'ltr', label: 'Russian', nativeLabel: 'Русский', flag: '🇷🇺' },
+  fr: { dir: 'ltr', label: 'French', nativeLabel: 'Français', flag: '🇫🇷' },
+  es: { dir: 'ltr', label: 'Spanish', nativeLabel: 'Español', flag: '🇪🇸' },
   he: { dir: 'rtl', label: 'Hebrew', nativeLabel: 'עברית', flag: '🇮🇱' }
 };
 

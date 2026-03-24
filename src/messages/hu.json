@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "misisimi — AI-kivitelezés, ami élesbe megy",
-    "description": "Éles AI-rendszerek pár hét alatt. Nincs pilot. Nincs óradíj. Indulj diagnózissal.",
+    "title": "misisimi — AI-rendszerek, amik tényleg működnek",
+    "description": "Olyan AI-rendszereket építünk, amelyek pár hét alatt élesben mennek. Kezdd egy gyors diagnózissal.",
     "ogAlt": "MISISIMI illusztráció"
   },
   "nav": {
@@ -18,7 +18,7 @@
   },
   "hero": {
     "title": "Az AI-ból működő rendszert csinálunk a cégedben",
-    "subtitle": "Nincs pilot. Nincs kísérlet. Éles AI pár hét alatt.",
+    "subtitle": "Nincs pilot. Nincs elmélet. Csak működő rendszer a napi működésben.",
     "primaryCta": "Diagnózis (48 óra)",
     "imageAlt": "MISISIMI illusztráció"
   },
@@ -28,7 +28,7 @@
     "metrics": [
       {
         "value": "30–60%",
-        "label": "kevesebb idő"
+        "label": "időmegtakarítás"
       },
       {
         "value": "3–6 hét",
@@ -36,7 +36,7 @@
       },
       {
         "value": "Ötlet → élő",
-        "label": "ötlettől az indulásig"
+        "label": "tiszta út"
       },
       {
         "value": "Nincs óradíj",
@@ -47,10 +47,10 @@
       {
         "title": "Ügyfélszolgálat automatizálás",
         "before": "Kézi válaszok",
-        "after": "A rendszer viszi a jegyek 70%-át",
+        "after": "A rendszer kezeli a jegyek 70%-át",
         "outcomes": [
-          "Válaszidő ↓",
-          "Kevesebb ügyfélszolgálati teher"
+          "Gyorsabb válaszok",
+          "Kisebb support teher"
         ]
       },
       {
@@ -58,14 +58,14 @@
         "before": "Kézi utánkövetés",
         "after": "Automatizált folyamatok",
         "outcomes": [
-          "Ciklusidő ↓",
+          "Rövidebb átfutás",
           "Kevesebb hiba"
         ]
       },
       {
         "title": "Kereskedelmi előrejelzés",
         "before": "Megérzés",
-        "after": "Adatvezérelt döntés",
+        "after": "Adatra épülő döntések",
         "outcomes": [
           "Jobb tervezés",
           "Nagyobb biztonság"
@@ -75,7 +75,7 @@
   },
   "outcomes": {
     "kicker": "Eredmény",
-    "title": "Mi változik először",
+    "title": "Mi javul meg először",
     "items": [
       {
         "emoji": "⚡",
@@ -83,7 +83,7 @@
       },
       {
         "emoji": "🧠",
-        "title": "AI a működésben"
+        "title": "AI a napi működésben"
       },
       {
         "emoji": "📈",
@@ -97,24 +97,24 @@
     "items": [
       {
         "step": "1. LÉPÉS",
-        "title": "Diagnózis → Érték",
+        "title": "Diagnózis → Hol az érték",
         "image": "/08_step_1.png"
       },
       {
         "step": "2. LÉPÉS",
-        "title": "Építés → Rendszer",
+        "title": "Építés → Kész rendszer",
         "image": "/09_step_2.png"
       },
       {
         "step": "3. LÉPÉS",
-        "title": "Bevezetés → Éles működés",
+        "title": "Indítás → Éles működés",
         "image": "/10_step_3.png"
       }
     ]
   },
   "capabilities": {
     "kicker": "Képességek",
-    "title": "Ahol gyorsan értéket teremtünk",
+    "title": "Ahol a legtöbbet segítünk",
     "items": [
       {
         "title": "Operatív súrlódás",
@@ -160,7 +160,7 @@
     "lineOne": "Nincs óradíj.",
     "lineTwo": "Az eredményért fizetsz.",
     "rate": "1 kredit = 200 €",
-    "support": "A kreditek a leszállított eredményhez kötődnek, nem az időhöz.",
+    "support": "A kreditek ahhoz kötődnek, ami ténylegesen elkészül, nem az eltöltött időhöz.",
     "examples": [
       {
         "name": "Automatizációs script",
@@ -175,12 +175,12 @@
   },
   "contact": {
     "kicker": "Kezdjük itt",
-    "title": "Diagnózis kérése",
+    "title": "Kérj diagnózist",
     "points": [
       "48 órás válasz",
       "Tiszta következő lépés"
     ],
-    "note": "Rövid űrlap. Gyors válasz.",
+    "note": "Rövid űrlap. Egyenes válasz.",
     "form": {
       "company": "Cég",
       "problem": "Probléma",
@@ -188,7 +188,7 @@
       "submit": "Diagnózis (48 óra)"
     },
     "success": {
-      "title": "Diagnózis elküldve",
+      "title": "A diagnózis elküldve",
       "points": [
         "48 órás válasz",
         "Tiszta következő lépés"
@@ -199,7 +199,7 @@
   },
   "footer": {
     "label": "Lábléc navigáció",
-    "tagline": "AI-kivitelezés, ami gyorsan élesbe megy.",
+    "tagline": "AI-rendszerek, amelyek gyorsan élesbe mennek.",
     "links": {
       "trust": "Bizalom",
       "outcomes": "Eredmény",
