@@ -23,6 +23,8 @@
   --font-heading-display: var(--font-display-latin), var(--font-body), system-ui, sans-serif;
   --font-heading-safe: var(--font-body), system-ui, sans-serif;
   --font-heading-hebrew: var(--font-hebrew), var(--font-body), system-ui, sans-serif;
+  --font-heading-devanagari: var(--font-devanagari), var(--font-body), system-ui, sans-serif;
+  --font-heading-georgian: var(--font-georgian), var(--font-body), system-ui, sans-serif;
 }
 
 * {
@@ -85,6 +87,40 @@ h4 {
   font-family: var(--font-heading-hebrew);
   font-weight: 800;
   letter-spacing: -0.02em;
+}
+
+.locale-shell[data-locale='hi'],
+.locale-shell[data-locale='hi'] body,
+.locale-shell[data-locale='hi'] input,
+.locale-shell[data-locale='hi'] textarea,
+.locale-shell[data-locale='hi'] select {
+  font-family: var(--font-devanagari), system-ui, sans-serif;
+}
+
+.locale-shell[data-locale='hi'] h1,
+.locale-shell[data-locale='hi'] h2,
+.locale-shell[data-locale='hi'] h3,
+.locale-shell[data-locale='hi'] h4 {
+  font-family: var(--font-heading-devanagari);
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.locale-shell[data-locale='ka'],
+.locale-shell[data-locale='ka'] body,
+.locale-shell[data-locale='ka'] input,
+.locale-shell[data-locale='ka'] textarea,
+.locale-shell[data-locale='ka'] select {
+  font-family: var(--font-georgian), system-ui, sans-serif;
+}
+
+.locale-shell[data-locale='ka'] h1,
+.locale-shell[data-locale='ka'] h2,
+.locale-shell[data-locale='ka'] h3,
+.locale-shell[data-locale='ka'] h4 {
+  font-family: var(--font-heading-georgian);
+  font-weight: 800;
+  letter-spacing: -0.01em;
 }
 
 p {

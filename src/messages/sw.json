@@ -1,0 +1,212 @@
+{
+  "meta": {
+    "title": "misisimi — mifumo ya AI inayofanya kazi kweli",
+    "description": "Tunaweka mifumo ya AI kazini ndani ya wiki, si miezi. Anza na uchunguzi wa haraka.",
+    "ogAlt": "Mchoro wa MISISIMI"
+  },
+  "nav": {
+    "home": "Nyumbani",
+    "trust": "Uaminifu",
+    "outcomes": "Matokeo",
+    "process": "Mchakato",
+    "pricing": "Bei",
+    "contact": "Wasiliana",
+    "stickyCta": "Uchunguzi (48h)",
+    "openMenu": "Fungua menyu ya urambazaji",
+    "closeMenu": "Funga menyu ya urambazaji",
+    "language": "Lugha"
+  },
+  "hero": {
+    "title": "Tunabadilisha AI iwe mifumo inayofanya kazi ndani ya biashara yako",
+    "subtitle": "Hakuna pilot. Hakuna hadithi ndefu. Mifumo inayosaidia kazi ya kila siku.",
+    "primaryCta": "Uchunguzi (48h)",
+    "imageAlt": "Mchoro wa MISISIMI"
+  },
+  "trust": {
+    "kicker": "Uaminifu",
+    "title": "Kwa nini timu huanza na sisi",
+    "metrics": [
+      {
+        "value": "30–60%",
+        "label": "muda unaookolewa"
+      },
+      {
+        "value": "Wiki 3–6",
+        "label": "hadi live"
+      },
+      {
+        "value": "Wazo → live",
+        "label": "njia wazi"
+      },
+      {
+        "value": "Bila saa",
+        "label": "mfumo wa malipo"
+      }
+    ],
+    "cases": [
+      {
+        "title": "Otomatiki ya huduma kwa wateja",
+        "before": "Majibu ya mkono",
+        "after": "AI hushughulikia 70% ya tiketi",
+        "outcomes": [
+          "Majibu ya haraka",
+          "Mzigo mdogo wa support"
+        ]
+      },
+      {
+        "title": "Otomatiki ya uendeshaji",
+        "before": "Ufuatiliaji wa mkono",
+        "after": "Workflow za kiotomatiki",
+        "outcomes": [
+          "Mzunguko mfupi",
+          "Makosa machache"
+        ]
+      },
+      {
+        "title": "Utabiri wa kibiashara",
+        "before": "Hisia tu",
+        "after": "Maamuzi yanayoongozwa na data",
+        "outcomes": [
+          "Mipango bora",
+          "Kujiamini zaidi"
+        ]
+      }
+    ]
+  },
+  "outcomes": {
+    "kicker": "Matokeo",
+    "title": "Nini hubadilika kwanza",
+    "items": [
+      {
+        "emoji": "⚡",
+        "title": "Otomatisha kazi za kurudia"
+      },
+      {
+        "emoji": "🧠",
+        "title": "Leta AI kwenye shughuli za kila siku"
+      },
+      {
+        "emoji": "📈",
+        "title": "Fanya maamuzi bora kwa data"
+      }
+    ]
+  },
+  "process": {
+    "kicker": "Mchakato",
+    "title": "Inavyofanya kazi",
+    "items": [
+      {
+        "step": "HATUA 1",
+        "title": "Uchunguzi → Tafuta fursa",
+        "image": "/08_step_1.png"
+      },
+      {
+        "step": "HATUA 2",
+        "title": "Jenga → Tengeneza mfumo",
+        "image": "/09_step_2.png"
+      },
+      {
+        "step": "HATUA 3",
+        "title": "Weka kazini → Uanze kufanya kazi",
+        "image": "/10_step_3.png"
+      }
+    ]
+  },
+  "capabilities": {
+    "kicker": "Uwezo",
+    "title": "Mahali tunasaidia zaidi",
+    "items": [
+      {
+        "title": "Mzigo wa Uendeshaji",
+        "image": "/01_operational_drag.png"
+      },
+      {
+        "title": "Data Isiyotumika",
+        "image": "/02_unused_data.png"
+      },
+      {
+        "title": "Stack Iliyovunjika",
+        "image": "/03_fragmented_stack.png"
+      },
+      {
+        "title": "Hatari ya Utekelezaji",
+        "image": "/04_execution_risk.png"
+      },
+      {
+        "title": "Ushauri wa AI",
+        "image": "/06_ai_consulting.png"
+      },
+      {
+        "title": "Ujenzi wa AI",
+        "image": "/05_ai_development.png"
+      },
+      {
+        "title": "Zana za Otomatiki",
+        "image": "/07_ai_automation_tools.png"
+      },
+      {
+        "title": "Uendeshaji wa Huduma",
+        "image": "/12_service_operations.png"
+      },
+      {
+        "title": "Akili ya Kibiashara",
+        "image": "/13_commercial_intelligence.png"
+      }
+    ]
+  },
+  "pricing": {
+    "kicker": "Bei",
+    "title": "Bei inayobaki kwenye utoaji",
+    "lineOne": "Hakuna malipo ya saa.",
+    "lineTwo": "Unalipa kwa matokeo.",
+    "rate": "Krediti 1 = €200",
+    "support": "Krediti zinafungwa kwa kile kinachotolewa, si muda uliotumika.",
+    "examples": [
+      {
+        "name": "Script ya otomatiki",
+        "value": "Krediti 3–5"
+      },
+      {
+        "name": "Uchunguzi",
+        "value": "Kifurushi maalum"
+      }
+    ],
+    "cta": "Uchunguzi (48h)"
+  },
+  "contact": {
+    "kicker": "Anza hapa",
+    "title": "Pata uchunguzi",
+    "points": [
+      "Majibu ndani ya 48h",
+      "Hatua inayofuata iko wazi"
+    ],
+    "note": "Fomu fupi. Jibu la moja kwa moja.",
+    "form": {
+      "company": "Kampuni",
+      "problem": "Tatizo",
+      "email": "Barua pepe",
+      "submit": "Uchunguzi (48h)"
+    },
+    "success": {
+      "title": "Uchunguzi umeombwa",
+      "points": [
+        "Majibu ndani ya 48h",
+        "Hatua inayofuata iko wazi"
+      ],
+      "text": "Tutakutumia hatua inayofuata.",
+      "back": "Rudi"
+    }
+  },
+  "footer": {
+    "label": "Urambazaji wa footer",
+    "tagline": "Mifumo ya AI inayowekwa live haraka.",
+    "links": {
+      "trust": "Uaminifu",
+      "outcomes": "Matokeo",
+      "process": "Mchakato",
+      "pricing": "Bei",
+      "contact": "Wasiliana"
+    },
+    "copyright": "misisimi"
+  }
+}

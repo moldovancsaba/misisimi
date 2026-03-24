@@ -1,0 +1,212 @@
+{
+  "meta": {
+    "title": "misisimi — KI-stelsels wat regtig werk",
+    "description": "Ons sit KI-stelsels binne weke in produksie, nie maande nie. Begin met ’n vinnige diagnose.",
+    "ogAlt": "MISISIMI illustrasie"
+  },
+  "nav": {
+    "home": "Tuis",
+    "trust": "Vertroue",
+    "outcomes": "Uitkomste",
+    "process": "Proses",
+    "pricing": "Pryse",
+    "contact": "Kontak",
+    "stickyCta": "Diagnose (48h)",
+    "openMenu": "Maak navigasie oop",
+    "closeMenu": "Maak navigasie toe",
+    "language": "Taal"
+  },
+  "hero": {
+    "title": "Ons verander KI in stelsels wat regtig in jou besigheid werk",
+    "subtitle": "Geen loodsprojek. Geen groot stories. Net stelsels wat in die daaglikse werk help.",
+    "primaryCta": "Diagnose (48h)",
+    "imageAlt": "MISISIMI illustrasie"
+  },
+  "trust": {
+    "kicker": "Vertroue",
+    "title": "Hoekom spanne by ons begin",
+    "metrics": [
+      {
+        "value": "30–60%",
+        "label": "minder tyd"
+      },
+      {
+        "value": "3–6 weke",
+        "label": "tot live"
+      },
+      {
+        "value": "Idee → live",
+        "label": "duidelike pad"
+      },
+      {
+        "value": "Geen ure",
+        "label": "faktuurmodel"
+      }
+    ],
+    "cases": [
+      {
+        "title": "Kliëntediens-outomatisering",
+        "before": "Handmatige antwoorde",
+        "after": "KI hanteer 70% van kaartjies",
+        "outcomes": [
+          "Vinniger antwoorde",
+          "Minder druk op support"
+        ]
+      },
+      {
+        "title": "Operasionele outomatisering",
+        "before": "Handmatige opvolg",
+        "after": "Geoutomatiseerde vloei",
+        "outcomes": [
+          "Korter siklusse",
+          "Minder foute"
+        ]
+      },
+      {
+        "title": "Kommersiële voorspelling",
+        "before": "Gevoel",
+        "after": "Besluite op data",
+        "outcomes": [
+          "Beter beplanning",
+          "Meer sekerheid"
+        ]
+      }
+    ]
+  },
+  "outcomes": {
+    "kicker": "Uitkomste",
+    "title": "Wat eerste beter word",
+    "items": [
+      {
+        "emoji": "⚡",
+        "title": "Outomatiseer herhalende werk"
+      },
+      {
+        "emoji": "🧠",
+        "title": "Bring KI in die daaglikse operasie"
+      },
+      {
+        "emoji": "📈",
+        "title": "Neem beter besluite met data"
+      }
+    ]
+  },
+  "process": {
+    "kicker": "Proses",
+    "title": "Hoe dit werk",
+    "items": [
+      {
+        "step": "STAP 1",
+        "title": "Diagnose → Kry die hefboom",
+        "image": "/08_step_1.png"
+      },
+      {
+        "step": "STAP 2",
+        "title": "Bou → Skep die stelsel",
+        "image": "/09_step_2.png"
+      },
+      {
+        "step": "STAP 3",
+        "title": "Ontplooi → Laat dit werk",
+        "image": "/10_step_3.png"
+      }
+    ]
+  },
+  "capabilities": {
+    "kicker": "Vermoëns",
+    "title": "Waar ons die meeste help",
+    "items": [
+      {
+        "title": "Operasionele Sleep",
+        "image": "/01_operational_drag.png"
+      },
+      {
+        "title": "Ongebruikte Data",
+        "image": "/02_unused_data.png"
+      },
+      {
+        "title": "Gebreekte Stelselstapel",
+        "image": "/03_fragmented_stack.png"
+      },
+      {
+        "title": "Uitvoeringsrisiko",
+        "image": "/04_execution_risk.png"
+      },
+      {
+        "title": "KI-advies",
+        "image": "/06_ai_consulting.png"
+      },
+      {
+        "title": "KI-ontwikkeling",
+        "image": "/05_ai_development.png"
+      },
+      {
+        "title": "Outomatiseringsnutsgoed",
+        "image": "/07_ai_automation_tools.png"
+      },
+      {
+        "title": "Diensbedrywighede",
+        "image": "/12_service_operations.png"
+      },
+      {
+        "title": "Kommersiële Intelligensie",
+        "image": "/13_commercial_intelligence.png"
+      }
+    ]
+  },
+  "pricing": {
+    "kicker": "Pryse",
+    "title": "Pryse wat by aflewering bly",
+    "lineOne": "Geen uurbilling nie.",
+    "lineTwo": "Jy betaal vir uitkomste.",
+    "rate": "1 krediet = €200",
+    "support": "Krediete bly gekoppel aan wat gelewer word, nie aan ure nie.",
+    "examples": [
+      {
+        "name": "Outomatiseringskrip",
+        "value": "3–5 krediete"
+      },
+      {
+        "name": "Diagnose",
+        "value": "Vaste pakket"
+      }
+    ],
+    "cta": "Diagnose (48h)"
+  },
+  "contact": {
+    "kicker": "Begin hier",
+    "title": "Kry ’n diagnose",
+    "points": [
+      "Terugvoer binne 48h",
+      "Duidelike volgende stap"
+    ],
+    "note": "Kort vorm. Reguit antwoord.",
+    "form": {
+      "company": "Maatskappy",
+      "problem": "Probleem",
+      "email": "E-pos",
+      "submit": "Diagnose (48h)"
+    },
+    "success": {
+      "title": "Diagnose versoek",
+      "points": [
+        "Terugvoer binne 48h",
+        "Duidelike volgende stap"
+      ],
+      "text": "Ons stuur die volgende stap terug.",
+      "back": "Terug"
+    }
+  },
+  "footer": {
+    "label": "Voetnavigasie",
+    "tagline": "KI-stelsels wat vinnig live gaan.",
+    "links": {
+      "trust": "Vertroue",
+      "outcomes": "Uitkomste",
+      "process": "Proses",
+      "pricing": "Pryse",
+      "contact": "Kontak"
+    },
+    "copyright": "misisimi"
+  }
+}

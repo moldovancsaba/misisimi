@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Noto_Sans, Noto_Sans_Hebrew, Sigmar } from "next/font/google";
+import { Noto_Sans, Noto_Sans_Devanagari, Noto_Sans_Georgian, Noto_Sans_Hebrew, Sigmar } from "next/font/google";
 import "./globals.css";
 
 const notoSans = Noto_Sans({
@@ -11,6 +11,18 @@ const notoSans = Noto_Sans({
 const notoSansHebrew = Noto_Sans_Hebrew({
   subsets: ["hebrew"],
   variable: "--font-hebrew",
+  display: "swap",
+});
+
+const notoSansDevanagari = Noto_Sans_Devanagari({
+  subsets: ["devanagari"],
+  variable: "--font-devanagari",
+  display: "swap",
+});
+
+const notoSansGeorgian = Noto_Sans_Georgian({
+  subsets: ["georgian"],
+  variable: "--font-georgian",
   display: "swap",
 });
 
@@ -59,7 +71,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${notoSans.variable} ${notoSansHebrew.variable} ${sigmar.variable}`}>
+    <html
+      lang="en"
+      className={`${notoSans.variable} ${notoSansHebrew.variable} ${notoSansDevanagari.variable} ${notoSansGeorgian.variable} ${sigmar.variable}`}
+    >
       <body>{children}</body>
     </html>
   );

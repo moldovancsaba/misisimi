@@ -1,0 +1,212 @@
+{
+  "meta": {
+    "title": "misisimi — systemy AI, które naprawdę działają",
+    "description": "Wdrażamy systemy AI w kilka tygodni, nie miesięcy. Zacznij od szybkiej diagnozy.",
+    "ogAlt": "Ilustracja MISISIMI"
+  },
+  "nav": {
+    "home": "Start",
+    "trust": "Zaufanie",
+    "outcomes": "Efekty",
+    "process": "Proces",
+    "pricing": "Cennik",
+    "contact": "Kontakt",
+    "stickyCta": "Diagnoza (48h)",
+    "openMenu": "Otwórz menu nawigacji",
+    "closeMenu": "Zamknij menu nawigacji",
+    "language": "Język"
+  },
+  "hero": {
+    "title": "Zmieniamy AI w systemy, które działają w Twojej firmie",
+    "subtitle": "Bez pilota. Bez pustych obietnic. Tylko systemy, które pomagają w codziennej pracy.",
+    "primaryCta": "Diagnoza (48h)",
+    "imageAlt": "Ilustracja MISISIMI"
+  },
+  "trust": {
+    "kicker": "Zaufanie",
+    "title": "Dlaczego zespoły zaczynają z nami",
+    "metrics": [
+      {
+        "value": "30–60%",
+        "label": "mniej czasu"
+      },
+      {
+        "value": "3–6 tygodni",
+        "label": "do uruchomienia"
+      },
+      {
+        "value": "Pomysł → live",
+        "label": "jasna ścieżka"
+      },
+      {
+        "value": "Bez godzin",
+        "label": "model rozliczeń"
+      }
+    ],
+    "cases": [
+      {
+        "title": "Automatyzacja obsługi klienta",
+        "before": "Ręczne odpowiedzi",
+        "after": "AI obsługuje 70% zgłoszeń",
+        "outcomes": [
+          "Szybsze odpowiedzi",
+          "Mniejsze obciążenie supportu"
+        ]
+      },
+      {
+        "title": "Automatyzacja operacji",
+        "before": "Ręczne follow-upy",
+        "after": "Zautomatyzowane workflow",
+        "outcomes": [
+          "Krótszy cykl",
+          "Mniej błędów"
+        ]
+      },
+      {
+        "title": "Prognozowanie sprzedaży",
+        "before": "Przeczucie",
+        "after": "Decyzje oparte na danych",
+        "outcomes": [
+          "Lepsze planowanie",
+          "Większa pewność"
+        ]
+      }
+    ]
+  },
+  "outcomes": {
+    "kicker": "Efekty",
+    "title": "Co poprawia się najpierw",
+    "items": [
+      {
+        "emoji": "⚡",
+        "title": "Automatyzacja powtarzalnej pracy"
+      },
+      {
+        "emoji": "🧠",
+        "title": "Włączenie AI do codziennych operacji"
+      },
+      {
+        "emoji": "📈",
+        "title": "Lepsze decyzje dzięki danym"
+      }
+    ]
+  },
+  "process": {
+    "kicker": "Proces",
+    "title": "Jak to działa",
+    "items": [
+      {
+        "step": "KROK 1",
+        "title": "Diagnoza → Znaleźć dźwignię",
+        "image": "/08_step_1.png"
+      },
+      {
+        "step": "KROK 2",
+        "title": "Budowa → Stworzyć system",
+        "image": "/09_step_2.png"
+      },
+      {
+        "step": "KROK 3",
+        "title": "Wdrożenie → Uruchomić na żywo",
+        "image": "/10_step_3.png"
+      }
+    ]
+  },
+  "capabilities": {
+    "kicker": "Możliwości",
+    "title": "Gdzie pomagamy najmocniej",
+    "items": [
+      {
+        "title": "Tarcie Operacyjne",
+        "image": "/01_operational_drag.png"
+      },
+      {
+        "title": "Niewykorzystane Dane",
+        "image": "/02_unused_data.png"
+      },
+      {
+        "title": "Rozbity Stack",
+        "image": "/03_fragmented_stack.png"
+      },
+      {
+        "title": "Ryzyko Wykonania",
+        "image": "/04_execution_risk.png"
+      },
+      {
+        "title": "Doradztwo AI",
+        "image": "/06_ai_consulting.png"
+      },
+      {
+        "title": "Rozwój AI",
+        "image": "/05_ai_development.png"
+      },
+      {
+        "title": "Narzędzia Automatyzacji",
+        "image": "/07_ai_automation_tools.png"
+      },
+      {
+        "title": "Operacje Serwisowe",
+        "image": "/12_service_operations.png"
+      },
+      {
+        "title": "Inteligencja Komercyjna",
+        "image": "/13_commercial_intelligence.png"
+      }
+    ]
+  },
+  "pricing": {
+    "kicker": "Cennik",
+    "title": "Cena powiązana z dostarczeniem",
+    "lineOne": "Bez rozliczenia godzinowego.",
+    "lineTwo": "Płacisz za efekt.",
+    "rate": "1 kredyt = €200",
+    "support": "Kredyty są powiązane z tym, co dowozimy, a nie z liczbą godzin.",
+    "examples": [
+      {
+        "name": "Skrypt automatyzacji",
+        "value": "3–5 kredytów"
+      },
+      {
+        "name": "Diagnoza",
+        "value": "Stały pakiet"
+      }
+    ],
+    "cta": "Diagnoza (48h)"
+  },
+  "contact": {
+    "kicker": "Zacznij tutaj",
+    "title": "Poproś o diagnozę",
+    "points": [
+      "Odpowiedź w 48h",
+      "Jasny kolejny krok"
+    ],
+    "note": "Krótki formularz. Konkretna odpowiedź.",
+    "form": {
+      "company": "Firma",
+      "problem": "Problem",
+      "email": "E-mail",
+      "submit": "Diagnoza (48h)"
+    },
+    "success": {
+      "title": "Diagnoza została wysłana",
+      "points": [
+        "Odpowiedź w 48h",
+        "Jasny kolejny krok"
+      ],
+      "text": "Wrócimy z następnym krokiem.",
+      "back": "Wstecz"
+    }
+  },
+  "footer": {
+    "label": "Nawigacja stopki",
+    "tagline": "Systemy AI, które szybko trafiają na produkcję.",
+    "links": {
+      "trust": "Zaufanie",
+      "outcomes": "Efekty",
+      "process": "Proces",
+      "pricing": "Cennik",
+      "contact": "Kontakt"
+    },
+    "copyright": "misisimi"
+  }
+}

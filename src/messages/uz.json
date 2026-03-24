@@ -1,0 +1,212 @@
+{
+  "meta": {
+    "title": "misisimi — haqiqatan ishlaydigan AI tizimlari",
+    "description": "AI tizimlarini oylar emas, haftalar ichida ishga tushiramiz. Tez diagnostikadan boshlang.",
+    "ogAlt": "MISISIMI illustratsiyasi"
+  },
+  "nav": {
+    "home": "Bosh sahifa",
+    "trust": "Ishonch",
+    "outcomes": "Natijalar",
+    "process": "Jarayon",
+    "pricing": "Narxlar",
+    "contact": "Aloqa",
+    "stickyCta": "Diagnostika (48 soat)",
+    "openMenu": "Menyuni ochish",
+    "closeMenu": "Menyuni yopish",
+    "language": "Til"
+  },
+  "hero": {
+    "title": "Biz AI’ni biznesingizda ishlaydigan tizimga aylantiramiz",
+    "subtitle": "Pilot yo‘q. Quruq gap yo‘q. Faqat amalda ishlaydigan tizim.",
+    "primaryCta": "Diagnostika (48 soat)",
+    "imageAlt": "MISISIMI illustratsiyasi"
+  },
+  "trust": {
+    "kicker": "Ishonch",
+    "title": "Jamoalar nega bizdan boshlaydi",
+    "metrics": [
+      {
+        "value": "30–60%",
+        "label": "vaqt tejaladi"
+      },
+      {
+        "value": "3–6 hafta",
+        "label": "ishga tushadi"
+      },
+      {
+        "value": "G‘oya → live",
+        "label": "aniq yo‘l"
+      },
+      {
+        "value": "Soatbay emas",
+        "label": "hisob modeli"
+      }
+    ],
+    "cases": [
+      {
+        "title": "Mijozlar qo‘llab-quvvatlashini avtomatlashtirish",
+        "before": "Qo‘lda javob",
+        "after": "AI ticketlarning 70% ini yopadi",
+        "outcomes": [
+          "Javob tezroq",
+          "Support yuklamasi kamayadi"
+        ]
+      },
+      {
+        "title": "Operatsion jarayonlarni avtomatlashtirish",
+        "before": "Qo‘lda kuzatish",
+        "after": "Avtomatik workflow",
+        "outcomes": [
+          "Sikl qisqaradi",
+          "Xatolar kamayadi"
+        ]
+      },
+      {
+        "title": "Tijorat prognozi",
+        "before": "Ichki sezgi",
+        "after": "Ma’lumotga tayangan qaror",
+        "outcomes": [
+          "Reja yaxshilanadi",
+          "Ishonch ortadi"
+        ]
+      }
+    ]
+  },
+  "outcomes": {
+    "kicker": "Natijalar",
+    "title": "Avval nima yaxshilanadi",
+    "items": [
+      {
+        "emoji": "⚡",
+        "title": "Takroriy ishlarni avtomatlashtirish"
+      },
+      {
+        "emoji": "🧠",
+        "title": "AI’ni kundalik operatsiyaga olib kirish"
+      },
+      {
+        "emoji": "📈",
+        "title": "Ma’lumot bilan yaxshiroq qaror qilish"
+      }
+    ]
+  },
+  "process": {
+    "kicker": "Jarayon",
+    "title": "Qanday ishlaydi",
+    "items": [
+      {
+        "step": "1-QADAM",
+        "title": "Diagnostika → Ta’sir nuqtasi",
+        "image": "/08_step_1.png"
+      },
+      {
+        "step": "2-QADAM",
+        "title": "Qurish → Tizim yaratish",
+        "image": "/09_step_2.png"
+      },
+      {
+        "step": "3-QADAM",
+        "title": "Ishga tushirish → Amalda ishlatish",
+        "image": "/10_step_3.png"
+      }
+    ]
+  },
+  "capabilities": {
+    "kicker": "Imkoniyatlar",
+    "title": "Eng ko‘p qayerda yordam beramiz",
+    "items": [
+      {
+        "title": "Operatsion yuk",
+        "image": "/01_operational_drag.png"
+      },
+      {
+        "title": "Ishlatilmayotgan ma’lumot",
+        "image": "/02_unused_data.png"
+      },
+      {
+        "title": "Bo‘laklangan stack",
+        "image": "/03_fragmented_stack.png"
+      },
+      {
+        "title": "Ijro xavfi",
+        "image": "/04_execution_risk.png"
+      },
+      {
+        "title": "AI konsalting",
+        "image": "/06_ai_consulting.png"
+      },
+      {
+        "title": "AI rivojlantirish",
+        "image": "/05_ai_development.png"
+      },
+      {
+        "title": "Avtomatlashtirish vositalari",
+        "image": "/07_ai_automation_tools.png"
+      },
+      {
+        "title": "Xizmat operatsiyalari",
+        "image": "/12_service_operations.png"
+      },
+      {
+        "title": "Tijoriy intellekt",
+        "image": "/13_commercial_intelligence.png"
+      }
+    ]
+  },
+  "pricing": {
+    "kicker": "Narxlar",
+    "title": "Narx yetkazib berishga bog‘langan",
+    "lineOne": "Soatbay billing yo‘q.",
+    "lineTwo": "Natija uchun to‘laysiz.",
+    "rate": "1 kredit = €200",
+    "support": "Kreditlar vaqtga emas, topshirilgan natijaga bog‘lanadi.",
+    "examples": [
+      {
+        "name": "Avtomatlashtirish skripti",
+        "value": "3–5 kredit"
+      },
+      {
+        "name": "Diagnostika",
+        "value": "Qat’iy paket"
+      }
+    ],
+    "cta": "Diagnostika (48 soat)"
+  },
+  "contact": {
+    "kicker": "Shu yerdan boshlang",
+    "title": "Diagnostika oling",
+    "points": [
+      "48 soatda javob",
+      "Keyingi qadam aniq"
+    ],
+    "note": "Qisqa forma. To‘g‘ri javob.",
+    "form": {
+      "company": "Kompaniya",
+      "problem": "Muammo",
+      "email": "Email",
+      "submit": "Diagnostika (48 soat)"
+    },
+    "success": {
+      "title": "Diagnostika so‘rovi yuborildi",
+      "points": [
+        "48 soatda javob",
+        "Keyingi qadam aniq"
+      ],
+      "text": "Keyingi qadam bilan qaytamiz.",
+      "back": "Orqaga"
+    }
+  },
+  "footer": {
+    "label": "Footer navigatsiyasi",
+    "tagline": "Tez ishga tushadigan AI tizimlari.",
+    "links": {
+      "trust": "Ishonch",
+      "outcomes": "Natijalar",
+      "process": "Jarayon",
+      "pricing": "Narxlar",
+      "contact": "Aloqa"
+    },
+    "copyright": "misisimi"
+  }
+}
