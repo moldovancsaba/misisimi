@@ -5,6 +5,7 @@ import StickyCTA from '@/components/home/StickyCTA';
 import { getDictionary } from '@/i18n/dictionaries';
 import { isLocale, localeInfo, locales, type Locale } from '@/i18n/config';
 import { notFound } from 'next/navigation';
+import { MisisimiProviders } from '@/components/MisisimiProviders';
 
 type LocaleLayoutProps = {
   children: React.ReactNode;
@@ -74,11 +75,13 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
   }));
 
   return (
-    <div className="locale-shell" data-locale={locale} lang={locale} dir={info.dir}>
-      <Navbar locale={locale as Locale} nav={dict.nav} localeOptions={localeOptions} />
-      <StickyCTA locale={locale as Locale} label={dict.nav.stickyCta} />
-      {children}
-      <Footer locale={locale as Locale} content={dict.footer} />
-    </div>
+    <MisisimiProviders locale={locale}>
+      <div className="locale-shell" data-locale={locale} lang={locale} dir={info.dir}>
+        <Navbar locale={locale as Locale} nav={dict.nav} localeOptions={localeOptions} />
+        <StickyCTA locale={locale as Locale} label={dict.nav.stickyCta} />
+        {children}
+        <Footer locale={locale as Locale} content={dict.footer} />
+      </div>
+    </MisisimiProviders>
   );
 }

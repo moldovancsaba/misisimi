@@ -6,9 +6,18 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "gds:sync": "bash scripts/gds-sync-packages.sh",
+    "gds:ci-guard": "node scripts/ci-gds-guard.js"
   },
   "dependencies": {
+    "@gds/core": "file:./packages/gds-core",
+    "@gds/theme": "file:./packages/gds-theme",
+    "@mantine/core": "^7.15.0",
+    "@mantine/hooks": "^7.15.0",
+    "@mantine/modals": "^7.15.0",
+    "@mantine/notifications": "^7.15.0",
+    "@tabler/icons-react": "^3.5.0",
     "@types/nodemailer": "^7.0.11",
     "next": "16.2.0",
     "nodemailer": "^8.0.3",

@@ -18,7 +18,6 @@ export default function StickyCTA({ locale, label }: StickyCTAProps) {
     );
 
     if (!targets.length) {
-      setHidden(false);
       return;
     }
 
