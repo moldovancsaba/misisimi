@@ -48,3 +48,11 @@ npm run gds:sync        # Pull built packages from GDS SSOT
 npm run gds:ci-guard    # Run design system compliance checker
 npm run build           # Run Next.js production build verification
 ```
+
+### Git Authentication in Agent Environments
+
+If automated agents attempt to push updates and hit authentication token errors, it is because their runner sets an expired or read-only `GITHUB_TOKEN` environment variable, overriding the local macOS credentials keychain. Agents must temporarily clear the environment variable to fall back to the host's keyring:
+
+```bash
+GITHUB_TOKEN="" git push origin main
+```
